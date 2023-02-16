@@ -3,7 +3,6 @@ import React from 'react'
 const AboutUs = () => {
     return (
         <div>
-          
             <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9TRJ57"
                 height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
       
@@ -19,7 +18,7 @@ const AboutUs = () => {
                             <li class="active"><a href="/">Home</a></li>
                             <li class="drop-down"><a href="#0">About us</a>
                                 <ul>
-                                    <li><a href="/aboutus">Company</a></li>
+                                    <li><a href="/about-us">Company</a></li>
                                     <li><a href="about-us.html#our-story">Our Story</a></li>
                                     <li><a href="/ourteam">Our Team</a></li>
                                 </ul>
@@ -30,7 +29,7 @@ const AboutUs = () => {
                                         <div class="media">
                                             <img src="img/mega-menu/mega-menu-icon.png" />
                                             <div class="media-body">
-                                                <a href="/iosdevelopment">IOS Development</a>
+                                                <a href="/ios-application-development">IOS Development</a>
                                                 <p>Custom Native iPhone App Development and support</p>
                                             </div>
                                         </div>
@@ -39,7 +38,7 @@ const AboutUs = () => {
                                         <div class="media">
                                             <img src="img/mega-menu/mega-android.png" />
                                             <div class="media-body">
-                                                <a href="services/android-application-development.html">Android App Development</a>
+                                                <a href="/android-application-development">Android App Development</a>
                                                 <p>Ondemand android developemnet for your business</p>
                                             </div>
                                         </div>
@@ -48,7 +47,7 @@ const AboutUs = () => {
                                         <div class="media">
                                             <img src="img/mega-menu/mega-flutter.png" />
                                             <div class="media-body">
-                                                <a href="services/flutter-application-development.html">Flutter App Development</a>
+                                                <a href="/flutter-application-development">Flutter App Development</a>
                                                 <p>Helping startups, small businesses and growing enterprises </p>
                                             </div>
                                         </div>
@@ -57,7 +56,7 @@ const AboutUs = () => {
                                         <div class="media">
                                             <img src="img/mega-menu/mega-blockchain.png" />
                                             <div class="media-body">
-                                                <a href="services/blockchain-application-development.html">BlockChain Development</a>
+                                                <a href="/blockchain-application-development">BlockChain Development</a>
                                                 <p>App development using flutter and react technology</p>
                                             </div>
                                         </div>
@@ -66,7 +65,7 @@ const AboutUs = () => {
                                         <div class="media">
                                             <img src="img/mega-menu/mega-iot.png" />
                                             <div class="media-body">
-                                                <a href="services/iot-application-development.html">IOT App Development</a>
+                                                <a href="/iot-application-development">IOT App Development</a>
                                                 <p>controlled remotely and can be used to monitor the connected product's condition</p>
                                             </div>
                                         </div>
@@ -75,7 +74,7 @@ const AboutUs = () => {
                                         <div class="media">
                                             <img src="img/mega-menu/mega-arvr.png" />
                                                 <div class="media-body">
-                                                    <a href="services/augmented-reality-development.html">AR VR Development</a>
+                                                    <a href="/augmented-reality-development">AR VR Development</a>
                                                     <p>empower businesses them with our skilled technology capabilities in AR/VR</p>
                                                 </div>
                                         </div>
@@ -84,7 +83,7 @@ const AboutUs = () => {
                                         <div class="media">
                                             <img src="img/mega-menu/mega-react.png" />
                                             <div class="media-body">
-                                                <a href="services/react-native-application-development.html">React Native Development</a>
+                                                <a href="/react-native-application-development">React Native Development</a>
                                                 <p>iOS and Android mobile applications in an industry-driving structure</p>
                                             </div>
                                         </div>
@@ -93,22 +92,23 @@ const AboutUs = () => {
                                         <div class="media">
                                             <img src="img/mega-menu/mega-web.png" />
                                             <div class="media-body">
-                                                <a href="services/web-app-development.html">Web Development</a>
+                                                <a href="/web-app-development">Web Development</a>
                                                 <p>We build bespoke websites and web applications</p>
                                             </div>
                                         </div>
                                     </li>
                                     <li class="col-lg-4">
                                         <div class="lets-connect">
-                                            <a href="/contactus">Lets Connect <span class="ml-2"><img src="img/arrow 2.svg" /></span> </a>
+                                            <a href="/contact-us">Lets Connect <span class="ml-2"><img src="img/arrow 2.svg" /></span> </a>
                                             <p>meet the enthusiastic team of developers and designers</p>
                                         </div>
                                     </li>
                                 </ul>
                             </li>
                             <li><a href="/portfolio">Portfolio</a></li>
-                            <li><a href="/contactus">Contact us</a></li>
-                            <li class="get-started"><a href="/contactus">Estimate Project</a></li>
+                            <li><a href="/career">Careers</a></li>
+                            <li><a href="/contact-us">Contact us</a></li>
+                            <li class="get-started"><a href="/contact-us">Estimate Project</a></li>
                         </ul>
                     </nav>
    

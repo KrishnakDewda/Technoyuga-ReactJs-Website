@@ -126,6 +126,7 @@ const ReactNative = () => {
                             </li>
                             <li><a href="/portfolio">Portfolio</a></li>
                             <li><a href="/contact-us">Contact us</a></li>
+                            <li><a href="/career">Careers</a></li>
                             <li className="get-started"><a href="/contact-us">Estimate Project</a></li>
                         </ul>
                     </nav>
