@@ -130,7 +130,7 @@ const IotDevelopment = () => {
               </div>
               <div className="ar-vr-banner--sub-text">
                 <p className="mt-5 first-p">IoT development is the process of developing IoT applications and products that can be controlled remotely and can be used to monitor the connected product's condition or environment via sensors and external data sources.</p>
-                <a href="../contact-us.html" className="cta mt-3 d-inline-block">Request a call back</a>
+                <a href="/contact-us" className="cta mt-3 d-inline-block">Request a call back</a>
                 <p className="mt-4 banner-dis"><b>*No Spam. 100% Privacy Guaranteed.</b></p>
               </div>
             </div>
@@ -555,7 +555,7 @@ const IotDevelopment = () => {
                   </div>
                 </div>
 
-                <div className="outsource-content">
+                <div className="outsource-content mb-0 mb-md-4" >
                   <img className="content-image" src="img/outsource/transport.png" />
 
                   <div className="outsource-title">
@@ -563,7 +563,7 @@ const IotDevelopment = () => {
                   </div>
                 </div>
 
-                <div className="outsource-content">
+                <div className="outsource-content mb-0 mb-md-4">
                   <img className="content-image" src="img/outsource/fintech.jpg" />
 
                   <div className="outsource-title">
@@ -571,7 +571,7 @@ const IotDevelopment = () => {
                   </div>
                 </div>
 
-                <div className="outsource-content">
+                <div className="outsource-content mb-0 mb-md-4">
                   <img className="content-image" src="img/outsource/smart-watch.png" />
 
                   <div className="outsource-title">
@@ -1286,7 +1286,7 @@ const IotDevelopment = () => {
         </div>
       </footer>
 
- {/* <a href="#" className="back-to-top"><i className="icofont-simple-up"></i></a> */}
+      {/* <a href="#" className="back-to-top"><i className="icofont-simple-up"></i></a> */}
 
 
     </div>

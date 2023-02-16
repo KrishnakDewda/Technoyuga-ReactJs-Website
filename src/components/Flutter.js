@@ -2016,7 +2016,7 @@ const Flutter = () => {
                                     <div className="content-area">
                                         <h5>Do you have an <strong>Idea?</strong></h5>
                                         <p>Book a discovery call to validate your idea and get a free roadmap.</p>
-                                        <a href="contact-us.html" className="estimate">Estimate Project</a>
+                                        <a href="/contact-us" className="estimate">Estimate Project</a>
                                         <p className="banner-dis"><b>*No Spam. 100% Privacy Guaranteed.</b></p>
                                     </div>
                                 </div>

@@ -134,7 +134,7 @@ const AndroidDevelopment = () => {
                             <div className="ios-banner-text" data-aos="fade-in" data-aos-delay="100">
                                 <h2>Android App Development Company</h2>
                                 <p>Technoyuga is a top rated android app development company that is helping startups, small businesses and growing enterprises around the world develop in building android apps.</p>
-                                <a className="call-request" href="/contactus">REQUEST A CALL BACK</a>
+                                <a className="call-request" href="/contact-us">REQUEST A CALL BACK</a>
                             </div>
                         </div>
                     </div>

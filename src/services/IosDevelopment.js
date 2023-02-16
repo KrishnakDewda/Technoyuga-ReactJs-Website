@@ -138,7 +138,7 @@ const IosDevelopment = () => {
                             <div className="ios-banner-text">
                                 <h2>iPhone App Development Company</h2>
                                 <p>Technoyuga is a top rated iPhone app development company that is helping startups, small businesses and growing enterprises around the world develop in building iOS apps.</p>
-                                <a className="call-request" href="/contactus">REQUEST A CALL BACK</a>
+                                <a className="call-request" href="/contact-us">REQUEST A CALL BACK</a>
                             </div>
                         </div>
                     </div>

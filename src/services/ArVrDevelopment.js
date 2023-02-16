@@ -130,7 +130,7 @@ const ArVrDevelopment = () => {
                             </div>
                             <div className="ar-vr-banner--sub-text">
                                 <p className="mt-5 first-p">TechnoYuga is a top rated AR & VR development company that is helping startups and enterprises across the globe.</p>
-                                <a href="../contact-us.html" className="cta mt-3 d-inline-block">Request a call back</a>
+                                <a href="/contact-us" className="cta mt-3 d-inline-block">Request a call back</a>
                                 <p className="note banner-dis">*No Spam. 100% Privacy Guaranteed.</p>
                             </div>
                         </div>

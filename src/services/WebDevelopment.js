@@ -133,7 +133,7 @@ const WebDevelopment = () => {
                             </div>
                             <div className="ar-vr-banner--sub-text">
                                 <p className="mt-5 first-p">TechnoYuga is a top rated Website and Web app development company that is helping startups, small businesses and growing enterprises around the world. We build bespoke websites and web applications</p>
-                                <a href="../contact-us.html" className="cta mt-3 d-inline-block">Request a call back</a>
+                                <a href="/contact-us" className="cta mt-3 d-inline-block">Request a call back</a>
                                 <p className="note banner-dis">*No Spam. 100% Privacy Guaranteed.</p>
                             </div>
                         </div>

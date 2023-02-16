@@ -136,7 +136,7 @@ const BlockChainDevelopment = () => {
                             </div>
                             <div className="ar-vr-banner--sub-text">
                                 <p className="mt-5 first-p">Technoyuga strategize and develop Blockchain Services including secure and Scalable ICO creation, Decentralized Applications (DApp) solutions, Crypto Wallet Development, Crypto Exchange Development and Crypto-Token Development with Blockchain App Consultation</p>
-                                <a href="../contact-us.html" className="cta mt-3 d-inline-block">Request a call back</a>
+                                <a href="/contact-us" className="cta mt-3 d-inline-block">Request a call back</a>
                                 <p className="mt-4 banner-dis"><b>*No Spam. 100% Privacy Guaranteed.</b></p>
                             </div>
                         </div>

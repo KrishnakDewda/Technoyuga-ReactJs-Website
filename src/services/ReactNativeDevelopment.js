@@ -128,7 +128,7 @@ const ReactNativeDevelopment = () => {
                             </div>
                             <div className="ar-vr-banner--sub-text">
                                 <p className="mt-5 first-p">We build beautiful, fast and interactive iOS & Android apps using React Native.</p>
-                                <a href="../contact-us.html" className="cta mt-3 d-inline-block">Request a call back</a>
+                                <a href="/contact-us" className="cta mt-3 d-inline-block">Request a call back</a>
                                 <p className="mt-4 banner-dis"><b>*No Spam. 100% Privacy Guaranteed.</b></p>
                             </div>
 
