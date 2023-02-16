@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from './Footer'
 
 const Career = () => {
     return (
@@ -669,7 +670,7 @@ const Career = () => {
 
 
 
-            <footer id="footer">
+            {/* <footer id="footer">
 
                 <div className="footer-top">
                     <div className="container">
@@ -699,7 +700,9 @@ const Career = () => {
                         </div>
                     </div>
                 </div>
-            </footer>
+            </footer> */}
+            
+            <Footer />
 
             <div className="modal fade" id="ep1">
                 <div className="modal-dialog modal-dialog-centered">

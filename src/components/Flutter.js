@@ -3,6 +3,8 @@ import OwlCarousel from "react-owl-carousel"
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import 'animate.css/animate.min.css';
+import Header from './Header';
+import Footer from './Footer';
 
 const Flutter = () => {
 
@@ -14,7 +16,7 @@ const Flutter = () => {
 
             <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9TRJ57" height="0" width="0"
                 style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
-
+{/* 
             <header id="header" className="fixed-top dark-header">
                 <div className="container-fluid d-flex">
 
@@ -131,7 +133,8 @@ const Flutter = () => {
                     </nav>
 
                 </div>
-            </header>
+            </header> */}
+            <Header />
 
             <main>
 
@@ -1903,7 +1906,7 @@ const Flutter = () => {
             </main>
 
 
-            <footer id="footer">
+            {/* <footer id="footer">
 
                 <div className="footer-top">
                     <div className="container">
@@ -1933,7 +1936,9 @@ const Flutter = () => {
                         </div>
                     </div>
                 </div>
-            </footer>
+            </footer> */}
+
+            <Footer />
 
             <div className="modal fade" id="ep1">
                 <div className="modal-dialog modal-dialog-centered">

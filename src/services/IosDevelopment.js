@@ -3,6 +3,8 @@ import OwlCarousel from "react-owl-carousel"
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import 'animate.css/animate.min.css';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 
 const IosDevelopment = () => {
@@ -14,7 +16,7 @@ const IosDevelopment = () => {
             <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9TRJ57"
                 height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
          
-         <header id="header" class="fixed-top dark-header">
+         {/* <header id="header" class="fixed-top dark-header">
                 <div class="container-fluid d-flex">
 
                     <div class="logo mr-auto">
@@ -121,7 +123,10 @@ const IosDevelopment = () => {
                     </nav>
 
                 </div>
-            </header>
+            </header> */}
+
+            <Header />
+
             {/* <!-- End Header --> */}
 
             {/* <!-- ======= Hero Section ======= --> */}
@@ -1486,7 +1491,7 @@ const IosDevelopment = () => {
             {/* <!-- End #main --> */}
 
             {/* <!-- ======= Footer ======= --> */}
-            <footer id="footer">
+            {/* <footer id="footer">
 
                 <div className="footer-top">
                     <div className="container">
@@ -1516,7 +1521,10 @@ const IosDevelopment = () => {
                         </div>
                     </div>
                 </div>
-            </footer>
+            </footer> */}
+
+            <Footer />
+
             {/* <!-- End Footer --> */}
 
         </div>

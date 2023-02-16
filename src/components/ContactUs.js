@@ -1,13 +1,68 @@
-import React from 'react'
+import React, { useState } from 'react'
+import axios from 'axios'
+import Header from './Header';
+import Footer from './Footer';
 
 const ContactUs = () => {
+
+    const [error, setError] = useState({});
+    const [first, setFirst] = useState({ uname: "", phone: "", email: "", comment: "", budget: "" })
+
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (validate()) {
+        console.log("messgae submited")
+        }
+    }
+
+    const onChange = (e) => {
+        setFirst({ ...first, [e.target.name]: e.target.value }) // add or overwrite
+    }
+
+    function validate() {
+
+        let isValid = true;
+        let err = {};
+        if (!first.uname) {
+            err['uname_err'] = "Please provide your user name!"
+            isValid = false;
+        }
+        if (!first.email) {
+            err['email_err'] = "Please provide your email!"
+            isValid = false;
+        }
+        if (!first.phone) {
+            err['phone_err'] = "Please provide your phone number!"
+            isValid = false;
+        }
+        if (!first.budget) {
+            err['budget_err'] = "Please provide your budget!"
+            isValid = false;
+        }
+        if (!first.comment) {
+            err['comment_err'] = "Please provide comment!"
+            isValid = false;
+        }
+        // if (!first.customRadio) {
+        //     err['customRadio_err'] = "Please choose option!"
+        //     isValid = false;
+        // }
+        // if (!first.customRadio2) {
+        //     err['customRadio2_err'] = "Please choose option!"
+        //     isValid = false;
+        // }
+        setError(err);
+        return isValid;
+    };
+
     return (
         <div>
 
             <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9TRJ57"
                 height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
-  
-            <header id="header" className="fixed-top dark-header">
+
+            {/* <header id="header" className="fixed-top dark-header">
                 <div className="container-fluid d-flex">
 
                     <div className="logo mr-auto">
@@ -116,7 +171,8 @@ const ContactUs = () => {
 
 
                 </div>
-            </header>
+            </header> */}
+            <Header />
             {/* <!-- End Header --> */}
 
 
@@ -138,13 +194,15 @@ const ContactUs = () => {
                                     <div className="col-md-6">
                                         <div className="form-group">
                                             <label for="uname">Your Name *</label>
-                                            <input type="text" className="form-control" id="uname" name="uname" />
+                                            <input type="text" className="form-control" id="uname" name="uname" onChange={onChange} />
+                                            <div className='error' style={{ color: "red" }}>{error.uname_err}</div>
                                         </div>
                                     </div>
                                     <div className="col-md-6">
                                         <div className="form-group">
                                             <label for="email">Email Id *</label>
-                                            <input type="email" className="form-control" id="email" />
+                                            <input type="email" className="form-control" id="email" name="email" onChange={onChange} />
+                                            <div className='error' style={{ color: "red" }}>{error.email_err}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -152,13 +210,14 @@ const ContactUs = () => {
                                     <div className="col-md-6">
                                         <div className="form-group">
                                             <label for="uname">Phone Number *</label>
-                                            <input type="text" className="form-control" id="phone" name="phone" />
+                                            <input type="text" className="form-control" id="phone" name="phone" onChange={onChange} />
+                                            <div className='error' style={{ color: "red" }}>{error.phone_err}</div>
                                         </div>
                                     </div>
                                     <div className="col-md-6">
                                         <div className="form-group">
                                             <label for="uname">Budget *</label>
-                                            <select name="budget" className="custom-select">
+                                            <select name="budget" className="custom-select" onChange={onChange}>
                                                 <option selected>Choose Budget</option>
                                                 <option value="$5000 - $10000">$5000 - $10000</option>
                                                 <option value="$10000 - $15000">$10000 - $15000</option>
@@ -166,6 +225,7 @@ const ContactUs = () => {
                                                 <option value="$20000 - $30000">$20000 - $30000</option>
                                                 <option value="$30000 or More">$30000 or More</option>
                                             </select>
+                                            <div className='error' style={{ color: "red" }}>{error.budget_err}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -173,7 +233,8 @@ const ContactUs = () => {
                                     <div className="col-12">
                                         <div className="form-group">
                                             <label for="comment">Discuss your Dream *</label>
-                                            <textarea className="form-control" rows="5" id="comment"></textarea>
+                                            <textarea className="form-control" rows="5" id="comment" name='comment' onChange={onChange}></textarea>
+                                            <div className='error' style={{ color: "red" }}>{error.comment_err}</div>
                                         </div>
                                     </div>
                                 </div>
@@ -182,17 +243,20 @@ const ContactUs = () => {
                                         <div className="form-group">
                                             <label className="d-block mb-3">Do you need a NDA ? *</label>
                                             <div className="custom-control custom-radio custom-control-inline m-r">
-                                                <input type="radio" className="custom-control-input" id="customRadio" name="example" value="customEx" checked="" />
+                                                <input type="radio" className="custom-control-input" id="customRadio" name="example" value="customEx" onChange={onChange}  />
                                                 <label className="custom-control-label" for="customRadio">Yes</label>
+                                            {/* <div className='error' style={{ color: "red" }}>{error.customRadio_err}</div> */}
+
                                             </div>
-                                            <div className="custom-control custom-radio custom-control-inline">
-                                                <input type="radio" className="custom-control-input" id="customRadio2" name="example" value="customEx" />
+                                            <div className="custom-control custom-radio custom-control-inline m-r">
+                                                <input type="radio" className="custom-control-input" id="customRadio2" name="example" value="customEx" onChange={onChange}  />
                                                 <label className="custom-control-label" for="customRadio2">No</label>
+                                            {/* <div className='error' style={{ color: "red" }}>{error.customRadio2_err}</div> */}
                                             </div>
                                         </div>
                                     </div>
                                     <div className="col-md-6 text-right">
-                                        <a href="#" className="contact-btn">Get in Touch</a>
+                                        <a href="#" className="contact-btn" onClick={handleSubmit}>Get in Touch</a>
                                     </div>
                                 </div>
                             </form>
@@ -258,7 +322,7 @@ const ContactUs = () => {
             {/* <!-- End #main --> */}
 
             {/* <!-- ======= Footer ======= --> */}
-            <footer id="footer">
+            {/* <footer id="footer">
 
                 <div className="footer-top">
                     <div className="container">
@@ -288,7 +352,10 @@ const ContactUs = () => {
                         </div>
                     </div>
                 </div>
-            </footer>
+            </footer> */}
+
+            <Footer />
+
             {/* <!-- End Footer --> */}
 
         </div>

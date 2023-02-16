@@ -1,4 +1,6 @@
 import React from 'react'
+import Footer from './Footer'
+import Header from './Header'
 
 const OurTeam = () => {
     return (
@@ -7,7 +9,7 @@ const OurTeam = () => {
             <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9TRJ57"
                 height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
           
-            <header id="header" className="fixed-top dark-header">
+            {/* <header id="header" className="fixed-top dark-header">
                 <div className="container-fluid d-flex">
 
                     <div className="logo mr-auto">
@@ -116,7 +118,8 @@ const OurTeam = () => {
            
 
                 </div>
-            </header>
+            </header> */}
+            <Header />
             {/* <!-- End Header --> */}
 
 
@@ -464,7 +467,7 @@ const OurTeam = () => {
             {/* <!-- End #main --> */}
 
             {/* <!-- ======= Footer ======= --> */}
-            <footer id="footer" style={{marginTop: "45px"}}>
+            {/* <footer id="footer" style={{marginTop: "45px"}}>
 
                 <div className="footer-top">
                     <div className="container">
@@ -494,7 +497,8 @@ const OurTeam = () => {
                         </div>
                     </div>
                 </div>
-            </footer>
+            </footer> */}
+            <Footer />
             {/* <!-- End Footer --> */}
         </div>
     )

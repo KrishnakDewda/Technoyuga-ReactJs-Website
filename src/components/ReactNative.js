@@ -3,6 +3,8 @@ import OwlCarousel from "react-owl-carousel"
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import 'animate.css/animate.min.css';
+import Footer from './Footer';
+import Header from './Header';
 
 const ReactNative = () => {
 
@@ -16,7 +18,7 @@ const ReactNative = () => {
                 style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
 
             {/* <!-- ======= Header ======= --> */}
-            <header id="header" className="fixed-top dark-header">
+            {/* <header id="header" className="fixed-top dark-header">
                 <div className="container-fluid d-flex">
 
                     <div className="logo mr-auto">
@@ -130,10 +132,13 @@ const ReactNative = () => {
                             <li className="get-started"><a href="/contact-us">Estimate Project</a></li>
                         </ul>
                     </nav>
-                    {/* <!-- .nav-menu --> */}
+              
 
                 </div>
-            </header>
+            </header> */}
+            
+            <Header />
+
             {/* <!-- End Header --> */}
 
             <main>
@@ -1961,7 +1966,7 @@ const ReactNative = () => {
 
 
             {/* <!-- ======= Footer ======= --> */}
-            <footer id="footer">
+            {/* <footer id="footer">
 
                 <div className="footer-top">
                     <div className="container">
@@ -1999,7 +2004,10 @@ const ReactNative = () => {
                         </div>
                     </div>
                 </div>
-            </footer>
+            </footer> */}
+
+            <Footer />
+
             {/* <!-- End Footer --> */}
             {/* <!-- The Modal --> */}
             <div className="modal fade" id="ep1">

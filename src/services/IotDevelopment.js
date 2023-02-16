@@ -3,6 +3,8 @@ import OwlCarousel from "react-owl-carousel"
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import 'animate.css/animate.min.css';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const IotDevelopment = () => {
   return (
@@ -11,7 +13,7 @@ const IotDevelopment = () => {
       <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9TRJ57"
         height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
 
-      <header id="header" className="fixed-top dark-header">
+      {/* <header id="header" className="fixed-top dark-header">
         <div className="container-fluid d-flex">
 
           <div className="logo mr-auto">
@@ -118,8 +120,8 @@ const IotDevelopment = () => {
           </nav>
 
         </div>
-      </header>
-
+      </header> */}
+      <Header />
 
       <section className="ar-vr-hero iot-hero">
         <div className="container">
@@ -1254,7 +1256,7 @@ const IotDevelopment = () => {
 
       </main>
 
-      <footer id="footer">
+      {/* <footer id="footer">
 
         <div className="footer-top">
           <div className="container">
@@ -1284,7 +1286,9 @@ const IotDevelopment = () => {
             </div>
           </div>
         </div>
-      </footer>
+      </footer> */}
+
+      <Footer />
 
       {/* <a href="#" className="back-to-top"><i className="icofont-simple-up"></i></a> */}
 
