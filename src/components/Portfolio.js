@@ -1,4 +1,6 @@
 import React from 'react'
+import Footer from './Footer'
+import Header from './Header'
 
 const Portfolio = () => {
     return (
@@ -7,7 +9,7 @@ const Portfolio = () => {
             <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9TRJ57"
                 height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
            
-            <header id="header" className="fixed-top dark-header">
+            {/* <header id="header" className="fixed-top dark-header">
                 <div className="container-fluid d-flex">
 
                     <div className="logo mr-auto">
@@ -116,7 +118,9 @@ const Portfolio = () => {
     
 
                 </div>
-            </header>
+            </header> */}
+
+            <Header />
             {/* <!-- End Header --> */}
 
 
@@ -1104,7 +1108,7 @@ const Portfolio = () => {
             {/* <!-- End #main --> */}
 
             {/* <!-- ======= Footer ======= --> */}
-            <footer id="footer">
+            {/* <footer id="footer">
 
                 <div className="footer-top">
                     <div className="container">
@@ -1134,7 +1138,10 @@ const Portfolio = () => {
                         </div>
                     </div>
                 </div>
-            </footer>
+            </footer> */}
+
+            <Footer />
+
             {/* <!-- End Footer --> */}
         </div>
     )

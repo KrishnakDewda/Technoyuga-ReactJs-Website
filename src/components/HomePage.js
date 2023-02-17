@@ -3,6 +3,8 @@ import OwlCarousel from "react-owl-carousel"
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import 'animate.css/animate.min.css';
+import Header from './Header';
+import Footer from './Footer';
 
 const HomePage = () => {
     const width = window.innerWidth
@@ -12,114 +14,7 @@ const HomePage = () => {
 
             <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9TRJ57" height="0" width="0"
                 style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
-            <header id="header" className="fixed-top dark-header">
-                <div className="container-fluid d-flex">
-
-                    <div className="logo mr-auto">
-                        <a href="/"><img src="img/technoyuga-logo.svg" alt="technoyuga logo" className="img-fluid" /></a>
-                    </div>
-
-                    <nav className="nav-menu d-none d-lg-block">
-                        <ul>
-                            <li className="active"><a href="/">Home</a></li>
-                            <li className="drop-down"><a href="#0">About us</a>
-                                <ul>
-                                    <li><a href="/about-us">Company</a></li>
-                                    <li><a href="../about-us.html#our-story">Our Story</a></li>
-                                    <li><a href="/ourteam">Our Team</a></li>
-                                </ul>
-                            </li>
-                            <li className="drop-down mega"><a href="#0">Services</a>
-                                <ul className="row">
-                                    <li className="col-lg-4">
-                                        <div className="media">
-                                            <img src="img/mega-menu/mega-menu-icon.png" />
-                                            <div className="media-body">
-                                                <a href="/ios-application-development">IOS Development</a>
-                                                <p>Custom Native iPhone App Development and support</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li className="col-lg-4">
-                                        <div className="media">
-                                            <img src="img/mega-menu/mega-android.png" />
-                                            <div className="media-body">
-                                                <a href="/android-application-development">Android App Development</a>
-                                                <p>Ondemand android developemnet for your business</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li className="col-lg-4">
-                                        <div className="media">
-                                            <img src="img/mega-menu/mega-flutter.png" />
-                                            <div className="media-body">
-                                                <a href="/flutter-application-development">Flutter App Development</a>
-                                                <p>Helping startups, small businesses and growing enterprises </p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li className="col-lg-4">
-                                        <div className="media">
-                                            <img src="img/mega-menu/mega-blockchain.png" />
-                                            <div className="media-body">
-                                                <a href="/blockchain-application-development">BlockChain Development</a>
-                                                <p>App development using flutter and react technology</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li className="col-lg-4">
-                                        <div className="media">
-                                            <img src="img/mega-menu/mega-iot.png" />
-                                            <div className="media-body">
-                                                <a href="/iot-application-development">IOT App Development</a>
-                                                <p>controlled remotely and can be used to monitor the connected product's condition</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li className="col-lg-4">
-                                        <div className="media">
-                                            <img src="img/mega-menu/mega-arvr.png" />
-                                            <div className="media-body">
-                                                <a href="/augmented-reality-development">AR VR Development</a>
-                                                <p>empower businesses them with our skilled technology capabilities in AR/VR</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li className="col-lg-4">
-                                        <div className="media">
-                                            <img src="img/mega-menu/mega-react.png" />
-                                            <div className="media-body">
-                                                <a href="/react-native-application-development">React Native Development</a>
-                                                <p>iOS and Android mobile applications in an industry-driving structure</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li className="col-lg-4">
-                                        <div className="media">
-                                            <img src="img/mega-menu/mega-web.png" />
-                                            <div className="media-body">
-                                                <a href="/web-app-development">Web Development</a>
-                                                <p>We build bespoke websites and web applications</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li className="col-lg-4">
-                                        <div className="lets-connect">
-                                            <a href="/contact-us">Lets Connect <span className="ml-2"><img src="img/arrow 2.svg" /></span> </a>
-                                            <p>meet the enthusiastic team of developers and designers</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a href="/portfolio">Portfolio</a></li>
-                            <li><a href="/career">Careers</a></li>
-                            <li><a href="/contact-us">Contact us</a></li>
-                            <li className="get-started"><a href="/contact-us">Estimate Project</a></li>
-                        </ul>
-                    </nav>
-
-                </div>
-            </header>
+           <Header />
 
             <section id="hero">
                 <div className="banner-video">
@@ -150,7 +45,7 @@ const HomePage = () => {
                             </div>
                         </div>
                         <div className="banner-callaction">
-                            <a href="#about" className="btn-get-started scrollto">Consult Our Strategist</a>
+                            <a href="/about-us" className="btn-get-started scrollto">Consult Our Strategist</a>
                         </div>
                     </div>
                 </div>
@@ -319,7 +214,7 @@ const HomePage = () => {
 
                             </div>
                             <div className="get-quote">
-                                <a href="contact-us.html">Get Quote</a>
+                                <a href="/contact-us">Get Quote</a>
                             </div>
                         </div>
                     </div>
@@ -1985,14 +1880,14 @@ const HomePage = () => {
 
                             <p>Book a discovery call to validate your idea and get a free roadmap document of your product development,
                                 marketing and revenue model.</p>
-                            <a href="contact-us.html">schedule a call</a>
+                            <a href="/contact-us">schedule a call</a>
                         </div>
                     </div>
                 </section>
 
             </main>
 
-            <footer id="footer">
+            {/* <footer id="footer">
                 <div className="footer-top">
                     <div className="container">
                         <div className="footer-nav">
@@ -2024,7 +1919,8 @@ const HomePage = () => {
                         </div>
                     </div>
                 </div>
-            </footer>
+            </footer> */}
+            <Footer />
             <div className="modal fade" id="ep1">
                 <div className="modal-dialog modal-dialog-centered">
                     <div className="modal-content">
@@ -2106,7 +2002,7 @@ const HomePage = () => {
                                     <div className="content-area">
                                         <h5>Do you have an <strong>Idea?</strong></h5>
                                         <p>Book a discovery call to validate your idea and get a free roadmap.</p>
-                                        <a href="contact-us.html" className="estimate">Estimate Project</a>
+                                        <a href="/contact-us" className="estimate">Estimate Project</a>
                                         <p className="banner-dis"><b>*No Spam. 100% Privacy Guaranteed.</b></p>
                                     </div>
                                 </div>

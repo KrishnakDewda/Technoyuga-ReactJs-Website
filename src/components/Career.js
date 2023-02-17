@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from './Footer'
 
 const Career = () => {
     return (
@@ -669,7 +670,7 @@ const Career = () => {
 
 
 
-            <footer id="footer">
+            {/* <footer id="footer">
 
                 <div className="footer-top">
                     <div className="container">
@@ -699,7 +700,9 @@ const Career = () => {
                         </div>
                     </div>
                 </div>
-            </footer>
+            </footer> */}
+            
+            <Footer />
 
             <div className="modal fade" id="ep1">
                 <div className="modal-dialog modal-dialog-centered">
@@ -783,7 +786,7 @@ const Career = () => {
                                     <div className="content-area">
                                         <h5>Do you have an <strong>Idea?</strong></h5>
                                         <p>Book a discovery call to validate your idea and get a free roadmap.</p>
-                                        <a href="contact-us.html" className="estimate">Estimate Project</a>
+                                        <a href="/contact-us" className="estimate">Estimate Project</a>
                                         <p className="banner-dis"><b>*No Spam. 100% Privacy Guaranteed.</b></p>
                                     </div>
                                 </div>

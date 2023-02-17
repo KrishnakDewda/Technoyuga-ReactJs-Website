@@ -1,4 +1,6 @@
 import React from 'react'
+import Footer from './Footer'
+import Header from './Header'
 
 const AboutUs = () => {
     return (
@@ -6,7 +8,7 @@ const AboutUs = () => {
             <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9TRJ57"
                 height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
       
-            <header id="header" class="fixed-top dark-header">
+            {/* <header id="header" class="fixed-top dark-header">
                 <div class="container-fluid d-flex">
 
                     <div class="logo mr-auto">
@@ -114,7 +116,9 @@ const AboutUs = () => {
    
 
                 </div>
-            </header>
+            </header> */}
+
+            <Header />
             {/* <!-- End Header --> */}
 
 
@@ -324,7 +328,7 @@ const AboutUs = () => {
             {/* <!-- End #main --> */}
 
             {/* <!-- ======= Footer ======= --> */}
-            <footer id="footer">
+            {/* <footer id="footer">
 
                 <div class="footer-top">
                     <div class="container">
@@ -354,7 +358,9 @@ const AboutUs = () => {
                         </div>
                     </div>
                 </div>
-            </footer>
+            </footer> */}
+             <Footer />       
+
             {/* <!-- End Footer --> */}
         </div>
     )
