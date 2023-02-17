@@ -1,4 +1,5 @@
 import React from 'react'
+import Discuss from './Discuss'
 import Footer from './Footer'
 import Header from './Header'
 
@@ -348,7 +349,7 @@ const OurTeam = () => {
                 </section>
 
                 {/* <!-- ======= Idea discission Section ======= --> */}
-                <section className="idea-discussion">
+                {/* <section className="idea-discussion">
                     <div className="overlay"></div>
                     <div className="container">
                         <div className="discusion-inner">
@@ -459,8 +460,8 @@ const OurTeam = () => {
                             </div>
                         </div>
                     </div>
-                </section>
-
+                </section> */}
+                <Discuss />
 
 
             </main>

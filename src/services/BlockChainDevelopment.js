@@ -5,6 +5,7 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import 'animate.css/animate.min.css'
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Discuss from '../components/Discuss';
 
 const BlockChainDevelopment = () => {
     return (
@@ -949,7 +950,7 @@ const BlockChainDevelopment = () => {
                     <div className="bubble2"><img src="img/bubbles3.svg" alt="two big circle" /></div>
                 </section>
 
-                <section className="idea-discussion">
+                {/* <section className="idea-discussion">
                     <div className="overlay"></div>
                     <div className="container">
                         <div className="discusion-inner">
@@ -1064,7 +1065,8 @@ const BlockChainDevelopment = () => {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
+                <Discuss h3={"Speak to our Blockchain Developer"} />
 
                 <section className="faqs">
                     <div className="container">

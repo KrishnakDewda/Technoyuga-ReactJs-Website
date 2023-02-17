@@ -6115,6 +6115,7 @@
     .stories-techology-stack .stories-team-member img {
         margin-right: 50px;
         border-radius: 0;
+        width: auto !important;
     }
 
     .stories-techology-stack .stories-stack-title {
