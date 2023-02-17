@@ -1109,7 +1109,7 @@ const FlutterDevelopment = () => {
                                                 <div className="form-group">
                                                     <label className="d-block mb-3">Do you need a NDA ?</label>
                                                     <div className="custom-control custom-radio custom-control-inline m-r">
-                                                        <input type="radio" className="custom-control-input" id="customRadio" name="example" value="customEx" checked="" />
+                                                        <input type="radio" className="custom-control-input" id="customRadio" name="example" value="customEx" />
                                                         <label className="custom-control-label" for="customRadio">Yes</label>
                                                     </div>
                                                     <div className="custom-control custom-radio custom-control-inline">

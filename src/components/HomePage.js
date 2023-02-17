@@ -14,6 +14,7 @@ const HomePage = () => {
 
             <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9TRJ57" height="0" width="0"
                 style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
+                
            <Header />
 
             <section id="hero">
@@ -45,7 +46,7 @@ const HomePage = () => {
                             </div>
                         </div>
                         <div className="banner-callaction">
-                            <a href="/about-us" className="btn-get-started scrollto">Consult Our Strategist</a>
+                            <a href="/contact-us" className="btn-get-started scrollto">Consult Our Strategist</a>
                         </div>
                     </div>
                 </div>

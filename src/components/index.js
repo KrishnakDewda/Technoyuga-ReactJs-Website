@@ -17,6 +17,7 @@ import WebDevelopment from '../services/WebDevelopment'
 import Career from './Career'
 import Flutter from './Flutter'
 import ReactNative from './ReactNative'
+import AboutUsOurStory from './AboutUsOurStory'
 
 const index = () => {
   return (
@@ -26,6 +27,7 @@ const index = () => {
         <Route exact path='/' element={<HomePage />} />
         <Route exact path='/contact-us' element={<ContactUs />} />
         <Route exact path='/about-us' element={<AboutUs />} />
+        <Route exact path='/about-us-our-story' element={<AboutUsOurStory />} />
         <Route exact path='/ourteam' element={<OurTeam />} />
         <Route exact path='/portfolio' element={<Portfolio />} />
         <Route exact path='/ios-application-development' element={<IosDevelopment />} />
@@ -39,7 +41,7 @@ const index = () => {
         <Route exact path='/career' element={<Career />} />
         <Route exact path='/flutter' element={<Flutter />} />
         <Route exact path='/react-native' element={<ReactNative />} />
-
+       
       </Routes>
     </>
   )

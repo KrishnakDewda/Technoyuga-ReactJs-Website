@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import Header from './Header';
 import Footer from './Footer';
@@ -6,18 +6,34 @@ import Footer from './Footer';
 const ContactUs = () => {
 
     const [error, setError] = useState({});
-    const [first, setFirst] = useState({ uname: "", phone: "", email: "", comment: "", budget: "" })
+    const [first, setFirst] = useState({ uname: "", phone: "", email: "", comment: "", budget: "", customRadio: "" })
 
-
+    
     const handleSubmit = (e) => {
         e.preventDefault();
         if (validate()) {
-        console.log("messgae submited")
+            console.log("messgae submited")
+            // axios.post({
+            //     url: "",
+            //     method: "",
+            //     header: {
+            //         'Content-Type': '',
+            //     },
+            // }).then((response) => {
+            //     console.log(response)
+            // }).catch((err) => {
+            //     console.log(err);
+            // })
         }
     }
 
+    useEffect(() => {
+      
+    }, [])
+    
+
     const onChange = (e) => {
-        setFirst({ ...first, [e.target.name]: e.target.value }) // add or overwrite
+        setFirst({ ...first, [e.target.name]: e.target.value })
     }
 
     function validate() {
@@ -46,10 +62,6 @@ const ContactUs = () => {
         }
         // if (!first.customRadio) {
         //     err['customRadio_err'] = "Please choose option!"
-        //     isValid = false;
-        // }
-        // if (!first.customRadio2) {
-        //     err['customRadio2_err'] = "Please choose option!"
         //     isValid = false;
         // }
         setError(err);
@@ -243,16 +255,14 @@ const ContactUs = () => {
                                         <div className="form-group">
                                             <label className="d-block mb-3">Do you need a NDA ? *</label>
                                             <div className="custom-control custom-radio custom-control-inline m-r">
-                                                <input type="radio" className="custom-control-input" id="customRadio" name="example" value="customEx" onChange={onChange}  />
+                                                <input type="radio" className="custom-control-input" id="customRadio" name="example" value="customEx" onChange={onChange} />
                                                 <label className="custom-control-label" for="customRadio">Yes</label>
-                                            {/* <div className='error' style={{ color: "red" }}>{error.customRadio_err}</div> */}
-
                                             </div>
                                             <div className="custom-control custom-radio custom-control-inline m-r">
-                                                <input type="radio" className="custom-control-input" id="customRadio2" name="example" value="customEx" onChange={onChange}  />
+                                                <input type="radio" className="custom-control-input" id="customRadio2" name="example" value="customEx" onChange={onChange} />
                                                 <label className="custom-control-label" for="customRadio2">No</label>
-                                            {/* <div className='error' style={{ color: "red" }}>{error.customRadio2_err}</div> */}
                                             </div>
+                                            {/* <div className='error' style={{ color: "red" }}>{error.customRadio_err}</div> */}
                                         </div>
                                     </div>
                                     <div className="col-md-6 text-right">
