@@ -1,7 +1,76 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Footer from './Footer'
 
 const Career = () => {
+
+    const submitForm = useRef();
+
+    // useEffect(() => {
+    //     submitForm.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    // }, [])
+
+    const [error, setError] = useState({});
+    const [resume, setResume] = useState({
+        inputName: "", inputEmail: "", inputNumber: "",
+        inputJob: "", inputNotice: "", file: "", inputCTC: "", inputCTC2: "", inputMessage: ""
+    })
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (validate()) {
+            console.log("Messgae submit")
+        }
+    }
+
+    const onChange = (e) => {
+        setResume({ ...resume, [e.target.name]: e.target.value })
+    }
+
+    function validate() {
+
+        let isValid = true;
+        let err = {};
+        if (!resume.inputName) {
+            err['inputName_err'] = "Please provide your name!"
+            isValid = false;
+        }
+        if (!resume.inputEmail) {
+            err['inputEmail_err'] = "Please provide your email!"
+            isValid = false;
+        }
+        if (!resume.inputNumber) {
+            err['inputNumber_err'] = "Please provide your phone number!"
+            isValid = false;
+        }
+        if (!resume.inputJob) {
+            err['inputJob_err'] = "Please provide your job title!"
+            isValid = false;
+        }
+        if (!resume.inputNotice) {
+            err['inputNotice_err'] = "Please provide your notice!"
+            isValid = false;
+        }
+        if (!resume.file) {
+            err['file_err'] = "Please provide your resume!"
+            isValid = false;
+        }
+        if (!resume.inputCTC) {
+            err['inputCTC_err'] = "Please provide your current CTC!"
+            isValid = false;
+        }
+        if (!resume.inputCTC2) {
+            err['inputCTC2_err'] = "Please provide your expected CTC!"
+            isValid = false;
+        }
+        if (!resume.inputMessage) {
+            err['inputMessage_err'] = "Please provide your message!"
+            isValid = false;
+        }
+        setError(err);
+        return isValid;
+    };
+
+
     return (
         <div>
 
@@ -22,7 +91,7 @@ const Career = () => {
                             <li className="drop-down"><a href="#0">About us</a>
                                 <ul>
                                     <li><a href="/about-us">Company</a></li>
-                                    <li><a href="/about-us.html#our-story">Our Story</a></li>
+                                    <li><a href="/about-us-our-story">Our Story</a></li>
                                     <li><a href="/our-team">Our Team</a></li>
                                 </ul>
                             </li>
@@ -122,13 +191,10 @@ const Career = () => {
                             <li className="get-started"><a href="/contact-us">Estimate Project</a></li>
                         </ul>
                     </nav>
-
                 </div>
             </header>
 
             <main>
-
-
                 <section className="landing-section">
                     <div className="landing-img">
                         <img src="img/landing_bg.png" alt="" className="img-fluid w-100" />
@@ -143,16 +209,14 @@ const Career = () => {
                                     TECHNOYUGA
                                 </h2>
                                 <div className="landing-button">
-                                    <a href="#" className="btn btn-outline-light">Apply Now</a>
+                                    {/* <a href="#submit-resume" className="btn btn-outline-light" >Apply Now</a> */}
+                                    <button className='btn btn-outline-light' onClick={() => submitForm.current.scrollIntoView({ behavior: 'smooth', block: 'start' })} >Apply Now</button>
                                 </div>
                             </div>
 
                         </div>
                     </div>
                 </section>
-
-
-
 
                 <section className="our-culture-section">
                     <img src="img/career/bubbles.svg" alt="" className="img-fluid culture-bg" />
@@ -379,7 +443,8 @@ const Career = () => {
                                                     the app development space.
                                                 </p>
                                                 <div className="trending-btn">
-                                                    <a href="#" className="btn btn-primary">APPLY NOW</a>
+                                                    {/* <a href="#" className="btn btn-primary">APPLY NOW</a> */}
+                                                    <button className='btn btn-primary' onClick={() => submitForm.current.scrollIntoView({ behavior: 'smooth', block: 'start' })} >Apply Now</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -404,7 +469,8 @@ const Career = () => {
                                                     the app development space.
                                                 </p>
                                                 <div className="trending-btn">
-                                                    <a href="#" className="btn btn-primary">APPLY NOW</a>
+                                                    {/* <a href="#" className="btn btn-primary">APPLY NOW</a> */}
+                                                    <button className='btn btn-primary' onClick={() => submitForm.current.scrollIntoView({ behavior: 'smooth', block: 'start' })} >Apply Now</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -429,7 +495,8 @@ const Career = () => {
                                                     the app development space.
                                                 </p>
                                                 <div className="trending-btn">
-                                                    <a href="#" className="btn btn-primary">APPLY NOW</a>
+                                                    {/* <a href="#" className="btn btn-primary">APPLY NOW</a> */}
+                                                    <button className='btn btn-primary' onClick={() => submitForm.current.scrollIntoView({ behavior: 'smooth', block: 'start' })} >Apply Now</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -454,7 +521,8 @@ const Career = () => {
                                                     the app development space.
                                                 </p>
                                                 <div className="trending-btn">
-                                                    <a href="#" className="btn btn-primary">APPLY NOW</a>
+                                                    {/* <a href="#" className="btn btn-primary">APPLY NOW</a> */}
+                                                    <button className='btn btn-primary' onClick={() => submitForm.current.scrollIntoView({ behavior: 'smooth', block: 'start' })} >Apply Now</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -479,7 +547,8 @@ const Career = () => {
                                                     the app development space.
                                                 </p>
                                                 <div className="trending-btn">
-                                                    <a href="#" className="btn btn-primary">APPLY NOW</a>
+                                                    {/* <a href="#" className="btn btn-primary">APPLY NOW</a> */}
+                                                    <button className='btn btn-primary' onClick={() => submitForm.current.scrollIntoView({ behavior: 'smooth', block: 'start' })} >Apply Now</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -488,11 +557,7 @@ const Career = () => {
                             </div>
                         </div>
                     </div>
-
                 </section>
-
-
-
 
                 <section className="join-team-section">
                     <img src="img/career/join-bubbles.svg" alt="" className="img-fluid join-bg" />
@@ -508,7 +573,8 @@ const Career = () => {
                                                 work on some of the coolest projects you can imagine.</p>
                                         </div>
                                         <div className="join-team-button">
-                                            <a href="#" className="btn btn-primary">APPLY NOW</a>
+                                            {/* <a href="#" className="btn btn-primary">APPLY NOW</a> */}
+                                            <button className='btn btn-primary' onClick={() => submitForm.current.scrollIntoView({ behavior: 'smooth', block: 'start' })} >Apply Now</button>
                                         </div>
                                     </div>
                                 </div>
@@ -523,7 +589,7 @@ const Career = () => {
                 </section>
 
 
-                <section className="resume-form-section">
+                <section className="resume-form-section" ref={submitForm}>
                     <div className="container">
                         <div className="resume-form-content">
                             <h2 className="resume-form-title">
@@ -534,52 +600,62 @@ const Career = () => {
                                     <div className="form-row">
                                         <div className="form-group col-md-6">
                                             <label className="resume-label" for="inputName">Your Name*</label>
-                                            <input type="text" className="form-control" id="inputName" placeholder="" />
+                                            <input type="text" className="form-control" id="inputName" placeholder="" name='inputName' onChange={onChange} />
+                                            <div className='error' style={{ color: "red" }}>{error.inputName_err}</div>
                                         </div>
                                         <div className="form-group col-md-6">
                                             <label className="resume-label" for="inputEmail">Email Id</label>
-                                            <input type="Email" className="form-control" id="inputEmail" placeholder="" />
+                                            <input type="Email" className="form-control" id="inputEmail" placeholder="" name='inputEmail' onChange={onChange} />
+                                            <div className='error' style={{ color: "red" }}>{error.inputEmail_err}</div>
                                         </div>
                                         <div className="form-group col-md-6">
                                             <label className="resume-label" for="inputNumber">Phone Number</label>
-                                            <input type="Number" className="form-control" id="inputNumber" placeholder="" />
+                                            <input type="Number" className="form-control" id="inputNumber" placeholder="" name='inputNumber' onChange={onChange} />
+                                            <div className='error' style={{ color: "red" }}>{error.inputNumber_err}</div>
                                         </div>
                                         <div className="form-group col-md-6">
-                                            <label className="resume-label" for="exampleFormControlFile1">Upload Resume</label>
+                                            <label className="resume-label" for="file">Upload Resume</label>
                                             <div className="resume-file">
-                                                <input type="file" className="form-control-file" id="exampleFormControlFile1" />
+                                                <input type="file" className="form-control-file" id="file" name='file' onChange={onChange} />
                                                 <span>choose File</span>
                                             </div>
+                                            <div className='error' style={{ color: "red" }}>{error.file_err}</div>
                                         </div>
                                         <div className="form-group col-md-6">
-                                            <label className="resume-label" for="inputjob">Job Title</label>
-                                            <select id="inputjob" className="form-control">
+                                            <label className="resume-label" for="inputJob">Job Title</label>
+                                            <select id="inputJob" className="form-control" onChange={onChange} name='inputJob'>
                                                 <option selected>Choose...</option>
-                                                <option>...</option>
-                                                <option>...</option>
-                                                <option>...</option>
-                                                <option>...</option>
+                                                <option>IOS Developer</option>
+                                                <option>Laravel Developer</option>
+                                                <option>MERN stack Developer</option>
+                                                <option>Native Android Developer</option>
+                                                <option>React Native Developer</option>
                                             </select>
+                                            <div className='error' style={{ color: "red" }}>{error.inputJob_err}</div>
                                         </div>
                                         <div className="form-group col-md-6">
                                             <label className="resume-label" for="inputNotice">Notice Period</label>
-                                            <input type="text" className="form-control" id="inputNotice" />
+                                            <input type="text" className="form-control" id="inputNotice" onChange={onChange} name='inputNotice' />
+                                            <div className='error' style={{ color: "red" }}>{error.inputNotice_err}</div> 
                                         </div>
                                         <div className="form-group col-md-6">
                                             <label className="resume-label" for="inputCTC">Current CTC*</label>
-                                            <input type="Number" className="form-control" id="inputNumber" placeholder="" />
+                                            <input type="Number" className="form-control" id="inputCTC" placeholder="" onChange={onChange} name='inputCTC' />
+                                            <div className='error' style={{ color: "red" }}>{error.inputCTC_err}</div>
                                         </div>
                                         <div className="form-group col-md-6">
-                                            <label className="resume-label" for="inputCTC1">Expected CTC</label>
-                                            <input type="Number" className="form-control" id="inputCTC" placeholder="" />
+                                            <label className="resume-label" for="inputCTC2">Expected CTC</label>
+                                            <input type="Number" className="form-control" id="inputCTC2" placeholder="" onChange={onChange} name='inputCTC2' />
+                                            <div className='error' style={{ color: "red" }}>{error.inputCTC2_err}</div>
                                         </div>
                                         <div className="form-group col-12">
                                             <label className="resume-label" for="inputMessage">Message</label>
-                                            <textarea className="form-control" id="inputMessage" name="" cols="5"
-                                                rows="6"></textarea>
+                                            <textarea className="form-control" id="inputMessage" cols="5"
+                                                rows="6" onChange={onChange} name='inputMessage' ></textarea>
+                                            <div className='error' style={{ color: "red" }}>{error.inputMessage_err}</div>
                                         </div>
                                         <div className="resume-button ml-auto">
-                                            <button type="submit" className="btn btn-primary">SUBMIT</button>
+                                            <button type="button" className="btn btn-primary" onClick={handleSubmit}>SUBMIT</button>
                                         </div>
                                     </div>
                                 </form>
@@ -701,7 +777,7 @@ const Career = () => {
                     </div>
                 </div>
             </footer> */}
-            
+
             <Footer />
 
             <div className="modal fade" id="ep1">

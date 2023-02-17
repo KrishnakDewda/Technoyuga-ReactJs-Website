@@ -16,7 +16,7 @@ const Header = () => {
                             <li className="drop-down"><a href="#0">About us</a>
                                 <ul>
                                     <li><a href="/about-us">Company</a></li>
-                                    <li><a href="about-us.html#our-story">Our Story</a></li>
+                                    <li><a href="/about-us-our-story">Our Story</a></li>
                                     <li><a href="/ourteam">Our Team</a></li>
                                 </ul>
                             </li>

@@ -2,13 +2,19 @@ import React, { useEffect, useRef } from 'react'
 import Footer from './Footer'
 import Header from './Header'
 
-const AboutUs = () => {
-
+const AboutUsOurStory = () => {
+    
+    const storyRef = useRef();
+    
+    useEffect(() => {
+        storyRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }, [])
+    
     return (
         <div>
             <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9TRJ57"
                 height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
-      
+
             {/* <header id="header" className="fixed-top dark-header">
                 <div className="container-fluid d-flex">
 
@@ -136,7 +142,7 @@ const AboutUs = () => {
                                     <p>We are firm believers that the best software comes from <span>small, agile, highly skilled</span> teams.</p>
                                     <div className="actn-btns">
                                         <a href="/contact-us" className="primary">Let’s work together</a>
-                                        <a href="/about-us-our-story" className="primary invert">Read our story</a> 
+                                        <a href="/about-us-our-story" className="primary invert">Read our story</a>
                                         {/* our story page */}
                                     </div>
                                 </div>
@@ -166,7 +172,7 @@ const AboutUs = () => {
                 </section>
 
                 {/* <!-- ======= our story Section ======= --> */}
-                <section id="our-story" className="our-story">
+                <section id="our-story" className="our-story" ref={storyRef}>
                     <div className="container">
                         <div className="row">
                             <div className="col-md-8 py-5">
@@ -361,11 +367,11 @@ const AboutUs = () => {
                     </div>
                 </div>
             </footer> */}
-             <Footer />       
+            <Footer />
 
             {/* <!-- End Footer --> */}
         </div>
     )
 }
 
-export default AboutUs
+export default AboutUsOurStory
