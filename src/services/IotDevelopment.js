@@ -5,6 +5,7 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import 'animate.css/animate.min.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Discuss from '../components/Discuss';
 
 const IotDevelopment = () => {
   return (
@@ -586,7 +587,7 @@ const IotDevelopment = () => {
           </div>
         </section>
 
-        <section className="idea-discussion">
+        {/* <section className="idea-discussion">
           <div className="overlay"></div>
           <div className="container">
             <div className="discusion-inner">
@@ -701,7 +702,10 @@ const IotDevelopment = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
+                      <Discuss h3={"Let's Discuss Your Idea"} />
+
+
 
         <section className="potrfolio">
           <div className="container">

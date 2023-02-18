@@ -5,6 +5,7 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import 'animate.css/animate.min.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Discuss from '../components/Discuss';
 
 const WebDevelopment = () => {
     return (
@@ -173,13 +174,13 @@ const WebDevelopment = () => {
                             <ul className="d-flex">
                                 <li className="d-flex justify-content-center align-items-center" data-aos="fade-in" data-aos-delay="100">
                                     <div className="d-flex align-items-center justify-content-center">
-                                        <img src="img/web-dev.svg" />
+                                        <img src="img/web-dev.svg" alt='' />
                                     </div>
                                     <p>Custom Website Development</p>
                                 </li>
                                 <li className="d-flex justify-content-center align-items-center" data-aos="fade-in" data-aos-delay="200">
                                     <div className="d-flex align-items-center justify-content-center">
-                                        <img src="img/custom-e-com.svg" />
+                                        <img src="img/custom-e-com.svg" alt='' />
                                     </div>
                                     <p>Custom eCommerce <br />Website Development</p>
                                 </li>
@@ -957,7 +958,7 @@ const WebDevelopment = () => {
                 </section>
 
 
-                <section className="idea-discussion">
+                {/* <section className="idea-discussion">
                     <div className="overlay"></div>
                     <div className="container">
                         <div className="discusion-inner">
@@ -1071,7 +1072,10 @@ const WebDevelopment = () => {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
+               <Discuss h3={"Let's Discuss Your Idea"} />
+
+
 
                 {/* <section className="faqs">
                     <div className="container">

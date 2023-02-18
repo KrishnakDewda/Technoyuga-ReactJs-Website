@@ -5,6 +5,7 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import 'animate.css/animate.min.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Discuss from '../components/Discuss';
 
 
 const AndroidDevelopment = () => {
@@ -1186,7 +1187,7 @@ const AndroidDevelopment = () => {
                     <div className="bubble2"><img src="img/bubbles3.svg" alt="two big circle" /></div>
                 </section>
 
-                <section className="idea-discussion">
+                {/* <section className="idea-discussion">
                     <div className="overlay"></div>
                     <div className="container">
                         <div className="discusion-inner">
@@ -1301,7 +1302,8 @@ const AndroidDevelopment = () => {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
+                <Discuss h3={"Let's Discuss Your Idea"} />
 
                 <section className="process">
                     <div className="container">

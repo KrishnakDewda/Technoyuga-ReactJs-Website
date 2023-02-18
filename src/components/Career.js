@@ -1,13 +1,33 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Footer from './Footer'
+import toast, { Toaster } from 'react-hot-toast';
+import axios from 'axios';
+import { URL } from '../baseURL';
 
 const Career = () => {
 
     const submitForm = useRef();
 
-    // useEffect(() => {
-    //     submitForm.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    // }, [])
+    const [jobTitles, setJobTitles] = useState([]);
+    useEffect(() => {
+        const token = localStorage.getItem("TY_TOKEN");
+        console.log(token);
+        axios({
+            url: `${URL}get-job-titles-list`,
+            method: "POST",
+            header: {
+                Authorization: `Bearer ${token}`,
+            }
+                }).then((response) => {
+            if(response.data.status===true){
+                console.log(response.data.data);
+setJobTitles(response.data.data);
+            }
+        }).catch((err) => {
+            console.log('error',err);
+        })
+    
+    }, [])
 
     const [error, setError] = useState({});
     const [resume, setResume] = useState({
@@ -15,10 +35,63 @@ const Career = () => {
         inputJob: "", inputNotice: "", file: "", inputCTC: "", inputCTC2: "", inputMessage: ""
     })
 
+
+    const handleImage = (e) => {
+        let img = e.target.files[0];
+        if(img.type==='png'|| img.type==='jpg'||img.type==='jpeg'){
+            const token = localStorage.getItem("TY_TOKEN");
+            const body = new FormData();
+            body.append('file', img);
+            axios({
+                url: `${URL}upload-resume`,
+                method: "POST",
+                header: {
+                    Authorization: `Bearer ${token}`,
+                },
+                data:body
+            }).then((response) => {
+                if(response.data.status===true){
+                    setResume({...resume, file:response.data.data.url});
+                }
+            }).catch((err) => {
+                console.log(err);
+            })
+        
+        }else{
+            setError({...error, file_err:'Invalid file format. '})
+        }
+    }
+
     const handleSubmit = (e) => {
         e.preventDefault();
         if (validate()) {
             console.log("Messgae submit")
+        //     const token = localStorage.getItem("TY_TOKEN");
+        //     const body = new URLSearchParams();
+        //     body.append('name', userData.username);
+        //     body.append('email', userData.email)
+        //     body.append('phonenumber', userData.phone)
+        //     body.append('budget', userData.budget)
+        //     body.append('discussyourdream', userData.comment)
+        //     body.append('nda', userData.nda)
+        //     axios({
+        //         url: `${URL}contact-us`,
+        //         method: "POST",
+        //         header: {
+        //             Authorization: `Bearer ${token}`,
+        //         },
+        //         data:body
+        //     }).then((response) => {
+        //         if(response.data.status===true){
+        //             setUserData({
+        //                 username: "", phone: "", email: "", comment: "", budget: "", nda: ""
+        //             })
+        //             toast.success('Form Submited !!', { style: { background: '#333', color: '#fff' } })
+        //         }
+        //     }).catch((err) => {
+        //         console.log(err);
+        //     })
+        // }
         }
     }
 
@@ -37,6 +110,15 @@ const Career = () => {
         if (!resume.inputEmail) {
             err['inputEmail_err'] = "Please provide your email!"
             isValid = false;
+        }
+        else if (typeof resume.inputEmail !== "undefined") {
+            let lastAtPos = resume.inputEmail.lastIndexOf('@');
+            let lastDotPos = resume.inputEmail.lastIndexOf('.');
+
+            if (!(lastAtPos < lastDotPos && lastAtPos > 0 && resume.inputEmail.indexOf('@@') === -1 && lastDotPos > 2 && (resume.inputEmail.length - lastDotPos) > 2)) {
+                isValid = false;
+                err["inputEmail_err"] = "Email is not valid";
+            }
         }
         if (!resume.inputNumber) {
             err['inputNumber_err'] = "Please provide your phone number!"
@@ -73,7 +155,7 @@ const Career = () => {
 
     return (
         <div>
-
+<Toaster />
             <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9TRJ57"
                 height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
 
@@ -616,20 +698,19 @@ const Career = () => {
                                         <div className="form-group col-md-6">
                                             <label className="resume-label" for="file">Upload Resume</label>
                                             <div className="resume-file">
-                                                <input type="file" className="form-control-file" id="file" name='file' onChange={onChange} />
+                                                <input type="file" className="form-control-file" id="file" name='file' onChange={handleImage} />
                                                 <span>choose File</span>
                                             </div>
+                                            <p><b>Note :</b> Please upload file in PNG, JPEG and JPG format. </p>
                                             <div className='error' style={{ color: "red" }}>{error.file_err}</div>
                                         </div>
                                         <div className="form-group col-md-6">
                                             <label className="resume-label" for="inputJob">Job Title</label>
                                             <select id="inputJob" className="form-control" onChange={onChange} name='inputJob'>
-                                                <option selected>Choose...</option>
-                                                <option>IOS Developer</option>
-                                                <option>Laravel Developer</option>
-                                                <option>MERN stack Developer</option>
-                                                <option>Native Android Developer</option>
-                                                <option>React Native Developer</option>
+                                                <option selected value="">Choose...</option>
+                                                {jobTitles.length > 0 && jobTitles.map((elem) =>
+                                                <option value={elem.id}>{elem.title}</option>
+                                                )}
                                             </select>
                                             <div className='error' style={{ color: "red" }}>{error.inputJob_err}</div>
                                         </div>
