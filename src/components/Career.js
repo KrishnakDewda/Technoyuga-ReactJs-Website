@@ -5,7 +5,9 @@ import axios from 'axios';
 import { URL } from '../baseURL';
 
 const Career = () => {
-
+    // useEffect(() => {
+    //     toast.success('Helllooo', { style: { marginTop: '50px' } })
+    // }, [])
     const submitForm = useRef();
 
     const [jobTitles, setJobTitles] = useState([]);
@@ -15,50 +17,54 @@ const Career = () => {
         axios({
             url: `${URL}get-job-titles-list`,
             method: "POST",
-            header: {
+            headers: {
                 Authorization: `Bearer ${token}`,
             }
-                }).then((response) => {
-            if(response.data.status===true){
-                console.log(response.data.data);
-setJobTitles(response.data.data);
+        }).then((response) => {
+            console.log(response.data);
+            if (response.data.status === true) {
+                setJobTitles(response.data.data);
             }
         }).catch((err) => {
-            console.log('error',err);
+            console.log('error', err);
         })
-    
+
     }, [])
 
     const [error, setError] = useState({});
     const [resume, setResume] = useState({
         inputName: "", inputEmail: "", inputNumber: "",
         inputJob: "", inputNotice: "", file: "", inputCTC: "", inputCTC2: "", inputMessage: ""
-    })
+    });
+    const [fileName, setFileName] = useState('');
 
 
     const handleImage = (e) => {
-        let img = e.target.files[0];
-        if(img.type==='png'|| img.type==='jpg'||img.type==='jpeg'){
+        let file = e.target.files[0];
+        if (file.type === 'image/png' || file.type === 'image/jpg' || file.type === 'image/jpeg' ||
+            file.type === 'application/pdf' || file.type === 'application/vnd.openxmlformats-officedocument.wordprocessingml.document') {
+            setFileName(file.name);
             const token = localStorage.getItem("TY_TOKEN");
             const body = new FormData();
-            body.append('file', img);
+            body.append('file', file);
             axios({
                 url: `${URL}upload-resume`,
                 method: "POST",
-                header: {
+                headers: {
                     Authorization: `Bearer ${token}`,
                 },
-                data:body
+                data: body
             }).then((response) => {
-                if(response.data.status===true){
-                    setResume({...resume, file:response.data.data.url});
+                if (response.data.status === true) {
+                    toast.success('Resume Uploaded!', { style: { background: '#333', color: '#fff', marginTop: "70px" } })
+                    setResume({ ...resume, file: response.data.data.url });
                 }
             }).catch((err) => {
                 console.log(err);
             })
-        
-        }else{
-            setError({...error, file_err:'Invalid file format. '})
+
+        } else {
+            setError({ ...error, file_err: 'Invalid file format. ' })
         }
     }
 
@@ -66,36 +72,40 @@ setJobTitles(response.data.data);
         e.preventDefault();
         if (validate()) {
             console.log("Messgae submit")
-        //     const token = localStorage.getItem("TY_TOKEN");
-        //     const body = new URLSearchParams();
-        //     body.append('name', userData.username);
-        //     body.append('email', userData.email)
-        //     body.append('phonenumber', userData.phone)
-        //     body.append('budget', userData.budget)
-        //     body.append('discussyourdream', userData.comment)
-        //     body.append('nda', userData.nda)
-        //     axios({
-        //         url: `${URL}contact-us`,
-        //         method: "POST",
-        //         header: {
-        //             Authorization: `Bearer ${token}`,
-        //         },
-        //         data:body
-        //     }).then((response) => {
-        //         if(response.data.status===true){
-        //             setUserData({
-        //                 username: "", phone: "", email: "", comment: "", budget: "", nda: ""
-        //             })
-        //             toast.success('Form Submited !!', { style: { background: '#333', color: '#fff' } })
-        //         }
-        //     }).catch((err) => {
-        //         console.log(err);
-        //     })
-        // }
+            const token = localStorage.getItem("TY_TOKEN");
+            const body = new URLSearchParams();
+            body.append('resume', resume.file);
+            body.append('name', resume.inputName);
+            body.append('email', resume.inputEmail);
+            body.append('phoneno', resume.inputNumber);
+            body.append('job_title', resume.inputJob);
+            body.append('notice_period', resume.inputNotice);
+            body.append('current_ctc', resume.inputCTC);
+            body.append('expected_ctc', resume.inputCTC2);
+            body.append('message', resume.inputMessage);
+            axios({
+                url: `${URL}add-resume`,
+                method: "POST",
+                headers: {
+                    Authorization: `Bearer ${token}`,
+                },
+                data: body
+            }).then((response) => {
+                if (response.data.status === true) {
+                    setResume({
+                        inputName: "", inputEmail: "", inputNumber: "",
+                        inputJob: "", inputNotice: "", file: "", inputCTC: "", inputCTC2: "", inputMessage: ""
+                    });
+                    toast.success('Form Submited !!', { style: { background: '#333', color: '#fff', marginTop: '70px' } })
+                }
+            }).catch((err) => {
+                console.log(err);
+            })
         }
     }
 
     const onChange = (e) => {
+        console.log(e.target.value);
         setResume({ ...resume, [e.target.name]: e.target.value })
     }
 
@@ -129,7 +139,7 @@ setJobTitles(response.data.data);
             isValid = false;
         }
         if (!resume.inputNotice) {
-            err['inputNotice_err'] = "Please provide your notice!"
+            err['inputNotice_err'] = "Please provide your notice period!"
             isValid = false;
         }
         if (!resume.file) {
@@ -155,7 +165,7 @@ setJobTitles(response.data.data);
 
     return (
         <div>
-<Toaster />
+            <Toaster />
             <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9TRJ57"
                 height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
 
@@ -681,58 +691,58 @@ setJobTitles(response.data.data);
                                 <form>
                                     <div className="form-row">
                                         <div className="form-group col-md-6">
-                                            <label className="resume-label" for="inputName">Your Name*</label>
-                                            <input type="text" className="form-control" id="inputName" placeholder="" name='inputName' onChange={onChange} />
+                                            <label className="resume-label" for="inputName">Your Name *</label>
+                                            <input type="text" className="form-control" id="inputName" placeholder="" name='inputName' onChange={onChange} value={resume.inputName} />
                                             <div className='error' style={{ color: "red" }}>{error.inputName_err}</div>
                                         </div>
                                         <div className="form-group col-md-6">
-                                            <label className="resume-label" for="inputEmail">Email Id</label>
-                                            <input type="Email" className="form-control" id="inputEmail" placeholder="" name='inputEmail' onChange={onChange} />
+                                            <label className="resume-label" for="inputEmail">Email Id *</label>
+                                            <input type="Email" className="form-control" id="inputEmail" placeholder="" name='inputEmail' onChange={onChange} value={resume.inputEmail} />
                                             <div className='error' style={{ color: "red" }}>{error.inputEmail_err}</div>
                                         </div>
                                         <div className="form-group col-md-6">
-                                            <label className="resume-label" for="inputNumber">Phone Number</label>
-                                            <input type="Number" className="form-control" id="inputNumber" placeholder="" name='inputNumber' onChange={onChange} />
+                                            <label className="resume-label" for="inputNumber">Phone Number *</label>
+                                            <input type="Number" className="form-control" id="inputNumber" placeholder="" name='inputNumber' onChange={onChange} value={resume.inputNumber} />
                                             <div className='error' style={{ color: "red" }}>{error.inputNumber_err}</div>
                                         </div>
                                         <div className="form-group col-md-6">
-                                            <label className="resume-label" for="file">Upload Resume</label>
+                                            <label className="resume-label" for="file">Upload Resume *</label>
                                             <div className="resume-file">
                                                 <input type="file" className="form-control-file" id="file" name='file' onChange={handleImage} />
-                                                <span>choose File</span>
+                                                {!resume.file ? <span>choose File</span> : <span style={{ right: '0', left: '0', width: '100%', background: 'none', textAlign: 'start' }}>{fileName}</span>}
                                             </div>
-                                            <p><b>Note :</b> Please upload file in PNG, JPEG and JPG format. </p>
+                                            <p><b>Note :</b> Please upload file in PDF, WORD, PNG, JPEG or JPG format. </p>
                                             <div className='error' style={{ color: "red" }}>{error.file_err}</div>
                                         </div>
                                         <div className="form-group col-md-6">
-                                            <label className="resume-label" for="inputJob">Job Title</label>
-                                            <select id="inputJob" className="form-control" onChange={onChange} name='inputJob'>
-                                                <option selected value="">Choose...</option>
+                                            <label className="resume-label" for="inputJob">Job Title *</label>
+                                            <select id="inputJob" className="form-control" onChange={onChange} name='inputJob' value={resume.inputJob}>
+                                                <option value="">Select Job Title...</option>
                                                 {jobTitles.length > 0 && jobTitles.map((elem) =>
-                                                <option value={elem.id}>{elem.title}</option>
+                                                    <option value={elem._id}>{elem.title}</option>
                                                 )}
                                             </select>
                                             <div className='error' style={{ color: "red" }}>{error.inputJob_err}</div>
                                         </div>
                                         <div className="form-group col-md-6">
-                                            <label className="resume-label" for="inputNotice">Notice Period</label>
-                                            <input type="text" className="form-control" id="inputNotice" onChange={onChange} name='inputNotice' />
-                                            <div className='error' style={{ color: "red" }}>{error.inputNotice_err}</div> 
+                                            <label className="resume-label" for="inputNotice">Notice Period *</label>
+                                            <input type="text" className="form-control" id="inputNotice" onChange={onChange} name='inputNotice' value={resume.inputNotice} />
+                                            <div className='error' style={{ color: "red" }}>{error.inputNotice_err}</div>
                                         </div>
                                         <div className="form-group col-md-6">
-                                            <label className="resume-label" for="inputCTC">Current CTC*</label>
-                                            <input type="Number" className="form-control" id="inputCTC" placeholder="" onChange={onChange} name='inputCTC' />
+                                            <label className="resume-label" for="inputCTC">Current CTC *</label>
+                                            <input type="Number" className="form-control" id="inputCTC" placeholder="" onChange={onChange} name='inputCTC' value={resume.inputCTC} />
                                             <div className='error' style={{ color: "red" }}>{error.inputCTC_err}</div>
                                         </div>
                                         <div className="form-group col-md-6">
-                                            <label className="resume-label" for="inputCTC2">Expected CTC</label>
-                                            <input type="Number" className="form-control" id="inputCTC2" placeholder="" onChange={onChange} name='inputCTC2' />
+                                            <label className="resume-label" for="inputCTC2">Expected CTC *</label>
+                                            <input type="Number" className="form-control" id="inputCTC2" placeholder="" onChange={onChange} name='inputCTC2' value={resume.inputCTC2} />
                                             <div className='error' style={{ color: "red" }}>{error.inputCTC2_err}</div>
                                         </div>
                                         <div className="form-group col-12">
-                                            <label className="resume-label" for="inputMessage">Message</label>
+                                            <label className="resume-label" for="inputMessage">Message *</label>
                                             <textarea className="form-control" id="inputMessage" cols="5"
-                                                rows="6" onChange={onChange} name='inputMessage' ></textarea>
+                                                rows="6" onChange={onChange} name='inputMessage' value={resume.inputMessage}></textarea>
                                             <div className='error' style={{ color: "red" }}>{error.inputMessage_err}</div>
                                         </div>
                                         <div className="resume-button ml-auto">

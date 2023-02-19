@@ -5,6 +5,7 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import 'animate.css/animate.min.css';
 import Footer from './Footer';
 import Header from './Header';
+import Consultant from './Consultant';
 
 const ReactNative = () => {
 
@@ -191,60 +192,7 @@ const ReactNative = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col col-12 col-lg-6">
-                                    <div className="hire-form">
-                                        <h2 className="hire-form-title">Get Free Consultation Now</h2>
-                                        <p className="hire-form-discription">Set up a developer interview and hire within 24 hours
-                                        </p>
-                                        <div className="hire-form-box">
-                                            <div className="hire-form-input">
-                                                <label className="form-label">Full name</label>
-                                                <input type="text" className="form-control" />
-                                            </div>
-                                            <div className="hire-form-input">
-                                                <label className="form-label">Email address</label>
-                                                <input type="text" className="form-control" />
-                                            </div>
-                                            <div className="hire-form-input">
-                                                <label className="form-label">Contact number</label>
-                                                {/* <div className="hire-form-country"> */}
-                                                <input type="number" className="form-control" />
-                                                {/* <div className="form-country-selector">
-                                                        <select className="js-example-templating">
-                                                            <option value="india">India <span>+91</span></option>
-                                                            <option value="Afghanistan">Afghanistan <span>+93</span></option>
-                                                            <option value="Albania">Albania <span>+355</span></option>
-                                                            <option value="Algeria">Algeria <span>+213</span></option>
-                                                            <option value="Austria">Austria <span>+43</span></option>
-                                                            <option value="Bangladesh">Bangladesh <span>+880</span></option>
-                                                            <option value="Belize">Belize <span>+501</span></option>
-                                                            <option value="Canada">Canada <span>+1</span></option>
-                                                        </select>
-                                                    </div> */}
-                                                {/* </div> */}
-                                            </div>
-                                            {/* <!-- <div className="hire-form-input">
-                                <label className="form-label">Skype (Optional)</label>
-                                <input type="text" className="form-control">
-                            </div> --> */}
-                                            <div className="hire-form-input">
-                                                <label className="form-label">Discuss your Requirement</label>
-                                                <textarea cols="30" rows="5" className="form-control"></textarea>
-                                            </div>
-                                            <div className="hire-form-robot">
-                                                <div className="form-check">
-                                                    <input className="form-check-input" type="checkbox" value=""
-                                                        id="flexCheckDefault" />
-                                                    <label className="form-check-label" for="flexCheckDefault">
-                                                        I am not robot
-                                                    </label>
-                                                    <a href="#"><img src="img/refresh.png" alt="" className="img-fluid" /></a>
-                                                </div>
-                                            </div>
-                                            <a href="" className="btn btn-info hire-form-btn">HIRE DEVELOPER NOW</a>
-                                        </div>
-                                    </div>
-                                </div>
+                                <Consultant />
                             </div>
                         </div>
                     </div>

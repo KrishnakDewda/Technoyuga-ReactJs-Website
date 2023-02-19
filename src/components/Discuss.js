@@ -26,13 +26,13 @@ const Discuss = (props) => {
                 header: {
                     Authorization: `Bearer ${token}`,
                 },
-                data:body
+                data: body
             }).then((response) => {
-                if(response.data.status===true){
+                if (response.data.status === true) {
                     setUserData({
                         username: "", phone: "", email: "", comment: "", budget: "", nda: ""
                     })
-                    toast.success('Form Submited !!', { style: { background: '#333', color: '#fff' } })
+                    toast.success('Form Submited !!', { style: { background: '#333', color: '#fff', marginTop: '70px' } })
                 }
             }).catch((err) => {
                 console.log(err);
@@ -91,7 +91,7 @@ const Discuss = (props) => {
 
     return (
         <div>
-            <Toaster/>
+            <Toaster />
             <section className="idea-discussion">
                 <div className="overlay"></div>
                 <div className="container">
@@ -184,7 +184,7 @@ const Discuss = (props) => {
                                         <div className="col-12">
                                             <div className="form-group">
                                                 <label for="comment">Discuss your Dream *</label>
-                                                <textarea className="form-control" rows="5" id="comment" onChange={onChange} name='comment'></textarea>
+                                                <textarea className="form-control" rows="5" id="comment" onChange={onChange} name='comment' value={userData.comment}></textarea>
                                                 <div className='error' style={{ color: "red" }}>{error.comment_err}</div>
                                             </div>
                                         </div>

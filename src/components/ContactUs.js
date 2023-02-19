@@ -1,15 +1,16 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import axios from 'axios'
 import Header from './Header';
 import Footer from './Footer';
 import toast, { Toaster } from 'react-hot-toast';
+import { URL } from '../baseURL';
 
 const ContactUs = () => {
 
     const [error, setError] = useState({});
     const [data, setData] = useState({ username: "", phone: "", email: "", comment: "", budget: "", nda: "" })
 
-    
+
     const handleSubmit = (e) => {
         e.preventDefault();
         if (validate()) {
@@ -28,24 +29,19 @@ const ContactUs = () => {
                 header: {
                     Authorization: `Bearer ${token}`,
                 },
-                data:body
+                data: body
             }).then((response) => {
-                if(response.data.status===true){
+                if (response.data.status === true) {
                     setData({
                         username: "", phone: "", email: "", comment: "", budget: "", nda: ""
                     })
-                    toast.success('Form Submited !!', { style: { background: '#333', color: '#fff' } })
+                    toast.success('Form Submited !!', { style: { background: '#333', color: '#fff', marginTop: '70px' } })
                 }
             }).catch((err) => {
                 console.log(err);
             })
         }
     }
-
-    useEffect(() => {
-      
-    }, [])
-    
 
     const onChange = (e) => {
         setData({ ...data, [e.target.name]: e.target.value })
@@ -237,7 +233,7 @@ const ContactUs = () => {
                                     <div className="col-md-6">
                                         <div className="form-group">
                                             <label for="email">Email Id *</label>
-                                            <input type="email" className="form-control" id="email" name="email" onChange={onChange} value={data.email}/>
+                                            <input type="email" className="form-control" id="email" name="email" onChange={onChange} value={data.email} />
                                             <div className='error' style={{ color: "red" }}>{error.email_err}</div>
                                         </div>
                                     </div>
@@ -246,7 +242,7 @@ const ContactUs = () => {
                                     <div className="col-md-6">
                                         <div className="form-group">
                                             <label for="uname">Phone Number *</label>
-                                            <input type="text" className="form-control" id="phone" name="phone" onChange={onChange} value={data.phone}/>
+                                            <input type="number" className="form-control" id="phone" name="phone" onChange={onChange} value={data.phone} />
                                             <div className='error' style={{ color: "red" }}>{error.phone_err}</div>
                                         </div>
                                     </div>
@@ -279,11 +275,11 @@ const ContactUs = () => {
                                         <div className="form-group">
                                             <label className="d-block mb-3">Do you need a NDA ? *</label>
                                             <div className="custom-control custom-radio custom-control-inline m-r">
-                                                <input type="radio" className="custom-control-input" id="customRadio" name="nda" checked={data.nda==="Yes"?true:false} value="Yes" onChange={onChange} />
+                                                <input type="radio" className="custom-control-input" id="customRadio" name="nda" checked={data.nda === "Yes" ? true : false} value="Yes" onChange={onChange} />
                                                 <label className="custom-control-label" for="customRadio">Yes</label>
                                             </div>
                                             <div className="custom-control custom-radio custom-control-inline m-r">
-                                                <input type="radio" className="custom-control-input" id="customRadio2" name="nda" checked={data.nda==="No"?true:false} value="No" onChange={onChange} />
+                                                <input type="radio" className="custom-control-input" id="customRadio2" name="nda" checked={data.nda === "No" ? true : false} value="No" onChange={onChange} />
                                                 <label className="custom-control-label" for="customRadio2">No</label>
                                             </div>
                                             <div className='error' style={{ color: "red" }}>{error.nda_err}</div>
