@@ -6,13 +6,13 @@ import 'animate.css/animate.min.css';
 import Footer from './Footer';
 import Header from './Header';
 import Consultant from './Consultant';
+import HelpDesk from './HelpDesk';
 
 const ReactNative = () => {
 
     const price = useRef();
 
     const width = window.innerWidth
-    console.log(width, typeof (width))
 
     return (
         <div>
@@ -188,7 +188,7 @@ const ReactNative = () => {
                                         </ul>
                                         <div className="hire-details-btn">
                                             <button className="btn btn-info hire-trial-btn" onClick={() => price.current.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Start Risk Free Trial</button>
-                                            <a href="#" className="btn btn-info">Check our Pricing</a>
+                                            <button className="btn btn-info" onClick={() => price.current.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Check our Pricing</button>
                                         </div>
                                     </div>
                                 </div>
@@ -1857,69 +1857,7 @@ const ReactNative = () => {
                         </div>
                     </div>
                 </section>
-                {/* <!-- Frequently Section End --> */}
-
-                {/* <!-- Help Section Satrt --> */}
-                <section className="help-section">
-                    <div className="container">
-                        <div className="help-content">
-                            <div className="row align-items-center">
-                                <div className="col col-12 col-md-12 col-lg-3 col-xl-3">
-                                    <h2 className="help-title">How Can we Help ?</h2>
-                                </div>
-                                <div className="col col-12 col-md-12 col-lg-9 col-xl-9">
-                                    <div className="help-form">
-                                        <div className="row">
-                                            <div className="col col-12 col-md-4">
-                                                <div className="help-input">
-                                                    <label className="form-label">Your Full Name</label>
-                                                    <input type="text" className="form-control" />
-                                                </div>
-                                            </div>
-                                            <div className="col col-12 col-md-4">
-                                                <div className="help-input">
-                                                    <label className="form-label">Email Id</label>
-                                                    <input type="email" className="form-control" />
-                                                </div>
-                                            </div>
-                                            <div className="col col-12 col-md-4">
-                                                <div className="help-input">
-                                                    <label className="form-label">Phone Number</label>
-                                                    {/* <div className="hire-form-country help-form-country"> */}
-                                                    <input type="number" className="form-control" />
-                                                    {/* <div className="form-country-selector help-form-country-selector">
-                                                            <select className="js-example-templating">
-                                                                <option value="india">India <span>+91</span></option>
-                                                                <option value="Afghanistan">Afghanistan <span>+93</span>
-                                                                </option>
-                                                                <option value="Albania">Albania <span>+355</span></option>
-                                                                <option value="Algeria">Algeria <span>+213</span></option>
-                                                                <option value="Austria">Austria <span>+43</span></option>
-                                                                <option value="Bangladesh">Bangladesh <span>+880</span></option>
-                                                                <option value="Belize">Belize <span>+501</span></option>
-                                                                <option value="Canada">Canada <span>+1</span></option>
-                                                            </select>
-                                                        </div> */}
-                                                    {/* </div> */}
-                                                </div>
-                                            </div>
-                                            <div className="col col-12">
-                                                <div className="help-input w-100">
-                                                    <label className="form-label">Discuss your Requirement</label>
-                                                    <textarea className="form-control" cols="30" rows="7"></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="help-btn text-right">
-                                            <a href="#" className="btn schedule-btn">GET IN TOUCH</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                {/* <!-- Help Section End --> */}
+                <HelpDesk />
             </main>
 
 

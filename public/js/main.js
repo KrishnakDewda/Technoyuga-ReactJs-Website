@@ -65,7 +65,7 @@ function TypeWriter() {
     let word = text_arr[i].split("");
     let delword = text_arr[i].split("");
 
-    let type = function() {
+    let type = function () {
         if (word.length > 0) {
 
             //  text_elem.innerHTML += word.shift ();
@@ -101,7 +101,7 @@ if ($(window).width() < 768) {
 }
 
 
-$(window).scroll(function() {
+$(window).scroll(function () {
     var scroll = $(window).scrollTop();
 
     if (scroll >= 100) {
@@ -111,11 +111,11 @@ $(window).scroll(function() {
     }
 });
 
-!(function($) {
+!(function ($) {
     "use strict";
 
     // Smooth scroll for the navigation menu and links with .scrollto classes
-    $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {
+    $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function (e) {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             e.preventDefault();
             var target = $(this.hash);
@@ -159,19 +159,19 @@ $(window).scroll(function() {
         $('#header .container-fluid').prepend('<button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>');
         $('#header .container-fluid').append('<div class="mobile-nav-overly"></div>');
 
-        $(document).on('click', '.mobile-nav-toggle', function(e) {
+        $(document).on('click', '.mobile-nav-toggle', function (e) {
             $('#header .container-fluid').toggleClass('mobile-nav-active');
             $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
             $('.mobile-nav-overly').toggle();
         });
 
-        $(document).on('click', '.mobile-nav .drop-down > a', function(e) {
+        $(document).on('click', '.mobile-nav .drop-down > a', function (e) {
             e.preventDefault();
             $(this).next().slideToggle(300);
             $(this).parent().toggleClass('active');
         });
 
-        $(document).click(function(e) {
+        $(document).click(function (e) {
             var container = $(".mobile-nav, .mobile-nav-toggle");
             if (!container.is(e.target) && container.has(e.target).length === 0) {
                 if ($('body').hasClass('mobile-nav-active')) {
@@ -344,7 +344,7 @@ $(window).scroll(function() {
         easing: "ease-in-out"
     });
 
-    setTimeout(function() {
+    setTimeout(function () {
         $("#afterpopup").modal('show');
     }, 60000);
 
@@ -379,7 +379,7 @@ $(window).scroll(function() {
                 slidesToShow: 1,
                 slidesToScroll: 1,
             }
-        }, ]
+        },]
     });
 
     // Stories Slider End
@@ -425,26 +425,27 @@ $(window).scroll(function() {
         autoplay: true,
         autoplaySpeed: 2000,
         responsive: [{
-                breakpoint: 1199,
-                settings: {
-                    slidesToShow: 3,
-                }
-            },
-            {
-                breakpoint: 991,
-                settings: {
-                    slidesToShow: 2,
-                }
-            },
-            {
-                breakpoint: 767,
-                settings: {
-                    slidesToShow: 1,
-                }
-            },
+            breakpoint: 1199,
+            settings: {
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 1,
+            }
+        },
         ]
     });
     // startup Slider End
 
     Scrollbar.initAll();
+    // $("#mobile-number").intlTelInput();
 })(jQuery);
