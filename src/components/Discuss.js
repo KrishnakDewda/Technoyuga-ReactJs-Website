@@ -44,10 +44,6 @@ const Discuss = (props) => {
         setUserData({ ...userData, [e.target.name]: e.target.value })
     }
 
-
-
-
-
     function validate() {
 
         let isValid = true;

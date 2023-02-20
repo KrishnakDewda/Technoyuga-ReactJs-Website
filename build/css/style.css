@@ -2692,6 +2692,10 @@
         font-size: 20px;
     }
 
+    .special-label {
+        display: none;
+    }
+
     /*--------------------------------------------------------------
 # What is flutter Section
 --------------------------------------------------------------*/
@@ -2748,11 +2752,12 @@
         width: initial;
         margin: auto;
     }
-    
+
     .flutter-client ul li .img-fluid {
         width: initial;
         margin: auto;
     }
+
     .apps-built .flutter-client ul li img {
         width: initial;
         margin: auto;
@@ -6165,13 +6170,9 @@
         margin-top: 66px;
     }
 
-    .stories-slider-tabs {
-        
-    }
+    .stories-slider-tabs {}
 
-    .stories-tabs-link {
-       
-    }
+    .stories-tabs-link {}
 
     .stories-tabs-link {
         font-weight: 500;
