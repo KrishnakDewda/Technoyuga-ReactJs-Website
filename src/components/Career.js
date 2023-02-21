@@ -4,12 +4,14 @@ import toast, { Toaster } from 'react-hot-toast';
 import axios from 'axios';
 import { URL } from '../baseURL';
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { useLocation } from 'react-router-dom';
+
 const Career = () => {
     // useEffect(() => {
     //     toast.success('Helllooo', { style: { marginTop: '50px' } })
     // }, [])
     const submitForm = useRef();
-
+    let location = useLocation();
     const [jobTitles, setJobTitles] = useState([]);
     useEffect(() => {
         const token = localStorage.getItem("TY_TOKEN");
@@ -178,7 +180,7 @@ const Career = () => {
                     <button type="button" className="mobile-nav-toggle d-lg-none"><i className="icofont-navigation-menu" /></button>
                     <nav className="nav-menu d-none d-lg-block">
                         <ul>
-                            <li className="active"><a href="/">Home</a></li>
+                            <li ><a href="/">Home</a></li>
                             <li className="drop-down"><a href="#0">About us</a>
                                 <ul>
                                     <li><a href="/about-us">Company</a></li>
@@ -284,7 +286,7 @@ const Career = () => {
                     </nav>
                     <nav className="mobile-nav d-lg-none">
                         <ul>
-                            <li className=""><a href="/">Home</a></li>
+                            <li className={`nav-link ${location.pathname === "/" ? "active" : ""}`}><a href="/">Home</a></li>
                             <li className="drop-down"><a href="#0">About us</a>
                                 <ul>
                                     <li><a href="/about-us">Company</a></li>
@@ -376,9 +378,9 @@ const Career = () => {
                                 </ul>
 
                             </li>
-                            <li><a href="/portfolio">Portfolio</a></li>
-                            <li><a href="/career">Careers</a></li>
-                            <li><a href="/contact-us">Contact us</a></li>
+                            <li className={`nav-link ${location.pathname === "/portfolio" ? "active" : ""}`}><a href="/portfolio">Portfolio</a></li>
+                            <li className={`nav-link ${location.pathname === "/career" ? "active" : ""}`}><a href="/career">Careers</a></li>
+                            <li className={`nav-link ${location.pathname === "/contact-us" ? "active" : ""}`}><a href="/contact-us">Contact us</a></li>
                             <li className="get-started"><a href="/contact-us">Estimate Project</a></li>
                         </ul>
                     </nav>

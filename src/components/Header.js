@@ -1,14 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { useLocation } from 'react-router-dom';
 
 const Header = () => {
 
-    const [active, setActive] = useState(0);
-
-    const handleClick = (e) => {
-        setActive(e);
-    }
-
-
+    let location = useLocation();
+    
     return (
         <div>
             <header id="header" className="fixed-top dark-header">
@@ -20,7 +16,7 @@ const Header = () => {
                     <button type="button" className="mobile-nav-toggle d-lg-none"><i className="icofont-navigation-menu" /></button>
                     <nav className="nav-menu d-none d-lg-block">
                         <ul>
-                            <li className="active"><a href="/">Home</a></li>
+                            <li><a href="/">Home</a></li>
                             <li className="drop-down"><a href="#0">About us</a>
                                 <ul>
                                     <li><a href="/about-us">Company</a></li>
@@ -111,7 +107,7 @@ const Header = () => {
                                 </ul>
 
                             </li>
-                            <li><a href="/portfolio">Portfolio</a></li>
+                            <li ><a href="/portfolio">Portfolio</a></li>
                             <li><a href="/career">Careers</a></li>
                             <li><a href="/contact-us">Contact us</a></li>
                             <li className="get-started"><a href="/contact-us">Estimate Project</a></li>
@@ -119,9 +115,7 @@ const Header = () => {
                     </nav>
                     <nav className="mobile-nav d-lg-none">
                         <ul>
-                            {/* <li className="active"><a href="/">Home</a></li> */}
-                            <li><a href="/">Home</a></li>
-
+                            <li className={`nav-link ${location.pathname==="/"? "active": ""}`}><a href="/">Home</a></li>
                             <li className="drop-down"><a href="#0">About us</a>
                                 <ul>
                                     <li><a href="/about-us">Company</a></li>
@@ -213,9 +207,9 @@ const Header = () => {
                                 </ul>
 
                             </li>
-                            <li><a href="/portfolio">Portfolio</a></li>
-                            <li><a href="/career">Careers</a></li>
-                            <li><a href="/contact-us">Contact us</a></li>
+                            <li className={` ${location.pathname==="/portfolio"? "active": ""}`}><a href="/portfolio">Portfolio</a></li> 
+                            <li className={` ${location.pathname==="/career"? "active": ""}`}><a href="/career">Careers</a></li>
+                            <li className={` ${location.pathname==="/contact-us"? "active": ""}`}><a href="/contact-us">Contact us</a></li>
                             <li className="get-started"><a href="/contact-us">Estimate Project</a></li>
                         </ul>
                     </nav>
