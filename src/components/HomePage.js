@@ -14,8 +14,8 @@ const HomePage = () => {
 
             <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9TRJ57" height="0" width="0"
                 style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
-                
-           <Header />
+
+            <Header />
 
             <section id="hero">
                 <div className="banner-video">
@@ -146,7 +146,7 @@ const HomePage = () => {
                                 <div className="w-100 mb-5"></div>
 
                                 <div className="col-md-4 mb-pad" data-aos="fade-up" data-aos-delay="300">
-                                    <a href="web-dev.html">
+                                    <a href="/web-app-development">
                                         <div className="service-area">
                                             <img className="img-fluid" src="img/web-design.png" alt="web app developemnet" />
                                             <div className="service-heading">
@@ -157,7 +157,7 @@ const HomePage = () => {
                                     </a>
                                 </div>
                                 <div className="col-md-4 mb-pad" data-aos="fade-up" data-aos-delay="400">
-                                    <a href="ar-vr.html">
+                                    <a href="/augmented-reality-development">
                                         <div className="service-area">
                                             <img className="img-fluid" src="img/imerging.png" alt="augument reality development" />
                                             <div className="service-heading">
@@ -180,7 +180,7 @@ const HomePage = () => {
                                 <div className="w-100 mb-5"></div>
 
                                 <div className="col-md-4 mb-pad" data-aos="fade-up" data-aos-delay="300">
-                                    <a href="react-native.html">
+                                    <a href="/react-native-application-development">
                                         <div className="service-area">
                                             <img className="img-fluid" src="img/reactnative-service.png" alt="react native app development" />
                                             <div className="service-heading">
@@ -191,7 +191,7 @@ const HomePage = () => {
                                     </a>
                                 </div>
                                 <div className="col-md-4 mb-pad" data-aos="fade-up" data-aos-delay="400">
-                                    <a href="iot.html">
+                                    <a href="/iot-application-development">
                                         <div className="service-area">
                                             <img className="img-fluid" src="img/iot-service.png" alt="iot app development" />
                                             <div className="service-heading">
@@ -202,7 +202,7 @@ const HomePage = () => {
                                     </a>
                                 </div>
                                 <div className="col-md-4 mb-pad" data-aos="fade-up" data-aos-delay="500">
-                                    <a href="iot.html">
+                                    <a href="/blockchain-application-development">
                                         <div className="service-area">
                                             <img className="img-fluid" src="img/blockchain-service.png" alt="blockchain app development" />
                                             <div className="service-heading">
@@ -1340,7 +1340,7 @@ const HomePage = () => {
                                     <p>10X partners is a parent company of Foodio, a food tech community for consumers, industries and food
                                         suppliers across the globe. It helps industries and consumers to directly connect with food producers
                                         and they can sell their product anywhere in the world without any hustle.</p>
-                            <img className="country-flag" src="img/flags/germany.jpg" alt="germany flag" />
+                                    <img className="country-flag" src="img/flags/germany.jpg" alt="germany flag" />
 
                                 </div>
                                 <div className="testimonial-content">
