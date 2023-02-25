@@ -110,7 +110,7 @@ const HomePage = () => {
                         <div className="service-wrapper">
                             <div className="row">
                                 <div className="col-md-4 mb-pad" data-aos="fade-up">
-                                    <a href="ios-development.html">
+                                    <a href="/iot-application-development">
                                         <div className="service-area">
                                             <img className="img-fluid" src="img/ios.png" alt="ios app development" />
                                             <div className="service-heading">
@@ -121,7 +121,7 @@ const HomePage = () => {
                                     </a>
                                 </div>
                                 <div className="col-md-4 mb-pad" data-aos="fade-up" data-aos-delay="100">
-                                    <a href="android-development.html">
+                                    <a href="/android-application-development">
                                         <div className="service-area">
                                             <img className="img-fluid" src="img/android.png" alt="android app developemnet" />
                                             <div className="service-heading">
@@ -132,7 +132,7 @@ const HomePage = () => {
                                     </a>
                                 </div>
                                 <div className="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                                    <a href="flutter.html">
+                                    <a href="/flutter-application-development">
                                         <div className="service-area">
                                             <img className="img-fluid" src="img/flutter-service.png" alt="flutter app developemnet" />
                                             <div className="service-heading">
