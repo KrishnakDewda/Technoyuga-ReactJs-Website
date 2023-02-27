@@ -114,11 +114,11 @@ const Career = () => {
         let isValid = true;
         let err = {};
         if (!resume.inputName) {
-            err['inputName_err'] = "Please provide your name!"
+            err['inputName_err'] = "Please provide your name"
             isValid = false;
         }
         if (!resume.inputEmail) {
-            err['inputEmail_err'] = "Please provide your email!"
+            err['inputEmail_err'] = "Please provide your email"
             isValid = false;
         }
         else if (typeof resume.inputEmail !== "undefined") {
@@ -131,31 +131,31 @@ const Career = () => {
             }
         }
         if (!resume.inputNumber) {
-            err['inputNumber_err'] = "Please provide your phone number!"
+            err['inputNumber_err'] = "Please provide your phone number"
             isValid = false;
         }
         if (!resume.inputJob) {
-            err['inputJob_err'] = "Please provide your job title!"
+            err['inputJob_err'] = "Please provide your job title"
             isValid = false;
         }
         if (!resume.inputNotice) {
-            err['inputNotice_err'] = "Please provide your notice period!"
+            err['inputNotice_err'] = "Please provide your notice period"
             isValid = false;
         }
         if (!resume.file) {
-            err['file_err'] = "Please provide your resume!"
+            err['file_err'] = "Please provide your resume"
             isValid = false;
         }
         if (!resume.inputCTC) {
-            err['inputCTC_err'] = "Please provide your current CTC!"
+            err['inputCTC_err'] = "Please provide your current CTC"
             isValid = false;
         }
         if (!resume.inputCTC2) {
-            err['inputCTC2_err'] = "Please provide your expected CTC!"
+            err['inputCTC2_err'] = "Please provide your expected CTC"
             isValid = false;
         }
         if (!resume.inputMessage) {
-            err['inputMessage_err'] = "Please provide your message!"
+            err['inputMessage_err'] = "Please provide your message"
             isValid = false;
         }
         setError(err);
@@ -509,7 +509,7 @@ const Career = () => {
                             <div className="opportunities-content-heading">
                                 <div className="section-title aos-init aos-animate" data-aos="fade-up">
                                     <h2>Trending Opportunities</h2>
-                                    <p>Openings At Technoyuga’s</p>
+                                    <p>Openings At Technoyuga</p>
                                 </div>
                             </div>
                             <div className="trending-opportunities-content">
