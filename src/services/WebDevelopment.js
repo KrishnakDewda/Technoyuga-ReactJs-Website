@@ -355,7 +355,7 @@ const WebDevelopment = () => {
                                                         <img className="img-fluid" src="img/icon/python.svg" alt="python logo" />
                                                     </figure>
                                                     <figcaption>
-                                                        <p>Pythno</p>
+                                                        <p>Python</p>
                                                     </figcaption>
                                                 </li>
                                             </ul>

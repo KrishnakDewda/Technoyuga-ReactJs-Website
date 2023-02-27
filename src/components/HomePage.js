@@ -110,7 +110,7 @@ const HomePage = () => {
                         <div className="service-wrapper">
                             <div className="row">
                                 <div className="col-md-4 mb-pad" data-aos="fade-up">
-                                    <a href="/iot-application-development">
+                                    <a href="/ios-application-development">
                                         <div className="service-area">
                                             <img className="img-fluid" src="img/ios.png" alt="ios app development" />
                                             <div className="service-heading">
@@ -167,7 +167,7 @@ const HomePage = () => {
                                         </div>
                                     </a>
                                 </div>
-                                <div className="col-md-4 mb-pad" data-aos="fade-up" data-aos-delay="500">
+                                {/* <div className="col-md-4 mb-pad" data-aos="fade-up" data-aos-delay="500">
                                     <div className="service-area">
                                         <img src="img/ui-ux.png" alt="ui/ux designing" />
                                         <div className="service-heading">
@@ -175,9 +175,8 @@ const HomePage = () => {
                                             <h4>Digital Product UI/UX Designing</h4>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
 
-                                <div className="w-100 mb-5"></div>
 
                                 <div className="col-md-4 mb-pad" data-aos="fade-up" data-aos-delay="300">
                                     <a href="/react-native-application-development">
@@ -190,6 +189,7 @@ const HomePage = () => {
                                         </div>
                                     </a>
                                 </div>
+                                <div className="w-100 mb-5"></div>
                                 <div className="col-md-4 mb-pad" data-aos="fade-up" data-aos-delay="400">
                                     <a href="/iot-application-development">
                                         <div className="service-area">

@@ -35,7 +35,7 @@ const ContactUs = () => {
                     setData({
                         username: "", phone: "", email: "", comment: "", budget: "", nda: ""
                     })
-                    toast.success('Form Submited !!', { style: { background: '#333', color: '#fff', marginTop: '70px' } })
+                    toast.success('Thanks for contacting us.', { style: { background: '#333', color: '#fff', marginTop: '70px' } })
                 }
             }).catch((err) => {
                 console.log(err);
@@ -52,11 +52,11 @@ const ContactUs = () => {
         let isValid = true;
         let err = {};
         if (!data.username) {
-            err['username_err'] = "Please provide your user name!"
+            err['username_err'] = "Please provide your user name"
             isValid = false;
         }
         if (!data.email) {
-            err['email_err'] = "Please provide your email!"
+            err['email_err'] = "Please provide your email"
             isValid = false;
         }
         else if (typeof data.email !== "undefined") {
@@ -69,19 +69,19 @@ const ContactUs = () => {
             }
         }
         if (!data.phone) {
-            err['phone_err'] = "Please provide your phone number!"
+            err['phone_err'] = "Please provide your phone number"
             isValid = false;
         }
         if (!data.budget) {
-            err['budget_err'] = "Please provide your budget!"
+            err['budget_err'] = "Please provide your budget"
             isValid = false;
         }
         if (!data.comment) {
-            err['comment_err'] = "Please provide comment!"
+            err['comment_err'] = "Please provide comment"
             isValid = false;
         }
         if (!data.nda) {
-            err['nda_err'] = "Please choose option!"
+            err['nda_err'] = "Please choose option"
             isValid = false;
         }
         setError(err);
