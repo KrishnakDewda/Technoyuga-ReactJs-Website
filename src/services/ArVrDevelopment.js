@@ -752,9 +752,9 @@ const ArVrDevelopment = () => {
                     </div>
                 </section> */}
                 <Discuss h3={"Let's Discuss Your Idea"} />
-                
 
-{/* 
+                <br /><br /><br /><br />
+                {/* 
                 <section className="faqs">
                     <div className="container">
                         <div className="section-title" data-aos="fade-up">

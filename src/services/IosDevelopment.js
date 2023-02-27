@@ -13,11 +13,11 @@ const IosDevelopment = () => {
     console.log(width, typeof (width))
     return (
         <div>
-           
+
             <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9TRJ57"
                 height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
-         
-         {/* <header id="header" class="fixed-top dark-header">
+
+            {/* <header id="header" class="fixed-top dark-header">
                 <div class="container-fluid d-flex">
 
                     <div class="logo mr-auto">
@@ -1129,7 +1129,7 @@ const IosDevelopment = () => {
 
                                         <div className="app-tags">
                                             <ul>
-                                                <li className="flag" style={{ width: "46px"}}>
+                                                <li className="flag" style={{ width: "46px" }}>
                                                     <img src="img/flags/spain.png" />
                                                 </li>
                                                 <li className="app">
@@ -1311,7 +1311,7 @@ const IosDevelopment = () => {
                     </div>
                 </section> */}
                 <Discuss h3={"Let's Discuss Your Idea"} />
-
+                <br /><br /><br /><br />
 
                 {/* <!-- ======= How it works Section ======= --> */}
                 <section className="process">
