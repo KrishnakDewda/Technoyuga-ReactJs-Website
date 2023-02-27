@@ -298,7 +298,7 @@ const ContactUs = () => {
                 <section className="locations">
                     <div className="container-fluid">
                         <h4 className="text-center">Your new home for collabration</h4>
-                        <p className="text-center">with more that 10+ years of passion for technology we are spreading our footprints with our new workspaces for better innovations and engagement</p>
+                        <p className="text-center">with more that 3+ years of passion for technology we are spreading our footprints with our new workspaces for better innovations and engagement</p>
                     </div>
                 </section>
 
