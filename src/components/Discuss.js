@@ -32,7 +32,7 @@ const Discuss = (props) => {
                     setUserData({
                         username: "", phone: "", email: "", comment: "", budget: "", nda: ""
                     })
-                    toast.success('Form Submited !!', { style: { background: '#333', color: '#fff', marginTop: '70px' } })
+                    toast.success('Thanks for contacting us', { style: { background: '#333', color: '#fff', marginTop: '70px' } })
                 }
             }).catch((err) => {
                 console.log(err);
@@ -49,11 +49,11 @@ const Discuss = (props) => {
         let isValid = true;
         let err = {};
         if (!userData.username) {
-            err['username_err'] = "Please provide your user name!"
+            err['username_err'] = "Please provide your user name"
             isValid = false;
         }
         if (!userData.email) {
-            err['email_err'] = "Please provide your email!"
+            err['email_err'] = "Please provide your email"
             isValid = false;
         }
         else if (typeof userData.email !== "undefined") {
@@ -66,19 +66,19 @@ const Discuss = (props) => {
             }
         }
         if (!userData.phone) {
-            err['phone_err'] = "Please provide your phone number!"
+            err['phone_err'] = "Please provide your phone number"
             isValid = false;
         }
         if (!userData.budget) {
-            err['budget_err'] = "Please provide your budget!"
+            err['budget_err'] = "Please provide your budget"
             isValid = false;
         }
         if (!userData.comment) {
-            err['comment_err'] = "Please provide comment!"
+            err['comment_err'] = "Please provide comment"
             isValid = false;
         }
         if (!userData.nda) {
-            err['nda_err'] = "Please choose option!"
+            err['nda_err'] = "Please choose option"
             isValid = false;
         }
         setError(err);
@@ -88,11 +88,15 @@ const Discuss = (props) => {
     return (
         <div>
             <Toaster />
-            <section className="idea-discussion">
-                <div className="overlay"></div>
+            <section className="process">
+                {/* <div className="overlay"></div> */}
                 <div className="container">
-                    <div className="discusion-inner">
+                    {/* <div className="discusion-inner">
                         <h3>{props.h3}</h3>
+                        <p>100% Idea protection. We sign Non Disclosure Agreement</p>
+                    </div> */}
+                    <div className="section-title" data-aos="fade-up">
+                        <h2>{props.h3}</h2>
                         <p>100% Idea protection. We sign Non Disclosure Agreement</p>
                     </div>
                     <div className="idea-form-wrapper">
