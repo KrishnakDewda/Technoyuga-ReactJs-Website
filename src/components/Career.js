@@ -5,12 +5,15 @@ import axios from 'axios';
 import { URL } from '../baseURL';
 import PhoneInput from 'react-phone-input-2';
 
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import { useLocation } from 'react-router-dom';
+
 const Career = () => {
     // useEffect(() => {
     //     toast.success('Helllooo', { style: { marginTop: '50px' } })
     // }, [])
     const submitForm = useRef();
-
+    let location = useLocation();
     const [jobTitles, setJobTitles] = useState([]);
     useEffect(() => {
         const token = localStorage.getItem("TY_TOKEN");
@@ -171,15 +174,14 @@ const Career = () => {
 
             <header id="header" className="fixed-top header-light">
                 <div className="container-fluid d-flex">
-
                     <div className="logo mr-auto">
                         <a href="/"><img src="img/technoyuga-logo.svg" alt="technoyuga logo"
                             className="img-fluid" /></a>
                     </div>
-
+                    <button type="button" className="mobile-nav-toggle d-lg-none"><i className="icofont-navigation-menu" /></button>
                     <nav className="nav-menu d-none d-lg-block">
                         <ul>
-                            <li className="active"><a href="/">Home</a></li>
+                            <li ><a href="/">Home</a></li>
                             <li className="drop-down"><a href="#0">About us</a>
                                 <ul>
                                     <li><a href="/about-us">Company</a></li>
@@ -283,13 +285,114 @@ const Career = () => {
                             <li className="get-started"><a href="/contact-us">Estimate Project</a></li>
                         </ul>
                     </nav>
+                    <nav className="mobile-nav d-lg-none">
+                        <ul>
+                            <li className={`nav-link ${location.pathname === "/" ? "active" : ""}`}><a href="/">Home</a></li>
+                            <li className="drop-down"><a href="#0">About us</a>
+                                <ul>
+                                    <li><a href="/about-us">Company</a></li>
+                                    <li><a href="/about-us-our-story">Our Story</a></li>
+                                    <li><a href="/ourteam">Our Team</a></li>
+                                </ul>
+                            </li>
+                            <li className="drop-down mega"><a href="#0">Services</a>
+                                <ul className="row">
+                                    <li className="col-lg-4">
+                                        <div className="media">
+                                            <img src="img/mega-menu/mega-menu-icon.png" />
+                                            <div className="media-body">
+                                                <a href="/ios-application-development">IOS Development</a>
+                                                <p>Custom Native iPhone App Development and support</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li className="col-lg-4">
+                                        <div className="media">
+                                            <img src="img/mega-menu/mega-android.png" />
+                                            <div className="media-body">
+                                                <a href="/android-application-development">Android App Development</a>
+                                                <p>Ondemand android developemnet for your business</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li className="col-lg-4">
+                                        <div className="media">
+                                            <img src="img/mega-menu/mega-flutter.png" />
+                                            <div className="media-body">
+                                                <a href="/flutter-application-development">Flutter App Development</a>
+                                                <p>Helping startups, small businesses and growing enterprises </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li className="col-lg-4">
+                                        <div className="media">
+                                            <img src="img/mega-menu/mega-blockchain.png" />
+                                            <div className="media-body">
+                                                <a href="/blockchain-application-development">BlockChain Development</a>
+                                                <p>App development using flutter and react technology</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li className="col-lg-4">
+                                        <div className="media">
+                                            <img src="img/mega-menu/mega-iot.png" />
+                                            <div className="media-body">
+                                                <a href="/iot-application-development">IOT App Development</a>
+                                                <p>controlled remotely and can be used to monitor the connected product's condition</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li className="col-lg-4">
+                                        <div className="media">
+                                            <img src="img/mega-menu/mega-arvr.png" />
+                                            <div className="media-body">
+                                                <a href="/augmented-reality-development">AR VR Development</a>
+                                                <p>empower businesses them with our skilled technology capabilities in AR/VR</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li className="col-lg-4">
+                                        <div className="media">
+                                            <img src="img/mega-menu/mega-react.png" />
+                                            <div className="media-body">
+                                                <a href="/react-native-application-development">React Native Development</a>
+                                                <p>iOS and Android mobile applications in an industry-driving structure</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li className="col-lg-4">
+                                        <div className="media">
+                                            <img src="img/mega-menu/mega-web.png" />
+                                            <div className="media-body">
+                                                <a href="/web-app-development">Web Development</a>
+                                                <p>We build bespoke websites and web applications</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li className="col-lg-4">
+                                        <div className="lets-connect">
+                                            <a href="/contact-us">Lets Connect <span className="ml-2"><img src="img/arrow 2.svg" /></span>
+                                            </a>
+                                            <p>meet the enthusiastic team of developers and designers</p>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li className={`nav-link ${location.pathname === "/portfolio" ? "active" : ""}`}><a href="/portfolio">Portfolio</a></li>
+                            <li className={`nav-link ${location.pathname === "/career" ? "active" : ""}`}><a href="/career">Careers</a></li>
+                            <li className={`nav-link ${location.pathname === "/contact-us" ? "active" : ""}`}><a href="/contact-us">Contact us</a></li>
+                            <li className="get-started"><a href="/contact-us">Estimate Project</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </header>
 
             <main>
                 <section className="landing-section">
                     <div className="landing-img">
-                        <img src="img/landing_bg.png" alt="" className="img-fluid w-100" />
+                        <LazyLoadImage className="img-fluid w-100" src="img/landing_bg.png" alt="" />
+                        {/* <img src="img/landing_bg.png" alt="" className="img-fluid w-100" /> */}
                     </div>
                     <div className="container">
                         <div className="landing-section-content">
@@ -329,43 +432,53 @@ const Career = () => {
                                     <div className="col col-12 col-md-3 col-lg-twenty">
                                         <div className="our-item1 text-end">
                                             <div className="our-culture-item">
-                                                <img src="img/career/img_1.png" alt="" className="img-fluid" />
+                                                <LazyLoadImage src="img/career/img_1.png" alt="" className="img-fluid" />
+                                                {/* <img src="img/career/img_1.png" alt="" className="img-fluid" /> */}
                                             </div>
                                             <div className="our-culture-item">
-                                                <img src="img/career/img_2.png" alt="" className="img-fluid" />
+                                                <LazyLoadImage src="img/career/img_2.png" alt="" className="img-fluid" />
+                                                {/* <img src="img/career/img_2.png" alt="" className="img-fluid" /> */}
                                             </div>
                                         </div>
                                     </div>
                                     <div className="col col-12 col-md-2 col-lg-twenty">
                                         <div className="our-item2">
                                             <div className="our-culture-item">
-                                                <img src="img/career/img_3.png" alt="" className="img-fluid" />
+                                                <LazyLoadImage src="img/career/img_3.png" alt="" className="img-fluid" />
+                                                {/* <img src="img/career/img_3.png" alt="" className="img-fluid" /> */}
                                             </div>
                                             <div className="our-culture-item">
-                                                <img src="img/career/img_4.png" alt="" className="img-fluid" />
+                                                <LazyLoadImage src="img/career/img_4.png" alt="" className="img-fluid" />
+                                                {/* <img src="img/career/img_4.png" alt="" className="img-fluid" /> */}
                                             </div>
                                         </div>
                                     </div>
                                     <div className="col col-12 col-md-4 col-lg-forty">
                                         <div className="our-item3">
                                             <div className="our-culture-item">
-                                                <img src="img/career/img_5.png" alt="" className="img-fluid" />
+                                                <LazyLoadImage src="img/career/img_5.png" alt="" className="img-fluid" />
+                                                {/* <img src="img/career/img_5.png" alt="" className="img-fluid" /> */}
                                             </div>
                                             <div className="our-culture-item">
-                                                <img src="img/career/img_6.png" alt="" className="img-fluid" />
+                                                <LazyLoadImage src="img/career/img_6.png" alt="" className="img-fluid" />
+
+                                                {/* <img src="img/career/img_6.png" alt="" className="img-fluid" /> */}
                                             </div>
                                         </div>
                                     </div>
                                     <div className="col col-12 col-md-3 col-lg-twenty">
                                         <div className="our-item4">
                                             <div className="our-culture-item">
-                                                <img src="img/career/img_7.png" alt="" className="img-fluid" />
+                                                <LazyLoadImage src="img/career/img_7.png" alt="" className="img-fluid" />
+                                                {/* <img src="img/career/img_7.png" alt="" className="img-fluid" /> */}
                                             </div>
                                             <div className="our-culture-item">
-                                                <img src="img/career/img_8.png" alt="" className="img-fluid" />
+                                                <LazyLoadImage src="img/career/img_8.png" alt="" className="img-fluid" />
+                                                {/* <img src="img/career/img_8.png" alt="" className="img-fluid" /> */}
                                             </div>
                                             <div className="our-culture-item">
-                                                <img src="img/career/img_9.png" alt="" className="img-fluid" />
+                                                <LazyLoadImage src="img/career/img_9.png" alt="" className="img-fluid" />
+                                                {/* <img src="img/career/img_9.png" alt="" className="img-fluid" /> */}
                                             </div>
                                         </div>
                                     </div>
@@ -378,7 +491,8 @@ const Career = () => {
 
 
                 <section className="choose-section">
-                    <img src="img/career/bubbles1.svg" alt="" className="img-fluid choose-bg" />
+                    <LazyLoadImage src="img/career/bubbles1.svg" alt="" className="img-fluid choose-bg" />
+                    {/* <img src="img/career/bubbles1.svg" alt="" className="img-fluid choose-bg" /> */}
                     <div className="container">
                         <div className="choose-section-content">
                             <div className="choose-section-heading">
@@ -395,7 +509,8 @@ const Career = () => {
                                     <div className="col col-12 col-md-6 col-lg-6 col-xl-4">
                                         <div className="choose-item">
                                             <div className="choose-item-img">
-                                                <img src="img/career/frame1.png" alt="" className="img-fluid" />
+                                                <LazyLoadImage src="img/career/frame1.png" alt="" className="img-fluid" />
+                                                {/* <img src="img/career/frame1.png" alt="" className="img-fluid" /> */}
                                             </div>
                                             <div className="choose-item-detail">
                                                 <p className="choose-item-detail-description">
@@ -408,7 +523,8 @@ const Career = () => {
                                     <div className="col col-12 col-md-6 col-lg-6 col-xl-4">
                                         <div className="choose-item">
                                             <div className="choose-item-img">
-                                                <img src="img/career/frame2.png" alt="" className="img-fluid" />
+                                                <LazyLoadImage src="img/career/frame2.png" alt="" className="img-fluid" />
+                                                {/* <img src="img/career/frame2.png" alt="" className="img-fluid" /> */}
                                             </div>
                                             <div className="choose-item-detail">
                                                 <p className="choose-item-detail-description">
@@ -420,7 +536,8 @@ const Career = () => {
                                     <div className="col col-12 col-md-6 col-lg-6 col-xl-4">
                                         <div className="choose-item">
                                             <div className="choose-item-img">
-                                                <img src="img/career/frame3.png" alt="" className="img-fluid" />
+                                                <LazyLoadImage src="img/career/frame3.png" alt="" className="img-fluid" />
+                                                {/* <img src="img/career/frame3.png" alt="" className="img-fluid" /> */}
                                             </div>
                                             <div className="choose-item-detail">
                                                 <p className="choose-item-detail-description">
@@ -435,7 +552,8 @@ const Career = () => {
                                     <div className="col col-12 col-md-6 col-lg-6 col-xl-4">
                                         <div className="choose-item">
                                             <div className="choose-item-img">
-                                                <img src="img/career/frame4.png" alt="" className="img-fluid" />
+                                                <LazyLoadImage src="img/career/frame4.png" alt="" className="img-fluid" />
+                                                {/* <img src="img/career/frame4.png" alt="" className="img-fluid" /> */}
                                             </div>
                                             <div className="choose-item-detail">
                                                 <p className="choose-item-detail-description">
@@ -447,7 +565,8 @@ const Career = () => {
                                     <div className="col col-12 col-md-6 col-lg-6 col-xl-4">
                                         <div className="choose-item">
                                             <div className="choose-item-img">
-                                                <img src="img/career/frame5.png" alt="" className="img-fluid" />
+                                                <LazyLoadImage src="img/career/frame5.png" alt="" className="img-fluid" />
+                                                {/* <img src="img/career/frame5.png" alt="" className="img-fluid" /> */}
                                             </div>
                                             <div className="choose-item-detail">
                                                 <p className="choose-item-detail-description">
@@ -461,7 +580,8 @@ const Career = () => {
                                     <div className="col col-12 col-md-6 col-lg-6 col-xl-4">
                                         <div className="choose-item">
                                             <div className="choose-item-img">
-                                                <img src="img/career/frame6.png" alt="" className="img-fluid" />
+                                                <LazyLoadImage src="img/career/frame6.png" alt="" className="img-fluid" />
+                                                {/* <img src="img/career/frame6.png" alt="" className="img-fluid" /> */}
                                             </div>
                                             <div className="choose-item-detail">
                                                 <p className="choose-item-detail-description">
@@ -473,7 +593,8 @@ const Career = () => {
                                     <div className="col col-12 col-md-6 col-lg-6 col-xl-4">
                                         <div className="choose-item m-0 choose-item1">
                                             <div className="choose-item-img">
-                                                <img src="img/career/frame7.png" alt="" className="img-fluid" />
+                                                <LazyLoadImage src="img/career/frame7.png" alt="" className="img-fluid" />
+                                                {/* <img src="img/career/frame7.png" alt="" className="img-fluid" /> */}
                                             </div>
                                             <div className="choose-item-detail">
                                                 <p className="choose-item-detail-description">
@@ -485,7 +606,8 @@ const Career = () => {
                                     <div className="col col-12 col-md-6 col-lg-6 col-xl-4">
                                         <div className="choose-item m-0">
                                             <div className="choose-item-img">
-                                                <img src="img/career/frame8.png" alt="" className="img-fluid" />
+                                                <LazyLoadImage src="img/career/frame8.png" alt="" className="img-fluid" />
+                                                {/* <img src="img/career/frame8.png" alt="" className="img-fluid" /> */}
                                             </div>
                                             <div className="choose-item-detail">
                                                 <p className="choose-item-detail-description">
@@ -503,7 +625,8 @@ const Career = () => {
 
 
                 <section className="opportunities-section">
-                    <img src="img/career/bubbles2.svg" alt="" className="img-fluid opportunities-bg" />
+                    <LazyLoadImage src="img/career/bubbles2.svg" alt="" className="img-fluid opportunities-bg" />
+                    {/* <img src="img/career/bubbles2.svg" alt="" className="img-fluid opportunities-bg" /> */}
                     <div className="container">
                         <div className="opportunities-section-content">
                             <div className="opportunities-content-heading">
@@ -652,7 +775,8 @@ const Career = () => {
                 </section>
 
                 <section className="join-team-section">
-                    <img src="img/career/join-bubbles.svg" alt="" className="img-fluid join-bg" />
+                    <LazyLoadImage src="img/career/join-bubbles.svg" alt="" className="img-fluid join-bg" />
+                    {/* <img src="img/career/join-bubbles.svg" alt="" className="img-fluid join-bg" /> */}
                     <div className="container">
                         <div className="join-team-content">
                             <div className="row align-items-center">
@@ -672,7 +796,8 @@ const Career = () => {
                                 </div>
                                 <div className="col col-12 col-md-6 col-lg-6 col-xl-6">
                                     <div className="join-team-img">
-                                        <img src="img/career/team.png" alt="" className="img-fluid" />
+                                        <LazyLoadImage src="img/career/team.png" alt="" className="img-fluid" />
+                                        {/* <img src="img/career/team.png" alt="" className="img-fluid" /> */}
                                     </div>
                                 </div>
                             </div>
@@ -955,11 +1080,13 @@ const Career = () => {
                         <div className="modal-content-wrapper">
                             <div className="row">
                                 <div className="col-lg-6 col-md-6 pr-0 dnm">
-                                    <img className="img-fluid" src="img/modal-img.png" />
+                                    <LazyLoadImage className="img-fluid" src="img/modal-img.png" />
+                                    {/* <img className="img-fluid" src="img/modal-img.png" /> */}
                                 </div>
                                 <div className="col-lg-6 col-md-6 pl-0">
                                     <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                                        <img src="img/close-icon.svg" />
+                                        <LazyLoadImage src="img/close-icon.svg" />
+                                        {/* <img src="img/close-icon.svg" /> */}
                                     </button>
                                     <div className="content-area">
                                         <h5>Do you have an <strong>Idea?</strong></h5>
@@ -970,7 +1097,8 @@ const Career = () => {
                                 </div>
                             </div>
                             <div className="modal-bubble-img">
-                                <img src="img/modal-bubble.svg" />
+                                <LazyLoadImage src="img/modal-bubble.svg" />
+                                {/* <img src="img/modal-bubble.svg" /> */}
                             </div>
                         </div>
                     </div>
