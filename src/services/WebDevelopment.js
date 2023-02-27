@@ -182,7 +182,7 @@ const WebDevelopment = () => {
                                     <div className="d-flex align-items-center justify-content-center">
                                         <img src="img/custom-e-com.svg" alt='' />
                                     </div>
-                                    <p>Custom eCommerce <br />Website Development</p>
+                                    <p>Custom E-Commerce <br />Website Development</p>
                                 </li>
                                 <li className="d-flex justify-content-center align-items-center" data-aos="fade-in" data-aos-delay="300">
                                     <div className="d-flex align-items-center justify-content-center">
@@ -212,7 +212,7 @@ const WebDevelopment = () => {
                         <div className="row align-items-center">
                             <div className="col-lg-7">
                                 <h4>E-Commerce Web Development</h4>
-                                <p>TechnoYuga is a leading ecommerce website development company. We help startups and mid sized businesses to crafting beautiful e-commerce solution for great shopping experiences. We provide end to end E-commerce development from UI/UX design, to development, inventory management, shipping management and payment gateway integration or Revamping of an existing E-commerce website.</p>
+                                <p>TechnoYuga is a leading e-commerce website development company. We help startups and mid sized businesses to crafting beautiful e-commerce solution for great shopping experiences. We provide end to end E-commerce development from UI/UX design, to development, inventory management, shipping management and payment gateway integration or Revamping of an existing E-commerce website.</p>
                                 <ul>
                                     <li>Secured E-commerce website Development</li>
                                     <li>Woo-commerce based Websites</li>
@@ -220,7 +220,7 @@ const WebDevelopment = () => {
                                     <li>Magento E-commerce website development</li>
                                     <li>Multi-vendor E-commerce website Development</li>
                                     <li>Re-selling E-commerce Portal Development</li>
-                                    <li>Custom Ecommerce Website Development</li>
+                                    <li>Custom E-commerce Website Development</li>
                                     <li>Mobile Commerce Solution</li>
                                 </ul>
                             </div>
@@ -256,7 +256,7 @@ const WebDevelopment = () => {
                                 <p>Whether it's Custom Web Development from scratch, Revamp your existing website, or developing a web based SaaS product. We can help you in end to end custom web development and provide the cost efficient solution.</p>
                                 <ul>
                                     <li>Custom Website Development</li>
-                                    <li>Custom eCommerce Website Development</li>
+                                    <li>Custom E-Commerce Website Development</li>
                                     <li>Custom Web based SaaS Product Development</li>
                                     <li>Custom Backend Developmentt</li>
                                 </ul>

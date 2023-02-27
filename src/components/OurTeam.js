@@ -6,10 +6,10 @@ import Header from './Header'
 const OurTeam = () => {
     return (
         <div>
-          
+
             <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9TRJ57"
                 height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
-          
+
             {/* <header id="header" className="fixed-top dark-header">
                 <div className="container-fluid d-flex">
 
@@ -461,7 +461,7 @@ const OurTeam = () => {
                         </div>
                     </div>
                 </section> */}
-                <Discuss />
+                <Discuss h3={"Let's Discuss Your Idea"} />
 
 
             </main>

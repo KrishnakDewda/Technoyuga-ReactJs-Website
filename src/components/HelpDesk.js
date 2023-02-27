@@ -47,11 +47,11 @@ const HelpDesk = () => {
         let isValid = true;
         let err = {};
         if (!userData.username) {
-            err['username_err'] = "Please provide your full name!"
+            err['username_err'] = "Please provide your full name"
             isValid = false;
         }
         if (!userData.email) {
-            err['email_err'] = "Please provide your email!"
+            err['email_err'] = "Please provide your email"
             isValid = false;
         }
         else if (typeof userData.email !== "undefined") {
@@ -64,11 +64,11 @@ const HelpDesk = () => {
             }
         }
         if (!userData.phone) {
-            err['phone_err'] = "Please provide your phone number!"
+            err['phone_err'] = "Please provide your phone number"
             isValid = false;
         }
         if (!userData.comment) {
-            err['comment_err'] = "Please provide your requirements!"
+            err['comment_err'] = "Please provide your requirements"
             isValid = false;
         }
         setError(err);
@@ -110,6 +110,7 @@ const HelpDesk = () => {
                                                     required: true,
                                                     autoFocus: true
                                                 }}
+                                                placeholder=""
                                                 defaultCountry={"us"}
                                                 value={userData.phone}
                                                 onChange={(val) => setUserData({ ...userData, phone: val })}

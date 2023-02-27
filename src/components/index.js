@@ -28,7 +28,7 @@ const index = () => {
         <Route exact path='/contact-us' element={<ContactUs />} />
         <Route exact path='/about-us' element={<AboutUs />} />
         <Route exact path='/about-us-our-story' element={<AboutUsOurStory />} />
-        <Route exact path='/ourteam' element={<OurTeam />} />
+        <Route exact path='/our-team' element={<OurTeam />} />
         <Route exact path='/portfolio' element={<Portfolio />} />
         <Route exact path='/ios-application-development' element={<IosDevelopment />} />
         <Route exact path='/android-application-development' element={<AndroidDevelopment />} />
@@ -41,7 +41,7 @@ const index = () => {
         <Route exact path='/career' element={<Career />} />
         <Route exact path='/flutter' element={<Flutter />} />
         <Route exact path='/react-native' element={<ReactNative />} />
-       
+
       </Routes>
     </>
   )
