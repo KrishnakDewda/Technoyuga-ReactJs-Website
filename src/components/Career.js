@@ -3,6 +3,7 @@ import Footer from './Footer'
 import toast, { Toaster } from 'react-hot-toast';
 import axios from 'axios';
 import { URL } from '../baseURL';
+import PhoneInput from 'react-phone-input-2';
 
 const Career = () => {
     // useEffect(() => {
@@ -96,7 +97,7 @@ const Career = () => {
                         inputName: "", inputEmail: "", inputNumber: "",
                         inputJob: "", inputNotice: "", file: "", inputCTC: "", inputCTC2: "", inputMessage: ""
                     });
-                    toast.success('Form Submited !!', { style: { background: '#333', color: '#fff', marginTop: '70px' } })
+                    toast.success('Thanks for contacting us!!', { style: { background: '#333', color: '#fff', marginTop: '70px' } })
                 }
             }).catch((err) => {
                 console.log(err);
@@ -105,7 +106,6 @@ const Career = () => {
     }
 
     const onChange = (e) => {
-        console.log(e.target.value);
         setResume({ ...resume, [e.target.name]: e.target.value })
     }
 
@@ -702,7 +702,18 @@ const Career = () => {
                                         </div>
                                         <div className="form-group col-md-6">
                                             <label className="resume-label" for="inputNumber">Phone Number *</label>
-                                            <input type="Number" className="form-control" id="inputNumber" placeholder="" name='inputNumber' onChange={onChange} value={resume.inputNumber} />
+                                            {/* <input type="Number" className="form-control" id="inputNumber" placeholder="" name='inputNumber' onChange={onChange} value={resume.inputNumber} /> */}
+                                            <PhoneInput
+                                                inputExtraProps={{
+                                                    name: "phone",
+                                                    required: true,
+                                                    autoFocus: true
+                                                }}
+                                                placeholder=""
+                                                defaultCountry={"us"}
+                                                value={resume.phone}
+                                                onChange={(val) => setResume({ ...resume, phone: val })}
+                                            />
                                             <div className='error' style={{ color: "red" }}>{error.inputNumber_err}</div>
                                         </div>
                                         <div className="form-group col-md-6">
@@ -725,18 +736,18 @@ const Career = () => {
                                             <div className='error' style={{ color: "red" }}>{error.inputJob_err}</div>
                                         </div>
                                         <div className="form-group col-md-6">
-                                            <label className="resume-label" for="inputNotice">Notice Period *</label>
-                                            <input type="text" className="form-control" id="inputNotice" onChange={onChange} name='inputNotice' value={resume.inputNotice} />
+                                            <label className="resume-label" for="inputNotice">Notice Period * (In Months)</label>
+                                            <input type="number" className="form-control" id="inputNotice" onChange={onChange} name='inputNotice' value={resume.inputNotice} />
                                             <div className='error' style={{ color: "red" }}>{error.inputNotice_err}</div>
                                         </div>
                                         <div className="form-group col-md-6">
-                                            <label className="resume-label" for="inputCTC">Current CTC *</label>
-                                            <input type="Number" className="form-control" id="inputCTC" placeholder="" onChange={onChange} name='inputCTC' value={resume.inputCTC} />
+                                            <label className="resume-label" for="inputCTC">Current CTC * (In Lakhs)</label>
+                                            <input type="number" className="form-control" id="inputCTC" placeholder="" onChange={onChange} name='inputCTC' value={resume.inputCTC} />
                                             <div className='error' style={{ color: "red" }}>{error.inputCTC_err}</div>
                                         </div>
                                         <div className="form-group col-md-6">
-                                            <label className="resume-label" for="inputCTC2">Expected CTC *</label>
-                                            <input type="Number" className="form-control" id="inputCTC2" placeholder="" onChange={onChange} name='inputCTC2' value={resume.inputCTC2} />
+                                            <label className="resume-label" for="inputCTC2">Expected CTC * (In Lakhs)</label>
+                                            <input type="number" className="form-control" id="inputCTC2" placeholder="" onChange={onChange} name='inputCTC2' value={resume.inputCTC2} />
                                             <div className='error' style={{ color: "red" }}>{error.inputCTC2_err}</div>
                                         </div>
                                         <div className="form-group col-12">

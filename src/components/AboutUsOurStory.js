@@ -3,13 +3,13 @@ import Footer from './Footer'
 import Header from './Header'
 
 const AboutUsOurStory = () => {
-    
+
     const storyRef = useRef();
-    
+
     useEffect(() => {
         storyRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
     }, [])
-    
+
     return (
         <div>
             <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9TRJ57"
@@ -178,7 +178,7 @@ const AboutUsOurStory = () => {
                             <div className="col-md-8 py-5">
                                 <h2>Our Story</h2>
                                 <p>After working in the IT industry for more than 7 years for multiple companies our founder experienced that most of the agencies don't care about client’s success and the hard earned money they put in the product development and at the end client only struggled with the missed deadlines, No accountability, Zero Transparency and Failed Product.</p>
-                                <p>He always used to fight for his clients within the companies and their management and unfortunately there was ZERO empathy towards clients' problems and their issues. These things make him motivated to start this company as a side hustle and he started this journey back in 2017-18 by helping two small local businesses from Canada and England with their requirements which went pretty well and clients were able to launch fast and grow their business.</p>
+                                <p>He always used to fight for his clients within the companies and their management and unfortunately there was ZERO empathy towards client's problems and their issues. These things make him motivated to start this company as a side hustle and he started this journey back in 2017-18 by helping two small local businesses from Canada and England with their requirements which went pretty well and clients were able to launch fast and grow their business.</p>
                             </div>
                             <div className="col-md-4">
                                 <img className="img-fluid" src="img/ceo.png" />

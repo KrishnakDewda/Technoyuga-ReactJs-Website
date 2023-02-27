@@ -327,13 +327,13 @@ const ContactUs = () => {
                                 <div className="col-md-4">
                                     <div className="contact-details" data-aos="fade-up" data-aos-delay="100">
                                         <img src="img/email.svg" />
-                                        <a href="mailto:hello@technoyuga.com">hello@technoyuga.com</a>
+                                        <a href="mailto:hello@technoyuga.com" style={{ cursor: 'pointer', textAlign: 'center' }}>hello@technoyuga.com</a>
                                     </div>
                                 </div>
                                 <div className="col-md-4">
                                     <div className="contact-details" data-aos="fade-up" data-aos-delay="200">
                                         <img src="img/address.svg" />
-                                        <p className="text-center">512A, IGNOU Main Rd, Maidan Garhi, New Delhi, Delhi 110030</p>
+                                        <a href='https://goo.gl/maps/1BwducJY271VFnJp8' target='_blank' style={{ cursor: 'pointer', textAlign: 'center' }}>512A, IGNOU Main Rd, Maidan Garhi, New Delhi, Delhi 110030</a>
                                     </div>
                                 </div>
                                 <div className="col-md-4">

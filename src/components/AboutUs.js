@@ -8,7 +8,7 @@ const AboutUs = () => {
         <div>
             <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9TRJ57"
                 height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
-      
+
             {/* <header id="header" className="fixed-top dark-header">
                 <div className="container-fluid d-flex">
 
@@ -136,7 +136,7 @@ const AboutUs = () => {
                                     <p>We are firm believers that the best software comes from <span>small, agile, highly skilled</span> teams.</p>
                                     <div className="actn-btns">
                                         <a href="/contact-us" className="primary">Let’s work together</a>
-                                        <a href="/about-us-our-story" className="primary invert">Read our story</a> 
+                                        <a href="/about-us-our-story" className="primary invert">Read our story</a>
                                         {/* our story page */}
                                     </div>
                                 </div>
@@ -172,7 +172,7 @@ const AboutUs = () => {
                             <div className="col-md-8 py-5">
                                 <h2>Our Story</h2>
                                 <p>After working in the IT industry for more than 7 years for multiple companies our founder experienced that most of the agencies don't care about client’s success and the hard earned money they put in the product development and at the end client only struggled with the missed deadlines, No accountability, Zero Transparency and Failed Product.</p>
-                                <p>He always used to fight for his clients within the companies and their management and unfortunately there was ZERO empathy towards clients' problems and their issues. These things make him motivated to start this company as a side hustle and he started this journey back in 2017-18 by helping two small local businesses from Canada and England with their requirements which went pretty well and clients were able to launch fast and grow their business.</p>
+                                <p>He always used to fight for his clients within the companies and their management and unfortunately there was ZERO empathy towards client's problems and their issues. These things make him motivated to start this company as a side hustle and he started this journey back in 2017-18 by helping two small local businesses from Canada and England with their requirements which went pretty well and clients were able to launch fast and grow their business.</p>
                             </div>
                             <div className="col-md-4">
                                 <img className="img-fluid" src="img/ceo.png" />
@@ -361,7 +361,7 @@ const AboutUs = () => {
                     </div>
                 </div>
             </footer> */}
-             <Footer />       
+            <Footer />
 
             {/* <!-- End Footer --> */}
         </div>

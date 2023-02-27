@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import axios from 'axios'
 import toast, { Toaster } from 'react-hot-toast';
 import { URL } from '../baseURL';
+import PhoneInput from 'react-phone-input-2';
 
 const Consultant = () => {
     const [error, setError] = useState({});
@@ -105,7 +106,18 @@ const Consultant = () => {
                         </div>
                         <div className="hire-form-input">
                             <label className="form-label">Contact number *</label>
-                            <input type="number" className="form-control" name='phone' onChange={onChange} value={data.phone} />
+                            {/* <input type="number" className="form-control" name='phone' onChange={onChange} value={data.phone} /> */}
+                            <PhoneInput
+                                inputExtraProps={{
+                                    name: "phone",
+                                    required: true,
+                                    autoFocus: true
+                                }}
+                                placeholder=""
+                                defaultCountry={"us"}
+                                value={data.phone}
+                                onChange={(val) => setData({ ...data, phone: val })}
+                            />
                             <div className='error' style={{ color: "red" }}>{error.phone_err}</div>
                         </div>
                         <div className="hire-form-input">
