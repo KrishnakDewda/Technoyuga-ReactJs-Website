@@ -60,7 +60,7 @@ const Career = () => {
                 data: body
             }).then((response) => {
                 if (response.data.status === true) {
-                    toast.success('Resume Uploaded!', { style: { background: '#333', color: '#fff', marginTop: "70px" } })
+                    // toast.success('Resume Uploaded!', { style: { background: '#333', color: '#fff', marginTop: "70px" } })
                     setResume({ ...resume, file: response.data.data.url });
                 }
             }).catch((err) => {
@@ -836,8 +836,8 @@ const Career = () => {
                                                 }}
                                                 placeholder=""
                                                 defaultCountry={"us"}
-                                                value={resume.phone}
-                                                onChange={(val) => setResume({ ...resume, phone: val })}
+                                                value={resume.inputNumber}
+                                                onChange={(val) => setResume({ ...resume, inputNumber: val })}
                                             />
                                             <div className='error' style={{ color: "red" }}>{error.inputNumber_err}</div>
                                         </div>
@@ -862,17 +862,36 @@ const Career = () => {
                                         </div>
                                         <div className="form-group col-md-6">
                                             <label className="resume-label" for="inputNotice">Notice Period * (In Months)</label>
-                                            <input type="number" className="form-control" id="inputNotice" onChange={onChange} name='inputNotice' value={resume.inputNotice} />
+                                            {/* <input type="number" className="form-control" id="inputNotice" onChange={onChange} name='inputNotice' value={resume.inputNotice} /> */}
+                                            <select id="inputNotice" className="form-control" onChange={onChange} name='inputNotice' value={resume.inputNotice}>
+                                                <option value="">Select Notice Period</option>
+                                                <option value="1month">1 month</option>
+                                                <option value="2-months">2 months</option>
+                                                <option value="3-months">3 months</option>
+                                                <option value="6-months">6 months</option>
+                                            </select>
                                             <div className='error' style={{ color: "red" }}>{error.inputNotice_err}</div>
                                         </div>
                                         <div className="form-group col-md-6">
                                             <label className="resume-label" for="inputCTC">Current CTC * (In Lakhs)</label>
-                                            <input type="number" className="form-control" id="inputCTC" placeholder="" onChange={onChange} name='inputCTC' value={resume.inputCTC} />
+                                            <input type="number" min="0" className="form-control" id="inputCTC"
+                                                onKeyDown={(e) => {
+                                                    if (e.keyCode === 38 || e.keyCode === 40) {
+                                                        e.preventDefault();
+                                                    }
+                                                }}
+                                                placeholder="" onChange={onChange} name='inputCTC' value={resume.inputCTC} />
                                             <div className='error' style={{ color: "red" }}>{error.inputCTC_err}</div>
                                         </div>
                                         <div className="form-group col-md-6">
                                             <label className="resume-label" for="inputCTC2">Expected CTC * (In Lakhs)</label>
-                                            <input type="number" className="form-control" id="inputCTC2" placeholder="" onChange={onChange} name='inputCTC2' value={resume.inputCTC2} />
+                                            <input type="number" min="0"
+                                            onKeyDown={(e) => {
+                                                if (e.keyCode === 38 || e.keyCode === 40) {
+                                                    e.preventDefault();
+                                                }
+                                            }}
+                                            className="form-control" id="inputCTC2" placeholder="" onChange={onChange} name='inputCTC2' value={resume.inputCTC2} />
                                             <div className='error' style={{ color: "red" }}>{error.inputCTC2_err}</div>
                                         </div>
                                         <div className="form-group col-12">
