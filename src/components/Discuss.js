@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { URL } from '../baseURL';
 import axios from 'axios';
 import toast, { Toaster } from 'react-hot-toast';
+import PhoneInput from 'react-phone-input-2';
+
 
 const Discuss = (props) => {
 
@@ -161,7 +163,20 @@ const Discuss = (props) => {
                                         <div className="col-lg-6 col-md-12 col-sm-12">
                                             <div className="form-group">
                                                 <label for="uname">Phone Number *</label>
-                                                <input type="Number" className="form-control" id="phone" name="phone" onChange={onChange} value={userData.phone} />
+                                                {/* <input type="number" min="0" 
+                                                className="form-control" id="phone" name="phone" onChange={onChange} value={userData.phone} /> */}
+                                                <PhoneInput
+                                                inputExtraProps={{
+                                                    name: "phone",
+                                                    required: true,
+                                                    autoFocus: true
+                                                }}
+                                                placeholder=""
+                                                name="phone"
+                                                defaultCountry={"us"}
+                                                value={userData.phone}
+                                                onChange={(val) => setUserData({ ...userData, phone : val })}
+                                            />
                                                 <div className='error' style={{ color: "red" }}>{error.phone_err}</div>
                                             </div>
                                         </div>

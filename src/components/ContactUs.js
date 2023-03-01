@@ -4,6 +4,8 @@ import Header from './Header';
 import Footer from './Footer';
 import toast, { Toaster } from 'react-hot-toast';
 import { URL } from '../baseURL';
+import PhoneInput from 'react-phone-input-2';
+
 
 const ContactUs = () => {
 
@@ -242,7 +244,19 @@ const ContactUs = () => {
                                     <div className="col-md-6">
                                         <div className="form-group">
                                             <label for="uname">Phone Number *</label>
-                                            <input type="number" className="form-control" id="phone" name="phone" onChange={onChange} value={data.phone} />
+                                            {/* <input type="number" min="0" className="form-control" id="phone" name="phone" onChange={onChange} value={data.phone} /> */}
+                                            <PhoneInput
+                                                inputExtraProps={{
+                                                    name: "phone",
+                                                    required: true,
+                                                    autoFocus: true
+                                                }}
+                                                placeholder=""
+                                                name="phone"
+                                                defaultCountry={"us"}
+                                                value={data.phone}
+                                                onChange={(val) => setData({ ...data, phone : val })}
+                                            />
                                             <div className='error' style={{ color: "red" }}>{error.phone_err}</div>
                                         </div>
                                     </div>
