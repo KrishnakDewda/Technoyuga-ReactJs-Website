@@ -448,5 +448,6 @@ $(window).scroll(function () {
     // startup Slider End
 
     Scrollbar.initAll();
+    
     // $("#mobile-number").intlTelInput();
 })(jQuery);

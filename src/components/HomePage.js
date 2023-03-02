@@ -1,25 +1,16 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import OwlCarousel from "react-owl-carousel"
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import 'animate.css/animate.min.css';
 import Header from './Header';
 import Footer from './Footer';
-import $ from 'jquery'
 
 const HomePage = () => {
     const width = window.innerWidth
     console.log(width, typeof (width))
-
-    // change A
-
-    useEffect(() => {
-        $("#ep1").on('hidden.bs.modal', function (e) {
-            $("#ep1 iframe").attr("src", $("#ep1 iframe").attr("src"));
-        });
-        document.getElementById("myVideo").src = "https://www.youtube.com/embed/IUdD-rRJPPw";
-    })
     
+
     return (
         <div className="home">
 
@@ -1965,9 +1956,8 @@ const HomePage = () => {
             <div className="modal fade" id="ep1">
                 <div className="modal-dialog modal-dialog-centered">
                     <div className="modal-content">
-                        <iframe width="100%" height="315" id='ep1' src="https://www.youtube.com/embed/IUdD-rRJPPw" title="YouTube video player"
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/IUdD-rRJPPw" title="YouTube video player"
                             frameborder="0"
-                            // ref={iframeRef}
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
                             </iframe>
