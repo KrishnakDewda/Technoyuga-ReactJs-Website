@@ -366,7 +366,7 @@ const BlockChainDevelopment = () => {
                             <div className="col-lg-7 col-md-6">
                                 <div className="section-title white" data-aos="fade-up">
                                     <h2>How we implement <br /><span>Blockchain</span> Services</h2>
-                                    <p className="title-para">We at TechnoYuga have quite solid <br />Agile Methodology for the Blockchain <br />projects we work on</p>
+                                    <p className="title-para">We at Technoyuga have quite solid <br />Agile Methodology for the Blockchain <br />projects we work on</p>
                                 </div>
                             </div>
                             <div className="col-lg-5 col-md-6">

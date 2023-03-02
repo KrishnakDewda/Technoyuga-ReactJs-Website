@@ -205,7 +205,7 @@ const ReactNative = () => {
                         <div className="startup-content">
                             <h2 className="startup-heading">More than <span>50+ Startups,</span> Brands & Enterprise Companies
                                 around
-                                the globe chose <strong>Techno Yuga</strong> for their Technology Work.</h2>
+                                the globe chose <strong>Technoyuga</strong> for their Technology Work.</h2>
                             <div className="startup-slider">
                                 <OwlCarousel
                                     items={width > 420 ? 5 : 1}
@@ -1378,7 +1378,7 @@ const ReactNative = () => {
                                         <img className="play-btn" data-toggle="modal" data-target="#client3" title="Play this video"
                                             src="img/play.svg" alt="play button" />
                                     </div>
-                                    <p>TechnoYuga and Krishna did an AWESOME Job on our two projects Bubble Battle and
+                                    <p>Technoyuga and Krishna did an AWESOME Job on our two projects Bubble Battle and
                                         https://toplinemobiletours.com in last 2 years and we are very happy with the end
                                         results.
                                         They provided exceptional support even after delivery of the project.</p>

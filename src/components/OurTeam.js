@@ -135,7 +135,10 @@ const OurTeam = () => {
                             <p>Enthusiastic individuals working for extraordinary brands</p>
                         </div>
                         <div className="content text-center">
-                            <p>We are the team of technology experts that care for your success. We believe in long-term results and stay away from ‘quick wins’ that don’t last. We approach every project as true technology partners along with delivering the required technology solution, we work hard with our clients to understand their business domain, and revenue model.  We emphasize on areas that could be enhanced and optimized to get more customers and get them better ROI.</p>
+                            {/* <p>We are the team of technology experts that care for your success. We believe in long-term results and stay away from ‘quick wins’ that don’t last. We approach every project as true technology partners along with delivering the required technology solution, we work hard with our clients to understand their business domain, and revenue model.  We emphasize on areas that could be enhanced and optimized to get more customers and get them better ROI.</p> */}
+                            {/* change A */}
+                            <p>We are a team of technology experts that care for your success. We believe in long-term results and stay away from ‘quick wins’ that don’t last. We approach every project as true technology partners along with delivering the required technology solution, we work hard with our clients to understand their business domain, and revenue model.  We emphasize on areas that could be enhanced and optimized to get more customers and get them better ROI.</p>
+
                         </div>
                         <div className="teams-members">
                             <div className="row">

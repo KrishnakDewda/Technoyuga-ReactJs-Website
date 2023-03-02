@@ -138,7 +138,7 @@ const WebDevelopment = () => {
                                 <h2>Development</h2>
                             </div>
                             <div className="ar-vr-banner--sub-text">
-                                <p className="mt-5 first-p">TechnoYuga is a top rated Website and Web app development company that is helping startups, small businesses and growing enterprises around the world. We build bespoke websites and web applications</p>
+                                <p className="mt-5 first-p">Technoyuga is a top rated Website and Web app development company that is helping startups, small businesses and growing enterprises around the world. We build bespoke websites and web applications</p>
                                 <a href="/contact-us" className="cta mt-3 d-inline-block">Request a call back</a>
                                 <p className="note banner-dis">*No Spam. 100% Privacy Guaranteed.</p>
                             </div>
@@ -212,7 +212,7 @@ const WebDevelopment = () => {
                         <div className="row align-items-center">
                             <div className="col-lg-7">
                                 <h4>E-Commerce Web Development</h4>
-                                <p>TechnoYuga is a leading e-commerce website development company. We help startups and mid sized businesses to crafting beautiful e-commerce solution for great shopping experiences. We provide end to end E-commerce development from UI/UX design, to development, inventory management, shipping management and payment gateway integration or Revamping of an existing E-commerce website.</p>
+                                <p>Technoyuga is a leading e-commerce website development company. We help startups and mid sized businesses to crafting beautiful e-commerce solution for great shopping experiences. We provide end to end E-commerce development from UI/UX design, to development, inventory management, shipping management and payment gateway integration or Revamping of an existing E-commerce website.</p>
                                 <ul>
                                     <li>Secured E-commerce website Development</li>
                                     <li>Woo-commerce based Websites</li>

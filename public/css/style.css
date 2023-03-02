@@ -184,6 +184,12 @@
         filter: none;
     }
 
+    .banner-callaction a:hover{
+        background-color: #ffffff;
+        color: #000000;
+        transition: 0.3s;
+    }
+
     #header.header-bg {
         background-color: #ffffff;
         padding: 10px 0;
@@ -1881,6 +1887,8 @@
         display: flex;
         align-items: center;
         margin: 0;
+        /* change the margin for footer icon  */
+        margin-right: 30px;
     }
 
     .social-media ul li {
@@ -3922,6 +3930,7 @@
         background: #18B0D1;
         color: #fff;
         border-radius: 50px;
+        border-style: hidden;
         margin: 0 15px;
         padding: 10px 25px;
         margin-right: 0;
@@ -4573,7 +4582,9 @@
     /*======== opportunities section start ========*/
 
     .opportunities-section {
-        padding-top: 160px;
+        /* padding-top: 160px; */
+        /* change A */
+        padding-top: 30px;
         position: relative;
         overflow: hidden;
     }
@@ -4720,7 +4731,7 @@
     }
 
     .join-team-section .section-title {
-        margin-bottom: 70px;
+        /* margin-bottom: 70px; */
     }
 
     .join-team-description {
@@ -4733,7 +4744,9 @@
     }
 
     .join-team-button {
-        margin-top: 60px;
+        /* margin-top: 60px; */
+        /* chnage A */
+        margin-top: 30px;
     }
 
     .join-team-button .btn {
@@ -4805,6 +4818,19 @@
         position: relative;
     }
 
+    select.form-control {
+        -moz-appearance: none;
+        /* / Firefox / */
+        -webkit-appearance: none;
+        /* / Safari and Chrome / */
+        appearance: none;
+        position: relative;
+        background-image: url(../img/down-arrow.png);
+        background-size: 22px;
+        background-repeat: no-repeat;
+        background-position: calc(100% - 10px) center;
+    }
+
     .resume-file input {
         opacity: 0;
         width: 100%;
@@ -4869,6 +4895,10 @@
         border-radius: 10px;
         padding: 17px 10px;
         height: auto;
+    }
+
+    .resume-form .form-control select{
+     padding-right: 25px;   
     }
 
     .resume-button {
@@ -7797,3 +7827,11 @@
 
     /********** Responsive End ***********/
     /************* Flutter Page End *************/
+
+
+    /* chatbot */
+    /* change A */
+    .zsiq_flt_rel{
+        bottom: 75px;
+        right: 10px;
+    }

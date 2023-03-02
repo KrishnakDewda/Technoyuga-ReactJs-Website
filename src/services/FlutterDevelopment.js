@@ -157,7 +157,7 @@ const FlutterDevelopment = () => {
                     <div className="container">
                         <div className="what-flutter-text text-center" data-aos="fade-up" data-aos-delay="600">
                             <p>Flutter is Google’s open-source, cross platform framework for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.</p>
-                            <p>At TechnoYuga we have a team of flutter developers who have been building flutter apps since flutter was in beta. We have seen the evolution of flutter and build some of the great flutter apps. We have been recognized by</p>
+                            <p>At Technoyuga we have a team of flutter developers who have been building flutter apps since flutter was in beta. We have seen the evolution of flutter and build some of the great flutter apps. We have been recognized by</p>
                         </div>
                     </div>
                 </section>
@@ -1195,7 +1195,7 @@ const FlutterDevelopment = () => {
                                             <div className="card-body">
                                                 <img className="mobile-visible" src="img/process/test.svg" alt="test" />
                                                 <h2>Quality Assurance</h2>
-                                                <p>TechnoYuga integrated Mobile apps quality assurance process ensures that Apps are properly-tested and market-ready before the launch. We test all use cases, critical case scenarios, and all functional and real time device testing on IOS and Android Devices and Desktop.</p>
+                                                <p>Technoyuga integrated Mobile apps quality assurance process ensures that Apps are properly-tested and market-ready before the launch. We test all use cases, critical case scenarios, and all functional and real time device testing on IOS and Android Devices and Desktop.</p>
                                                 <div className="big-circle"></div>
                                             </div>
                                         </div>
@@ -1264,7 +1264,7 @@ const FlutterDevelopment = () => {
                                         <div className="card-body">
                                             <img className="mobile-visible" src="img/process/test.svg" alt="test" />
                                             <h2>Quality Assurance</h2>
-                                            <p>TechnoYuga integrated Mobile apps quality assurance process ensures that Apps are properly-tested and market-ready before the launch. We test all use cases, critical case scenarios, and all functional and real time device testing on IOS and Android Devices and Desktop.</p>
+                                            <p>Technoyuga integrated Mobile apps quality assurance process ensures that Apps are properly-tested and market-ready before the launch. We test all use cases, critical case scenarios, and all functional and real time device testing on IOS and Android Devices and Desktop.</p>
                                             <div className="big-circle"></div>
                                         </div>
                                     </div>

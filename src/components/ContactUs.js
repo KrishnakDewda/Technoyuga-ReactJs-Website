@@ -220,21 +220,21 @@ const ContactUs = () => {
                             <div className="media">
                                 <img src="img/our-ceo.png" className="img-fluid" data-aos="fade-in" />
                                 <div className="media-body">
-                                    <p className="m-0">Hi, I am Krishna CEO of TechnoYuga. I would love to talk with you about your project or requirements. Send me an email at <a href="mailto:hello@technoyuga.com"> hello@technoyuga.com</a> or fill the below form. Talk to you soon!</p>
+                                    <p className="m-0">Hi, I am Krishna CEO of Technoyuga. I would love to talk with you about your project or requirements. Send me an email at <a href="mailto:hello@technoyuga.com"> hello@technoyuga.com</a> or fill the below form. Talk to you soon!</p>
                                 </div>
                             </div>
                             <form className="contact-form" id="contact-form">
                                 <div className="row mb-3">
                                     <div className="col-md-6">
                                         <div className="form-group">
-                                            <label for="uname">Your Name *</label>
+                                            <label style={{ fontSize: "15px" }} for="uname">Your Name *</label>
                                             <input type="text" className="form-control" id="uname" name="username" onChange={onChange} value={data.username} />
                                             <div className='error' style={{ color: "red" }}>{error.username_err}</div>
                                         </div>
                                     </div>
                                     <div className="col-md-6">
                                         <div className="form-group">
-                                            <label for="email">Email Id *</label>
+                                            <label style={{ fontSize: "15px" }} for="email">Email Id *</label>
                                             <input type="email" className="form-control" id="email" name="email" onChange={onChange} value={data.email} />
                                             <div className='error' style={{ color: "red" }}>{error.email_err}</div>
                                         </div>
@@ -243,7 +243,7 @@ const ContactUs = () => {
                                 <div className="row mb-3">
                                     <div className="col-md-6">
                                         <div className="form-group">
-                                            <label for="uname">Phone Number *</label>
+                                            <label style={{ fontSize: "15px" }} for="uname">Phone Number *</label>
                                             {/* <input type="number" min="0" className="form-control" id="phone" name="phone" onChange={onChange} value={data.phone} /> */}
                                             <PhoneInput
                                                 inputExtraProps={{
@@ -262,7 +262,7 @@ const ContactUs = () => {
                                     </div>
                                     <div className="col-md-6">
                                         <div className="form-group">
-                                            <label for="uname">Budget *</label>
+                                            <label style={{ fontSize: "15px" }} for="uname">Budget *</label>
                                             <select name="budget" className="custom-select" onChange={onChange} value={data.budget}>
                                                 <option selected>Choose Budget</option>
                                                 <option value="$5000 - $10000">$5000 - $10000</option>
@@ -278,7 +278,7 @@ const ContactUs = () => {
                                 <div className="row mb-3">
                                     <div className="col-12">
                                         <div className="form-group">
-                                            <label for="comment">Discuss your Dream *</label>
+                                            <label style={{ fontSize: "15px" }} for="comment">Discuss your Dream *</label>
                                             <textarea className="form-control" rows="5" id="comment" name='comment' onChange={onChange} value={data.comment}></textarea>
                                             <div className='error' style={{ color: "red" }}>{error.comment_err}</div>
                                         </div>

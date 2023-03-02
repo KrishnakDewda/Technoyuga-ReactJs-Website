@@ -186,7 +186,7 @@ const AboutUs = () => {
                         <div className="row">
                             <div className="col-md-6">
                                 <h2>And the journey begins...</h2>
-                                <p>This small success gave him enough confidence and by 2019 he founded TechnoYuga with the vision of helping small businesses and startups with their Web and Mobile App Development projects. In a short span of 20 months at TechnoYuga we have served more than 50+ startups, Small businesses and organizations Like European Union. Additionally we become Top Rated Mobile App Developer on Upwork with 32+ Successful Jobs with 5* feedback and 100% success rate. In our early days we worked with 3 freelancers and within just a one year of time we had a skilled and dedicated team of 20+ technology enthusiasts and we are growing every month.  </p>
+                                <p>This small success gave him enough confidence and by 2019 he founded Technoyuga with the vision of helping small businesses and startups with their Web and Mobile App Development projects. In a short span of 20 months at Technoyuga we have served more than 50+ startups, Small businesses and organizations Like European Union. Additionally we become Top Rated Mobile App Developer on Upwork with 32+ Successful Jobs with 5* feedback and 100% success rate. In our early days we worked with 3 freelancers and within just a one year of time we had a skilled and dedicated team of 20+ technology enthusiasts and we are growing every month.  </p>
                             </div>
                             <div className="col-md-6">
                                 <img src="img/office.png" className="img-fluid" />
@@ -262,7 +262,11 @@ const AboutUs = () => {
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M22.224 31.5309C22.224 30.2247 22.2203 28.9184 22.2253 27.612C22.2289 26.6599 22.7401 26.1517 23.6967 26.1494C25.2232 26.1459 26.7505 26.118 28.2759 26.1582C30.917 26.2279 32.4505 28.9813 31.1089 31.2508C30.4433 32.3767 29.3907 32.8841 28.0886 32.8824C27.1345 32.8812 26.1803 32.894 25.2266 32.8752C24.9321 32.8695 24.8563 32.9585 24.8637 33.245C24.8835 34.0077 24.8767 34.7713 24.8687 35.5345C24.8597 36.3823 24.3034 36.9838 23.5426 36.9855C22.7729 36.9871 22.2292 36.397 22.2256 35.538C22.2201 34.2022 22.224 32.8666 22.224 31.5309ZM26.6548 30.2337C27.1237 30.2337 27.5924 30.2386 28.061 30.2325C28.6522 30.2249 28.956 29.9687 28.9462 29.4987C28.9368 29.0502 28.63 28.7991 28.0708 28.7954C27.3677 28.7909 26.6647 28.7943 25.9614 28.7943C24.7823 28.7943 24.7879 28.794 24.8646 29.9917C24.877 30.1822 24.9276 30.2415 25.1168 30.2374C25.6293 30.2263 26.1422 30.2337 26.6548 30.2337Z" fill="#2D2D2D" />
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M20.9405 31.5626C20.9405 32.9266 20.9614 34.2911 20.9336 35.6546C20.9133 36.6549 19.9549 37.2667 19.0844 36.8635C18.5136 36.5991 18.2952 36.1103 18.2951 35.5044C18.2951 34.4043 18.295 33.3044 18.295 32.2042C18.295 30.6788 18.289 29.1533 18.2975 27.628C18.3021 26.8255 18.7406 26.2663 19.4149 26.1617C20.2338 26.0346 20.9246 26.6272 20.9372 27.5147C20.9564 28.8637 20.9422 30.2133 20.9422 31.5627C20.9417 31.5626 20.9411 31.5626 20.9405 31.5626Z" fill="#2D2D2D" />
                                     </svg>
-                                    <h5>Transfer Of IP</h5>
+                                    
+                                    {/* <h5>Transfer Of IP</h5> */}
+                                   {/* change A */}
+                                    <h5>Transfer of IP</h5>
+                                    
                                     <p>You are the owner of the product Intellectual Property Rights.</p>
                                 </div>
                             </div>

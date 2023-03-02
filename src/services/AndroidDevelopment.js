@@ -1370,7 +1370,7 @@ const AndroidDevelopment = () => {
                                             <div className="card-body">
                                                 <img className="mobile-visible" src="img/process/test.svg" alt="test" />
                                                 <h2>Quality Assurance</h2>
-                                                <p>TechnoYuga integrated Mobile apps quality assurance process ensures that Apps are properly-tested and market-ready before the launch. We test all use cases, critical case scenarios, and all functional and real time device testing on IOS and Android Devices and Desktop.</p>
+                                                <p>Technoyuga integrated Mobile apps quality assurance process ensures that Apps are properly-tested and market-ready before the launch. We test all use cases, critical case scenarios, and all functional and real time device testing on IOS and Android Devices and Desktop.</p>
                                                 <div className="big-circle"></div>
                                             </div>
                                         </div>
@@ -1439,7 +1439,7 @@ const AndroidDevelopment = () => {
                                         <div className="card-body">
                                             <img className="mobile-visible" src="img/process/test.svg" alt="test" />
                                             <h2>Quality Assurance</h2>
-                                            <p>TechnoYuga integrated Mobile apps quality assurance process ensures that Apps are properly-tested and market-ready before the launch. We test all use cases, critical case scenarios, and all functional and real time device testing on IOS and Android Devices and Desktop.</p>
+                                            <p>Technoyuga integrated Mobile apps quality assurance process ensures that Apps are properly-tested and market-ready before the launch. We test all use cases, critical case scenarios, and all functional and real time device testing on IOS and Android Devices and Desktop.</p>
                                             <div className="big-circle"></div>
                                         </div>
                                     </div>
