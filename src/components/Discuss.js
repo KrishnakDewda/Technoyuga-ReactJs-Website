@@ -110,7 +110,7 @@ const Discuss = (props) => {
                                 <div className="dream-list">
                                     <div className="row">
                                         <div className="col-lg-6">
-                                            <p><span>1</span> 45 minutes of free consultation.</p>
+                                            <p><span>1</span> 45 minutes of free consultation</p>
                                         </div>
                                         <div className="col-lg-6">
                                             <p><span>2</span> A strict non-disclosure agreement</p>
@@ -119,7 +119,7 @@ const Discuss = (props) => {
 
                                     <div className="row">
                                         <div className="col-lg-6">
-                                            <p><span>3</span> Free Market & Competitive Analysis.</p>
+                                            <p><span>3</span> Free Market & Competitive Analysis</p>
                                         </div>
                                         <div className="col-lg-6">
                                             <p><span>4</span> Suggestions on Revenue Models & Go To Market Strategy</p>
@@ -128,10 +128,10 @@ const Discuss = (props) => {
 
                                     <div className="row">
                                         <div className="col-lg-6">
-                                            <p><span>5</span> No obligation Technical Specs & Proposal.</p>
+                                            <p><span>5</span> No obligation Technical Specs & Proposal</p>
                                         </div>
                                         <div className="col-lg-6">
-                                            <p><span>6</span> Guidance on Pre-launch & Post-Launch Marketing.</p>
+                                            <p><span>6</span> Guidance on Pre-launch & Post-Launch Marketing</p>
                                         </div>
                                     </div>
 

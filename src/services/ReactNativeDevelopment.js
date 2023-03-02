@@ -169,7 +169,7 @@ const ReactNativeDevelopment = () => {
                                     <h4>WHAT IS REACT NATIVE ?</h4>
                                     <p>React Native is a JS based framework released by <span className="fb-color">Facebook</span> in 2015 and since then FB is maintaining and evolving this framework year after year.</p>
                                     <p>React Native framework allows us to create native apps and doesn't compromise on UX (user experience).It offers a core set of native components like View, Text, and Image that map directly to the platform’s native UI building blocks.</p>
-                                    <p>At TechnoYuga we have a team of React Native developers who have been building React apps since it was in beta. We have seen the evolution of React Native and built some of the great React Native apps.</p>
+                                    <p>At Technoyuga we have a team of React Native developers who have been building React apps since it was in beta. We have seen the evolution of React Native and built some of the great React Native apps.</p>
                                 </div>
                             </div>
                             <div className="col-lg-4" data-aos="fade-down" data-aos-delay="100">

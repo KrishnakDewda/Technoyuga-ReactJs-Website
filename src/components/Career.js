@@ -389,10 +389,11 @@ const Career = () => {
             </header>
 
             <main>
+
                 <section className="landing-section">
                     <div className="landing-img">
-                        <LazyLoadImage className="img-fluid w-100" src="img/landing_bg.png" alt="" />
-                        {/* <img src="img/landing_bg.png" alt="" className="img-fluid w-100" /> */}
+                        {/* <LazyLoadImage className="img-fluid w-100" src="img/landing_bg.png" alt="" /> */}
+                        <img src="img/landing_bg.png" alt="" className="img-fluid w-100" />
                     </div>
                     <div className="container">
                         <div className="landing-section-content">
@@ -496,7 +497,7 @@ const Career = () => {
                     <div className="container">
                         <div className="choose-section-content">
                             <div className="choose-section-heading">
-                                <div className="section-title aos-init aos-animate" data-aos="fade-up">
+                                <div className="section-title aos-init aos-animate" data-aos="fade-up" style={{ paddingBottom: "0" }}>
                                     <h2>Why choose us ?</h2>
                                     <p>Aspects of Technoyuga</p>
                                     <p className="title-para">We promise you an inclusive work environment where you will fall in
@@ -514,8 +515,8 @@ const Career = () => {
                                             </div>
                                             <div className="choose-item-detail">
                                                 <p className="choose-item-detail-description">
-                                                    Flexible workinh hours <br className="d-none d-md-block" />and WFH facility as
-                                                    &<br className="d-none d-md-block" /> when needed
+                                                    Flexible working hours <br className="d-none d-md-block" />and WFH facility
+                                                    &<br className="d-none d-md-block" /> Hybrid culture
                                                 </p>
                                             </div>
                                         </div>
@@ -528,7 +529,7 @@ const Career = () => {
                                             </div>
                                             <div className="choose-item-detail">
                                                 <p className="choose-item-detail-description">
-                                                    Free Access to OTT Platforms like Amazone prime, Netflix, Hotstar etc...
+                                                    Free Access to OTT Platforms like Amazon prime, Netflix, Hotstar etc...
                                                 </p>
                                             </div>
                                         </div>
@@ -541,7 +542,7 @@ const Career = () => {
                                             </div>
                                             <div className="choose-item-detail">
                                                 <p className="choose-item-detail-description">
-                                                    Oppurtunities to work on brilliant startup ideas and<br
+                                                    Opportunities to work on brilliant startup ideas and<br
                                                         className="d-none d-md-block" /> top enterpise projects
                                                 </p>
                                             </div>
@@ -585,7 +586,7 @@ const Career = () => {
                                             </div>
                                             <div className="choose-item-detail">
                                                 <p className="choose-item-detail-description">
-                                                    Employee of the Quarter Awards & Gifts.
+                                                    Employee of the Quarter Awards & Gifts
                                                 </p>
                                             </div>
                                         </div>
@@ -598,7 +599,7 @@ const Career = () => {
                                             </div>
                                             <div className="choose-item-detail">
                                                 <p className="choose-item-detail-description">
-                                                    Leave Compensation<br className="d-none d-md-block" /> and Comoff.
+                                                    Leave Compensation<br className="d-none d-md-block" /> and Comoff
                                                 </p>
                                             </div>
                                         </div>
@@ -611,7 +612,7 @@ const Career = () => {
                                             </div>
                                             <div className="choose-item-detail">
                                                 <p className="choose-item-detail-description">
-                                                    Friendly Working<br className="d-none d-md-block" /> enviourment
+                                                    Friendly Working<br className="d-none d-md-block" /> environment
                                                 </p>
                                             </div>
                                         </div>
@@ -632,7 +633,9 @@ const Career = () => {
                             <div className="opportunities-content-heading">
                                 <div className="section-title aos-init aos-animate" data-aos="fade-up">
                                     <h2>Trending Opportunities</h2>
-                                    <p>Openings At Technoyuga</p>
+                                    {/* <p>Openings At Technoyuga</p> */}
+                                    {/* change A */}
+                                    <p>Join us</p>
                                 </div>
                             </div>
                             <div className="trending-opportunities-content">
@@ -742,13 +745,16 @@ const Career = () => {
                                             </div>
                                         </div>
                                     </div>
+
+                                    {/* flutter Change A */}
+
                                     <div className="card trending-item">
                                         <div className="card-header" id="headingFive">
                                             <h5 className="mb-0">
                                                 <button className="btn  collapsed trending-button" data-toggle="collapse"
                                                     data-target="#collapseFive" aria-expanded="false"
                                                     aria-controls="collapseFive">
-                                                    .Net Developer
+                                                    Flutter Developer
                                                 </button>
                                             </h5>
                                         </div>
@@ -768,6 +774,33 @@ const Career = () => {
                                             </div>
                                         </div>
                                     </div>
+
+                                    {/* <div className="card trending-item">
+                                        <div className="card-header" id="headingFive">
+                                            <h5 className="mb-0">
+                                                <button className="btn  collapsed trending-button" data-toggle="collapse"
+                                                    data-target="#collapseFive" aria-expanded="false"
+                                                    aria-controls="collapseFive">
+                                                    .Net Developer
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseFive" className="collapse" aria-labelledby="headingFive"
+                                            data-parent="#accordion">
+                                            <div className="card-body">
+                                                <p className="trending-item-description">
+                                                    We are looking for experienced and seasoned iOS App Developers, who are
+                                                    passionate to create mind-blowing iOS applications, which set new benchmarks
+                                                    in
+                                                    the app development space.
+                                                </p>
+                                                <div className="trending-btn"> */}
+                                    {/* <a href="#" className="btn btn-primary">APPLY NOW</a> */}
+                                    {/* <button className='btn btn-primary' onClick={() => submitForm.current.scrollIntoView({ behavior: 'smooth', block: 'start' })} >Apply Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>
@@ -781,16 +814,17 @@ const Career = () => {
                         <div className="join-team-content">
                             <div className="row align-items-center">
                                 <div className="col col-12 col-md-6 col-lg-6 col-xl-6">
-                                    <div className="join-team-heading">
-                                        <div className="section-title aos-init aos-animate" data-aos="fade-up">
+                                    <div className="join-team-heading" >
+                                        <div className="section-title aos-init aos-animate" data-aos="fade-up" style={{ paddingBottom: "0" }}>
                                             <h2>Join the Technoyuga team!</h2>
                                             <p>Aspects of Technoyuga</p>
                                             <p className="title-para">Innovate with the latest and greatest technologies & get to
                                                 work on some of the coolest projects you can imagine.</p>
                                         </div>
-                                        <div className="join-team-button">
+                                        <div className="join-team-button" style={{ textAlign: "center" }}>
                                             {/* <a href="#" className="btn btn-primary">APPLY NOW</a> */}
-                                            <button className='btn btn-primary' onClick={() => submitForm.current.scrollIntoView({ behavior: 'smooth', block: 'start' })} >Apply Now</button>
+                                            <button className='btn btn-primary'
+                                                onClick={() => submitForm.current.scrollIntoView({ behavior: 'smooth', block: 'start' })} >Apply Now</button>
                                         </div>
                                     </div>
                                 </div>
@@ -847,12 +881,16 @@ const Career = () => {
                                                 <input type="file" className="form-control-file" id="file" name='file' onChange={handleImage} />
                                                 {!resume.file ? <span>choose File</span> : <span style={{ right: '0', left: '0', width: '100%', background: 'none', textAlign: 'start' }}>{fileName}</span>}
                                             </div>
-                                            <p><b>Note :</b> Please upload file in PDF, WORD, PNG, JPEG or JPG format. </p>
+                                            {/* <p><b>Note :</b> Please upload file in PDF, WORD, PNG, JPEG or JPG format. </p> */}
+                                            {/* change A */}
+                                            <p><b></b> Please upload file in PDF, WORD, PNG, JPEG or JPG format. </p>
                                             <div className='error' style={{ color: "red" }}>{error.file_err}</div>
                                         </div>
                                         <div className="form-group col-md-6">
                                             <label className="resume-label" for="inputJob">Job Title *</label>
-                                            <select id="inputJob" className="form-control" onChange={onChange} name='inputJob' value={resume.inputJob}>
+                                            <select id="inputJob" className="form-control"
+
+                                                onChange={onChange} name='inputJob' value={resume.inputJob}>
                                                 <option value="">Select Job Title...</option>
                                                 {jobTitles.length > 0 && jobTitles.map((elem) =>
                                                     <option value={elem._id}>{elem.title}</option>
@@ -861,7 +899,7 @@ const Career = () => {
                                             <div className='error' style={{ color: "red" }}>{error.inputJob_err}</div>
                                         </div>
                                         <div className="form-group col-md-6">
-                                            <label className="resume-label" for="inputNotice">Notice Period * (In Months)</label>
+                                            <label className="resume-label" for="inputNotice">Notice Period *</label>
                                             {/* <input type="number" className="form-control" id="inputNotice" onChange={onChange} name='inputNotice' value={resume.inputNotice} /> */}
                                             <select id="inputNotice" className="form-control" onChange={onChange} name='inputNotice' value={resume.inputNotice}>
                                                 <option value="">Select Notice Period</option>
@@ -886,12 +924,12 @@ const Career = () => {
                                         <div className="form-group col-md-6">
                                             <label className="resume-label" for="inputCTC2">Expected CTC * (In Lakhs)</label>
                                             <input type="number" min="0"
-                                            onKeyDown={(e) => {
-                                                if (e.keyCode === 38 || e.keyCode === 40) {
-                                                    e.preventDefault();
-                                                }
-                                            }}
-                                            className="form-control" id="inputCTC2" placeholder="" onChange={onChange} name='inputCTC2' value={resume.inputCTC2} />
+                                                onKeyDown={(e) => {
+                                                    if (e.keyCode === 38 || e.keyCode === 40) {
+                                                        e.preventDefault();
+                                                    }
+                                                }}
+                                                className="form-control" id="inputCTC2" placeholder="" onChange={onChange} name='inputCTC2' value={resume.inputCTC2} />
                                             <div className='error' style={{ color: "red" }}>{error.inputCTC2_err}</div>
                                         </div>
                                         <div className="form-group col-12">

@@ -192,7 +192,7 @@ const AboutUsOurStory = () => {
                         <div className="row">
                             <div className="col-md-6">
                                 <h2>And the journey begins...</h2>
-                                <p>This small success gave him enough confidence and by 2019 he founded TechnoYuga with the vision of helping small businesses and startups with their Web and Mobile App Development projects. In a short span of 20 months at TechnoYuga we have served more than 50+ startups, Small businesses and organizations Like European Union. Additionally we become Top Rated Mobile App Developer on Upwork with 32+ Successful Jobs with 5* feedback and 100% success rate. In our early days we worked with 3 freelancers and within just a one year of time we had a skilled and dedicated team of 20+ technology enthusiasts and we are growing every month.  </p>
+                                <p>This small success gave him enough confidence and by 2019 he founded Technoyuga with the vision of helping small businesses and startups with their Web and Mobile App Development projects. In a short span of 20 months at Technoyuga we have served more than 50+ startups, Small businesses and organizations Like European Union. Additionally we become Top Rated Mobile App Developer on Upwork with 32+ Successful Jobs with 5* feedback and 100% success rate. In our early days we worked with 3 freelancers and within just a one year of time we had a skilled and dedicated team of 20+ technology enthusiasts and we are growing every month.  </p>
                             </div>
                             <div className="col-md-6">
                                 <img src="img/office.png" className="img-fluid" />

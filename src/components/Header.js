@@ -37,7 +37,7 @@ const Header = () => {
                                 <ul>
                                     <li><a href="/about-us">Company</a></li>
                                     <li><a href="/about-us-our-story">Our Story</a></li>
-                                    <li><a href="/ourteam">Our Team</a></li>
+                                    <li><a href="/our-team">Our Team</a></li>
                                 </ul>
                             </li>
                             <li className="drop-down mega"><a href="#0">Services</a>

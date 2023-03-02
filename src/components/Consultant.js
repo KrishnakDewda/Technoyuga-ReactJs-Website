@@ -121,7 +121,7 @@ const Consultant = () => {
                             <div className='error' style={{ color: "red" }}>{error.phone_err}</div>
                         </div>
                         <div className="hire-form-input">
-                            <label className="form-label">Discuss your Requirement *</label>
+                            <label className="form-label">Discuss your requirement *</label>
                             <textarea cols="30" rows="5" className="form-control" name='comment' onChange={onChange} value={data.comment}></textarea>
                             <div className='error' style={{ color: "red" }}>{error.comment_err}</div>
                         </div>

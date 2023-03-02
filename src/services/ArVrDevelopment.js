@@ -134,7 +134,7 @@ const ArVrDevelopment = () => {
                                 <h2>Development</h2>
                             </div>
                             <div className="ar-vr-banner--sub-text">
-                                <p className="mt-5 first-p">TechnoYuga is a top rated AR & VR development company that is helping startups and enterprises across the globe.</p>
+                                <p className="mt-5 first-p">Technoyuga is a top rated AR & VR development company that is helping startups and enterprises across the globe.</p>
                                 <a href="/contact-us" className="cta mt-3 d-inline-block">Request a call back</a>
                                 <p className="note banner-dis">*No Spam. 100% Privacy Guaranteed.</p>
                             </div>
@@ -155,7 +155,7 @@ const ArVrDevelopment = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-sm-12">
-                                <p className="text-center big-p">TechnoYuga expertises in developing immersive, interactive, engaging, and informative AR/VR experiences for our clients. We believe every client is unique, and their needs are specific. We offer free consultation and support to our clients from the very beginning o our
+                                <p className="text-center big-p">Technoyuga expertises in developing immersive, interactive, engaging, and informative AR/VR experiences for our clients. We believe every client is unique, and their needs are specific. We offer free consultation and support to our clients from the very beginning o our
                                     collaboration process and help them to test, and highlight the potential of their ideas before
                                     it even gets officially on the development floor</p>
                             </div>
@@ -385,7 +385,7 @@ const ArVrDevelopment = () => {
                     <div className="container">
                         <div className="section-title" data-aos="fade-up">
                             <h2>How we implement AR-VR development Services</h2>
-                            <p> We at TechnoYuga have quite solid Agile Methodology for the AR-VR development projects we work on.</p>
+                            <p> We at Technoyuga have quite solid Agile Methodology for the AR-VR development projects we work on.</p>
                         </div>
                         <div className="">
                             <ul className="implement-timeline">

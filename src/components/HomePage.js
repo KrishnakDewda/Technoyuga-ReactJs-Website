@@ -9,6 +9,8 @@ import Footer from './Footer';
 const HomePage = () => {
     const width = window.innerWidth
     console.log(width, typeof (width))
+    
+
     return (
         <div className="home">
 
@@ -46,7 +48,9 @@ const HomePage = () => {
                             </div>
                         </div>
                         <div className="banner-callaction">
-                            <a href="/contact-us" className="btn-get-started scrollto">Consult Our Strategist</a>
+                            <a href="/contact-us"
+                                className="btn-get-started scrollto"
+                            >Consult Our Strategist</a>
                         </div>
                     </div>
                 </div>
@@ -57,9 +61,18 @@ const HomePage = () => {
 
                 <section className="brands clients">
                     <div className="container">
-                        <p>More than <span className="blue">50+ Startups,</span> Brands & Enterprise Companies around the globe chose
+                        {/* <p>More than <span className="blue">50+ Startups,</span> Brands & Enterprise Companies around the globe chose
                             <span>Techno Yuga</span> for their mobile app and website project.
+                        </p> */}
+
+                        {/* changes A */}
+                        <p>Over <span className="blue">50+ Startups,</span> brands and enterprise companies have chosen <span>Technoyuga</span> for their mobile app and website projects.
                         </p>
+
+
+
+
+
                         {/* <div className="owl-carousel clients-carousel" data-aos="fade-up" data-aos-delay="100"> */}
                         <OwlCarousel className="owl-dots "
                             items={width > 420 ? 5 : 2}
@@ -73,11 +86,13 @@ const HomePage = () => {
                         >
                             <img src="img/clients/eu.png" alt="eu logo" />
                             <img src="img/clients/bleusix.png" alt="bleusix logo" />
+                            {/* <img src="img/clients/decath.png" alt="decath logo" /> */}
                             <img src="img/clients/decath.png" alt="decath logo" />
                             <img src="img/clients/gfacility.png" alt="gfacility logo" />
                             <img src="img/clients/jaku.png" alt="jaku logo" />
                             <img src="img/clients/ordeno.png" alt="ordeno logo" />
-                            <img src="img/clients/club-grub.png" alt="club gurb logo" />
+                            {/* chnage A */}
+                            {/* <img src="img/clients/club-grub.png" alt="club gurb logo" /> */}
                             <img src="img/clients/cloud-menu.png" alt="cloud menu logo" />
                             <img src="img/clients/imwow.png" alt="imwow logo" />
                             <img src="img/clients/kairo.png" alt="kairo logo" />
@@ -327,7 +342,11 @@ const HomePage = () => {
                                         <img className="content-image" src="img/outsource/wellness.jpg" />
 
                                         <div className="outsource-title">
-                                            <h5>welness and fitness</h5>
+                                            {/* <h5>welness and fitness</h5> */}
+
+                                            {/* change A */}
+                                            <h5>wellness and fitness</h5>
+
                                         </div>
                                     </div>
                                 </OwlCarousel>
@@ -421,7 +440,10 @@ const HomePage = () => {
                                     <img className="content-image" src="img/outsource/wellness.jpg" />
 
                                     <div className="outsource-title">
-                                        <h5>welness and fitness</h5>
+                                        {/* <h5>welness and fitness</h5> */}
+
+                                        {/* change A */}
+                                        <h5>wellness and fitness</h5>
                                     </div>
                                 </div>
                             </div>
@@ -444,8 +466,11 @@ const HomePage = () => {
                                         <li>
                                             <a data-toggle="tab" href="#web-stack" className="active d-block">
                                                 <h5 className="tech-name">Web Development Stack</h5>
+                                                {/* <p className="mb-0">We follow the agile methodology and technology framework to develop web applications
+                                                    that meets your expectations..</p> */}
+                                                {/* change A */}
                                                 <p className="mb-0">We follow the agile methodology and technology framework to develop web applications
-                                                    that meets your expectations..</p>
+                                                    that meets your expectations.</p>
                                             </a>
                                         </li>
                                         <li>
@@ -996,8 +1021,8 @@ const HomePage = () => {
                                         </div>
                                     </div>
                                 </div>
-
-                                <div className="folio-item">
+                                {/* club grub Change A */}
+                                {/* <div className="folio-item">
                                     <div className="gradient-bg gradient2">
                                         <img data-aos="fade-down" className="slider-img img-fluid" src="img/portfolio/clubgrub/club-grub.png"
                                             alt="develop delivery app" />
@@ -1072,7 +1097,7 @@ const HomePage = () => {
                                             </ul>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
 
                                 <div className="folio-item">
                                     <div className="gradient-bg gradient8">
@@ -1160,7 +1185,9 @@ const HomePage = () => {
                                             </div>
                                             <div className="app-name">
                                                 <h5>Ordeno App</h5>
-                                                <p>In-restaurant food ordering and Order management System</p>
+                                                {/* <p>In-restaurant food ordering and Order management System</p> */}
+                                                {/* change A */}
+                                                <p>In-restaurant food ordering and order management System</p>
                                             </div>
                                         </div>
 
@@ -1225,6 +1252,7 @@ const HomePage = () => {
                                         </div>
                                     </div>
                                 </div>
+
                             </OwlCarousel>
                             {/* </div> */}
                         </div>
@@ -1319,7 +1347,7 @@ const HomePage = () => {
                                         <img className="play-btn" data-toggle="modal" data-target="#client3" title="Play this video"
                                             src="img/play.svg" alt="play button" />
                                     </div>
-                                    <p>TechnoYuga and Krishna did an AWESOME Job on our two projects Bubble Battle and
+                                    <p>Technoyuga and Krishna did an AWESOME Job on our two projects Bubble Battle and
                                         https://toplinemobiletours.com in last 2 years and we are very happy with the end results. They provided
                                         exceptional support even after delivery of the project.</p>
                                     {/* <!-- <div className="star-rating">
@@ -1606,7 +1634,7 @@ const HomePage = () => {
                                             <div className="card-body">
                                                 <img className="mobile-visible" src="img/process/test.svg" alt="test" />
                                                 <h2>Quality Assurance</h2>
-                                                <p>TechnoYuga integrated Mobile apps quality assurance process ensures that Apps are properly-tested and
+                                                <p>Technoyuga integrated Mobile apps quality assurance process ensures that Apps are properly-tested and
                                                     market-ready before the launch. We test all use cases, critical case scenarios, and all functional and
                                                     real time device testing on IOS and Android Devices and Desktop.</p>
                                                 <div className="big-circle"></div>
@@ -1695,7 +1723,7 @@ const HomePage = () => {
                                         <div className="card-body">
                                             <img className="mobile-visible" src="img/process/test.svg" alt="test" />
                                             <h2>Quality Assurance</h2>
-                                            <p>TechnoYuga integrated Mobile apps quality assurance process ensures that Apps are properly-tested and
+                                            <p>Technoyuga integrated Mobile apps quality assurance process ensures that Apps are properly-tested and
                                                 market-ready before the launch. We test all use cases, critical case scenarios, and all functional and
                                                 real time device testing on IOS and Android Devices and Desktop.</p>
                                             <div className="big-circle"></div>
@@ -1803,7 +1831,10 @@ const HomePage = () => {
                                             d="M20.9405 31.5626C20.9405 32.9266 20.9614 34.2911 20.9336 35.6546C20.9133 36.6549 19.9549 37.2667 19.0844 36.8635C18.5136 36.5991 18.2952 36.1103 18.2951 35.5044C18.2951 34.4043 18.295 33.3044 18.295 32.2042C18.295 30.6788 18.289 29.1533 18.2975 27.628C18.3021 26.8255 18.7406 26.2663 19.4149 26.1617C20.2338 26.0346 20.9246 26.6272 20.9372 27.5147C20.9564 28.8637 20.9422 30.2133 20.9422 31.5627C20.9417 31.5626 20.9411 31.5626 20.9405 31.5626Z"
                                             fill="#2D2D2D" />
                                     </svg>
-                                    <h5>Transfer Of IP</h5>
+                                    {/* <h5>Transfer Of IP</h5> */}
+                                    {/* change A */}
+                                    <h5>Transfer of IP</h5>
+
                                     <p>You are the owner of the product Intellectual Property Rights.</p>
                                 </div>
                             </div>
@@ -1928,7 +1959,8 @@ const HomePage = () => {
                         <iframe width="100%" height="315" src="https://www.youtube.com/embed/IUdD-rRJPPw" title="YouTube video player"
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                            allowfullscreen>
+                            </iframe>
                     </div>
                 </div>
             </div>
