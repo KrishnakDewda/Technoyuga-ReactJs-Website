@@ -9,7 +9,6 @@ import Footer from './Footer';
 const HomePage = () => {
     const width = window.innerWidth
     console.log(width, typeof (width))
-    
 
     return (
         <div className="home">
@@ -1960,7 +1959,7 @@ const HomePage = () => {
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
-                            </iframe>
+                        </iframe>
                     </div>
                 </div>
             </div>
