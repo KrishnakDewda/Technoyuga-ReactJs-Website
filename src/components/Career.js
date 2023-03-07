@@ -762,10 +762,7 @@ const Career = () => {
                                             data-parent="#accordion">
                                             <div className="card-body">
                                                 <p className="trending-item-description">
-                                                    We are looking for experienced and seasoned iOS App Developers, who are
-                                                    passionate to create mind-blowing iOS applications, which set new benchmarks
-                                                    in
-                                                    the app development space.
+                                                We are looking for experienced and seasoned Flutter Developers, who are passionate to create mind-blowing hybrid applications, which set new benchmarks in the app development space.
                                                 </p>
                                                 <div className="trending-btn">
                                                     {/* <a href="#" className="btn btn-primary">APPLY NOW</a> */}

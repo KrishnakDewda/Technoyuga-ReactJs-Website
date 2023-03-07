@@ -950,7 +950,7 @@ const Flutter = () => {
                                             <h2 className="requirement-card-title">Risk free Trial Starts <br
                                                 className="d-none d-md-block" />
                                                 from</h2>
-                                            <h2 className="reqirement-card-price">$499</h2><br />
+                                            <h2 className="reqirement-card-price">$499</h2><br className='d-none d-md-block' />
                                             <p className="requirement-card-discription">One week trial.</p>
                                             <p className="requirement-card-discription">Dedicated developer.</p>
                                             <p className="requirement-card-discription">Get an idea about our <br />process.</p>
