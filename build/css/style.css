@@ -184,7 +184,7 @@
         filter: none;
     }
 
-    .banner-callaction a:hover{
+    .banner-callaction a:hover {
         background-color: #ffffff;
         color: #000000;
         transition: 0.3s;
@@ -551,13 +551,30 @@
         }
     }
 
+    /* banner-image */
+    /* chnage A */
+    .banner-image {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+
+    @media (max-width: 768px) {
+        .banner-image {
+            height: 50vh !important;
+            object-fit: cover;
+        }
+    }
+
     /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 
+
+
     #hero {
         width: 100%;
-        height: 100vh;
+        /* height: 100vh; */
         align-items: center;
         padding: 0;
         overflow: hidden;
@@ -578,7 +595,9 @@
 
     .banner-area {
         position: absolute;
-        top: 50%;
+        /* top: 50%; */
+        /* change A */
+        top: 50%;   
         transform: translate(0, -50%);
         z-index: 999;
     }
@@ -609,10 +628,21 @@
         padding: 10px 20px;
     }
 
-    @media (max-width: 767px) {
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .banner-area{
+            top: 20% !important;
+        }
+    }
+
+
+    @media (max-width: 768px) {
         .banner-content h1 {
             font-size: 25px;
             height: 37px;
+        }
+
+        .banner-area {
+            top: 30% !important;
         }
 
         .banner-content h3 {
@@ -4897,8 +4927,8 @@
         height: auto;
     }
 
-    .resume-form .form-control select{
-     padding-right: 25px;   
+    .resume-form .form-control select {
+        padding-right: 25px;
     }
 
     .resume-button {
@@ -7831,7 +7861,7 @@
 
     /* chatbot */
     /* change A */
-    .zsiq_flt_rel{
+    .zsiq_flt_rel {
         bottom: 75px;
         right: 10px;
     }

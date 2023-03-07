@@ -21,10 +21,11 @@ const HomePage = () => {
             <section id="hero">
                 <div className="banner-video">
                     <div className="banner-video">
-                        <video autoPlay muted loop id="myVideo" poster="img/poster.jpeg">
+                        {/* <video autoPlay muted loop id="myVideo" poster="img/poster.jpeg">
                             <source src="video/banner-bg-video.mp4" type="video/mp4" />
                             Your browser does not support HTML5 video.
-                        </video>
+                        </video> */}
+                        <img src="img/banner.png" className='banner-image' alt="banner-image" style={{ width: "100%", height: "auto" }} />
                     </div>
                 </div>
                 <div className="container-fluid banner-area">
@@ -53,7 +54,7 @@ const HomePage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="banner-overlay"></div>
+                {/* <div className="banner-overlay"></div> */}
             </section>
 
             <main id="main">
