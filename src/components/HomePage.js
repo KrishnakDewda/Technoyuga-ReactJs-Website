@@ -25,7 +25,7 @@ const HomePage = () => {
                             <source src="video/banner-bg-video.mp4" type="video/mp4" />
                             Your browser does not support HTML5 video.
                         </video> */}
-                        <img src="img/banner.png" className='banner-image' alt="banner-image" style={{ width: "100%", height: "auto" }} />
+                        <img src="img/banner.jpg" className='banner-image' alt="banner-image" style={{ width: "100%", height: "auto" }} />
                     </div>
                 </div>
                 <div className="container-fluid banner-area">
