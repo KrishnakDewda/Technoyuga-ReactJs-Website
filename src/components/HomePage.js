@@ -5,6 +5,8 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import 'animate.css/animate.min.css';
 import Header from './Header';
 import Footer from './Footer';
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 
 const HomePage = () => {
     const width = window.innerWidth
@@ -127,9 +129,9 @@ const HomePage = () => {
                                 <div className="col-md-4 mb-pad" data-aos="fade-up">
                                     <a href="/ios-application-development">
                                         <div className="service-area">
-                                            <img className="img-fluid" src="img/ios.png" alt="ios app development" />
+                                            <LazyLoadImage className="img-fluid" src="img/ios.png" alt="ios app development" />
                                             <div className="service-heading">
-                                                <img src="img/ios.svg" alt="ios logo" />
+                                                <LazyLoadImage src="img/ios.svg" alt="ios logo" />
                                                 <h4>iOS App Development</h4>
                                             </div>
                                         </div>
@@ -138,9 +140,9 @@ const HomePage = () => {
                                 <div className="col-md-4 mb-pad" data-aos="fade-up" data-aos-delay="100">
                                     <a href="/android-application-development">
                                         <div className="service-area">
-                                            <img className="img-fluid" src="img/android.png" alt="android app developemnet" />
+                                            <LazyLoadImage className="img-fluid" src="img/android.png" alt="android app developemnet" />
                                             <div className="service-heading">
-                                                <img src="img/android.svg" alt="android logo" />
+                                                <LazyLoadImage src="img/android.svg" alt="android logo" />
                                                 <h4>Android App Development</h4>
                                             </div>
                                         </div>
@@ -149,9 +151,9 @@ const HomePage = () => {
                                 <div className="col-md-4" data-aos="fade-up" data-aos-delay="200">
                                     <a href="/flutter-application-development">
                                         <div className="service-area">
-                                            <img className="img-fluid" src="img/flutter-service.png" alt="flutter app developemnet" />
+                                            <LazyLoadImage className="img-fluid" src="img/flutter-service.png" alt="flutter app developemnet" />
                                             <div className="service-heading">
-                                                <img src="img/flutter-service-icon.svg" alt="flutter logo" />
+                                                <LazyLoadImage src="img/flutter-service-icon.svg" alt="flutter logo" />
                                                 <h4>Flutter App Development</h4>
                                             </div>
                                         </div>
@@ -163,9 +165,9 @@ const HomePage = () => {
                                 <div className="col-md-4 mb-pad" data-aos="fade-up" data-aos-delay="300">
                                     <a href="/web-app-development">
                                         <div className="service-area">
-                                            <img className="img-fluid" src="img/web-design.png" alt="web app developemnet" />
+                                            <LazyLoadImage className="img-fluid" src="img/web-design.png" alt="web app developemnet" />
                                             <div className="service-heading">
-                                                <img src="img/web-design.svg" alt="website logo" />
+                                                <LazyLoadImage src="img/web-design.svg" alt="website logo" />
                                                 <h4>Website Development</h4>
                                             </div>
                                         </div>
@@ -174,9 +176,9 @@ const HomePage = () => {
                                 <div className="col-md-4 mb-pad" data-aos="fade-up" data-aos-delay="400">
                                     <a href="/augmented-reality-development">
                                         <div className="service-area">
-                                            <img className="img-fluid" src="img/imerging.png" alt="augument reality development" />
+                                            <LazyLoadImage className="img-fluid" src="img/imerging.png" alt="augument reality development" />
                                             <div className="service-heading">
-                                                <img src="img/ar-vr-service-icon.svg" alt="ar logo" />
+                                                <LazyLoadImage src="img/ar-vr-service-icon.svg" alt="ar logo" />
                                                 <h4>AR/VR</h4>
                                             </div>
                                         </div>
@@ -196,9 +198,9 @@ const HomePage = () => {
                                 <div className="col-md-4 mb-pad" data-aos="fade-up" data-aos-delay="300">
                                     <a href="/react-native-application-development">
                                         <div className="service-area">
-                                            <img className="img-fluid" src="img/reactnative-service.png" alt="react native app development" />
+                                            <LazyLoadImage className="img-fluid" src="img/reactnative-service.png" alt="react native app development" />
                                             <div className="service-heading">
-                                                <img src="img/reactnative-service-icon.svg" alt="react native logo" />
+                                                <LazyLoadImage src="img/reactnative-service-icon.svg" alt="react native logo" />
                                                 <h4>React Native Development</h4>
                                             </div>
                                         </div>
@@ -208,9 +210,9 @@ const HomePage = () => {
                                 <div className="col-md-4 mb-pad" data-aos="fade-up" data-aos-delay="400">
                                     <a href="/iot-application-development">
                                         <div className="service-area">
-                                            <img className="img-fluid" src="img/iot-service.png" alt="iot app development" />
+                                            <LazyLoadImage className="img-fluid" src="img/iot-service.png" alt="iot app development" />
                                             <div className="service-heading">
-                                                <img src="img/imerging.svg" alt="iot logo" />
+                                                <LazyLoadImage src="img/imerging.svg" alt="iot logo" />
                                                 <h4>IoT Development</h4>
                                             </div>
                                         </div>
@@ -219,9 +221,9 @@ const HomePage = () => {
                                 <div className="col-md-4 mb-pad" data-aos="fade-up" data-aos-delay="500">
                                     <a href="/blockchain-application-development">
                                         <div className="service-area">
-                                            <img className="img-fluid" src="img/blockchain-service.png" alt="blockchain app development" />
+                                            <LazyLoadImage className="img-fluid" src="img/blockchain-service.png" alt="blockchain app development" />
                                             <div className="service-heading">
-                                                <img src="img/blockchain-service-icon.svg" alt="blockchain logo" />
+                                                <LazyLoadImage src="img/blockchain-service-icon.svg" alt="blockchain logo" />
                                                 <h4>Blockchain Development</h4>
                                             </div>
                                         </div>
@@ -234,8 +236,8 @@ const HomePage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="bubble2"><img src="img/bubbles2.svg" alt="big two circle" /></div>
-                    <div className="bubble1"><img src="img/bubbles1.svg" alt="small two circle" /></div>
+                    <div className="bubble2"><LazyLoadImage src="img/bubbles2.svg" alt="big two circle" /></div>
+                    <div className="bubble1"><LazyLoadImage src="img/bubbles1.svg" alt="small two circle" /></div>
                 </section>
 
                 <section className="what-we-do">
@@ -449,7 +451,7 @@ const HomePage = () => {
                             </div>
                         }
                     </div>
-                    <div className="bubble2"><img src="img/bubbles2.svg" alt="big two circle" /></div>
+                    <div className="bubble2"><LazyLoadImage src="img/bubbles2.svg" alt="big two circle" /></div>
                 </section>
 
                 <section className="tech-stack">
@@ -492,7 +494,7 @@ const HomePage = () => {
                                             <ul>
                                                 <li>
                                                     <figure>
-                                                        <img className="img-fluid" src="img/icon/react.svg" alt="react logo" />
+                                                        <LazyLoadImage className="img-fluid" src="img/icon/react.svg" alt="react logo" />
                                                     </figure>
                                                     <figcaption>
                                                         <p>React</p>
@@ -500,7 +502,7 @@ const HomePage = () => {
                                                 </li>
                                                 <li>
                                                     <figure>
-                                                        <img className="img-fluid" src="img/icon/angular.svg" alt="angular logo" />
+                                                        <LazyLoadImage className="img-fluid" src="img/icon/angular.svg" alt="angular logo" />
                                                     </figure>
                                                     <figcaption>
                                                         <p>Angular</p>
@@ -508,7 +510,7 @@ const HomePage = () => {
                                                 </li>
                                                 <li>
                                                     <figure>
-                                                        <img className="img-fluid" src="img/icon/javascript.svg" alt="javascript logo" />
+                                                        <LazyLoadImage className="img-fluid" src="img/icon/javascript.svg" alt="javascript logo" />
                                                     </figure>
                                                     <figcaption>
                                                         <p>JavaScript</p>
@@ -516,7 +518,7 @@ const HomePage = () => {
                                                 </li>
                                                 <li>
                                                     <figure>
-                                                        <img className="img-fluid" src="img/icon/html5.svg" alt="html5 logo" />
+                                                        <LazyLoadImage className="img-fluid" src="img/icon/html5.svg" alt="html5 logo" />
                                                     </figure>
                                                     <figcaption>
                                                         <p>HTML 5</p>
@@ -529,7 +531,7 @@ const HomePage = () => {
                                             <ul>
                                                 <li>
                                                     <figure>
-                                                        <img className="img-fluid" src="img/icon/node-js.svg" alt="node-js logo" />
+                                                        <LazyLoadImage className="img-fluid" src="img/icon/node-js.svg" alt="node-js logo" />
                                                     </figure>
                                                     <figcaption>
                                                         <p>Node js</p>
@@ -537,7 +539,7 @@ const HomePage = () => {
                                                 </li>
                                                 <li>
                                                     <figure>
-                                                        <img className="img-fluid" src="img/icon/php.svg" alt="php logo" />
+                                                        <LazyLoadImage className="img-fluid" src="img/icon/php.svg" alt="php logo" />
                                                     </figure>
                                                     <figcaption>
                                                         <p>PHP</p>
@@ -545,7 +547,7 @@ const HomePage = () => {
                                                 </li>
                                                 <li>
                                                     <figure>
-                                                        <img className="img-fluid" src="img/icon/csharp.svg" alt="csharp logo" />
+                                                        <LazyLoadImage className="img-fluid" src="img/icon/csharp.svg" alt="csharp logo" />
                                                     </figure>
                                                     <figcaption>
                                                         <p>C#</p>
@@ -553,7 +555,7 @@ const HomePage = () => {
                                                 </li>
                                                 <li>
                                                     <figure>
-                                                        <img className="img-fluid" src="img/icon/python.svg" alt="python logo" />
+                                                        <LazyLoadImage className="img-fluid" src="img/icon/python.svg" alt="python logo" />
                                                     </figure>
                                                     <figcaption>
                                                         <p>Python</p>
@@ -566,7 +568,7 @@ const HomePage = () => {
                                             <ul>
                                                 <li>
                                                     <figure>
-                                                        <img className="img-fluid" src="img/icon/express.png" alt="express logo" />
+                                                        <LazyLoadImage className="img-fluid" src="img/icon/express.png" alt="express logo" />
                                                     </figure>
                                                     <figcaption>
                                                         <p>Express</p>
@@ -574,7 +576,7 @@ const HomePage = () => {
                                                 </li>
                                                 <li>
                                                     <figure>
-                                                        <img className="img-fluid" src="img/icon/laravel.svg" alt="laravel logo" />
+                                                        <LazyLoadImage className="img-fluid" src="img/icon/laravel.svg" alt="laravel logo" />
                                                     </figure>
                                                     <figcaption>
                                                         <p>Laravel</p>
@@ -582,7 +584,7 @@ const HomePage = () => {
                                                 </li>
                                                 <li>
                                                     <figure>
-                                                        <img className="img-fluid" src="img/icon/dotnet.svg" alt="dotnet logo" />
+                                                        <LazyLoadImage className="img-fluid" src="img/icon/dotnet.svg" alt="dotnet logo" />
                                                     </figure>
                                                     <figcaption>
                                                         <p>.NET</p>
@@ -590,7 +592,7 @@ const HomePage = () => {
                                                 </li>
                                                 <li>
                                                     <figure>
-                                                        <img className="img-fluid" src="img/icon/django.svg" alt="django logo" />
+                                                        <LazyLoadImage className="img-fluid" src="img/icon/django.svg" alt="django logo" />
                                                     </figure>
                                                     <figcaption>
                                                         <p>Django</p>
@@ -605,7 +607,7 @@ const HomePage = () => {
                                             <ul>
                                                 <li>
                                                     <figure>
-                                                        <img className="img-fluid" src="img/icon/swift.svg" alt="swift logo" />
+                                                        <LazyLoadImage className="img-fluid" src="img/icon/swift.svg" alt="swift logo" />
                                                     </figure>
                                                     <figcaption>
                                                         <p>Swift</p>
@@ -613,7 +615,7 @@ const HomePage = () => {
                                                 </li>
                                                 <li>
                                                     <figure>
-                                                        <img className="img-fluid" src="img/icon/kotlin.svg" alt="kotlin logo" />
+                                                        <LazyLoadImage className="img-fluid" src="img/icon/kotlin.svg" alt="kotlin logo" />
                                                     </figure>
                                                     <figcaption>
                                                         <p>Kotlin</p>
@@ -621,7 +623,7 @@ const HomePage = () => {
                                                 </li>
                                                 <li>
                                                     <figure>
-                                                        <img className="img-fluid" src="img/icon/java.svg" alt="java logo" />
+                                                        <LazyLoadImage className="img-fluid" src="img/icon/java.svg" alt="java logo" />
                                                     </figure>
                                                     <figcaption>
                                                         <p>Java</p>
@@ -629,7 +631,7 @@ const HomePage = () => {
                                                 </li>
                                                 <li>
                                                     <figure>
-                                                        <img className="img-fluid" src="img/icon/dart.svg" alt="dart" />
+                                                        <LazyLoadImage className="img-fluid" src="img/icon/dart.svg" alt="dart" />
                                                     </figure>
                                                     <figcaption>
                                                         <p>Dart</p>
@@ -642,7 +644,7 @@ const HomePage = () => {
                                             <ul>
                                                 <li>
                                                     <figure>
-                                                        <img className="img-fluid" src="img/icon/flutter.svg" alt="flutter	logo" />
+                                                        <LazyLoadImage className="img-fluid" src="img/icon/flutter.svg" alt="flutter	logo" />
                                                     </figure>
                                                     <figcaption>
                                                         <p>Flutter</p>
@@ -650,7 +652,7 @@ const HomePage = () => {
                                                 </li>
                                                 <li>
                                                     <figure>
-                                                        <img className="img-fluid" src="img/icon/react-native.svg" alt="react native logo" />
+                                                        <LazyLoadImage className="img-fluid" src="img/icon/react-native.svg" alt="react native logo" />
                                                     </figure>
                                                     <figcaption>
                                                         <p>React Native</p>
@@ -658,7 +660,7 @@ const HomePage = () => {
                                                 </li>
                                                 <li>
                                                     <figure>
-                                                        <img className="img-fluid" src="img/icon/rx-java.svg" alt="rx java logo" />
+                                                        <LazyLoadImage className="img-fluid" src="img/icon/rx-java.svg" alt="rx java logo" />
                                                     </figure>
                                                     <figcaption>
                                                         <p>Rx Java</p>
@@ -666,7 +668,7 @@ const HomePage = () => {
                                                 </li>
                                                 <li>
                                                     <figure>
-                                                        <img className="img-fluid" src="img/icon/junit.svg" alt="junit logo" />
+                                                        <LazyLoadImage className="img-fluid" src="img/icon/junit.svg" alt="junit logo" />
                                                     </figure>
                                                     <figcaption>
                                                         <p>JUnit</p>
@@ -680,7 +682,7 @@ const HomePage = () => {
                                             <ul>
                                                 <li>
                                                     <figure>
-                                                        <img className="img-fluid" src="img/icon/firebase.svg" alt="firebase logo" />
+                                                        <LazyLoadImage className="img-fluid" src="img/icon/firebase.svg" alt="firebase logo" />
                                                     </figure>
                                                     <figcaption>
                                                         <p>Firebase</p>
@@ -688,7 +690,7 @@ const HomePage = () => {
                                                 </li>
                                                 <li>
                                                     <figure>
-                                                        <img className="img-fluid" src="img/icon/realm.svg" alt="realm logo" />
+                                                        <LazyLoadImage className="img-fluid" src="img/icon/realm.svg" alt="realm logo" />
                                                     </figure>
                                                     <figcaption>
                                                         <p>Realm</p>
@@ -696,7 +698,7 @@ const HomePage = () => {
                                                 </li>
                                                 <li>
                                                     <figure>
-                                                        <img className="img-fluid" src="img/icon/sw-lite.svg" alt="sw lite logo" />
+                                                        <LazyLoadImage className="img-fluid" src="img/icon/sw-lite.svg" alt="sw lite logo" />
                                                     </figure>
                                                     <figcaption>
                                                         <p>SQLite</p>
@@ -704,7 +706,7 @@ const HomePage = () => {
                                                 </li>
                                                 <li>
                                                     <figure>
-                                                        <img className="img-fluid" src="img/icon/mongo-db.svg" alt="mongo db logo" />
+                                                        <LazyLoadImage className="img-fluid" src="img/icon/mongo-db.svg" alt="mongo db logo" />
                                                     </figure>
                                                     <figcaption>
                                                         <p>Mongo DB</p>
@@ -712,7 +714,7 @@ const HomePage = () => {
                                                 </li>
                                                 <li>
                                                     <figure>
-                                                        <img className="img-fluid" src="img/icon/my-sql.svg" alt="my sql logo" />
+                                                        <LazyLoadImage className="img-fluid" src="img/icon/my-sql.svg" alt="my sql logo" />
                                                     </figure>
                                                     <figcaption>
                                                         <p>My SQL</p>
@@ -739,25 +741,25 @@ const HomePage = () => {
                             <div className="achievement-item mb-md-4" data-aos="fade-up" data-aos-delay="100">
                                 <h5>5/5</h5>
                                 <p>Top Flutter App Developers</p>
-                                <img src="img/upwork.png" alt="upwork logo" />
+                                <LazyLoadImage src="img/upwork.png" alt="upwork logo" />
                             </div>
 
                             <div className="achievement-item mb-md-4" data-aos="fade-up" data-aos-delay="200">
                                 <h5>5/5</h5>
                                 <p>Top Mobile App Developers</p>
-                                <img src="img/gf.png" alt="good firms logo" />
+                                <LazyLoadImage src="img/gf.png" alt="good firms logo" />
                             </div>
 
                             <div className="achievement-item" data-aos="fade-up" data-aos-delay="300">
                                 <h5>5/5</h5>
                                 <p>Top App Development Company</p>
-                                <img src="img/clutch.png" alt="clutch logo" />
+                                <LazyLoadImage src="img/clutch.png" alt="clutch logo" />
                             </div>
 
                             <div className="achievement-item mb-0" data-aos="fade-up" data-aos-delay="400">
                                 <h5>5/5</h5>
                                 <p>Top Food Tech Developer</p>
-                                <img src="img/supersourcing.png" alt="super sourcing logo" />
+                                <LazyLoadImage src="img/supersourcing.png" alt="super sourcing logo" />
                             </div>
                         </div>
                     </div>
@@ -770,7 +772,7 @@ const HomePage = () => {
                             <p>Reach your customers across the entire spectrum of digital devices </p>
                         </div>
                         <div data-aos="fade-up" data-aos-delay="100">
-                            <img src="img/platform-services.png" className="img-fluid" />
+                            <LazyLoadImage src="img/platform-services.png" className="img-fluid" />
                         </div>
                     </div>
                 </section>
@@ -1257,7 +1259,7 @@ const HomePage = () => {
                             {/* </div> */}
                         </div>
                     </div>
-                    <div className="bubble2"><img src="img/bubbles3.svg" alt="circle" /></div>
+                    <div className="bubble2"><LazyLoadImage src="img/bubbles3.svg" alt="circle" /></div>
                 </section>
 
                 <section className="testimonial">
@@ -1553,7 +1555,7 @@ const HomePage = () => {
                         </OwlCarousel>
                         {/* </div> */}
                     </div>
-                    <div className="bubble2"><img src="img/bubbles2.svg" alt="big two circle" /></div>
+                    <div className="bubble2"><LazyLoadImage src="img/bubbles2.svg" alt="big two circle" /></div>
                 </section>
 
                 <section className="process">
@@ -1749,28 +1751,28 @@ const HomePage = () => {
 
                         <ul className="ps-timeline nav nav-tabs" role="tablist">
                             <li>
-                                <a data-toggle="tab" href="#process-idea"><img src="img/process/idea.svg" alt="idea" /></a>
+                                <a data-toggle="tab" href="#process-idea"><LazyLoadImage src="img/process/idea.svg" alt="idea" /></a>
                             </li>
                             <li>
-                                <a data-toggle="tab" href="#process-wireframe"><img src="img/process/wireframe.svg"
+                                <a data-toggle="tab" href="#process-wireframe"><LazyLoadImage src="img/process/wireframe.svg"
                                     alt="wireframe" /></a>
                             </li>
                             <li>
-                                <a data-toggle="tab" href="#process-design"><img src="img/process/design.svg" alt="design" /></a>
+                                <a data-toggle="tab" href="#process-design"><LazyLoadImage src="img/process/design.svg" alt="design" /></a>
                             </li>
                             <li>
-                                <a data-toggle="tab" href="#process-development"><img src="img/process/development.svg"
+                                <a data-toggle="tab" href="#process-development"><LazyLoadImage src="img/process/development.svg"
                                     alt="development process" /></a>
                             </li>
                             <li>
-                                <a data-toggle="tab" href="#process-test"><img src="img/process/test.svg" alt="test" /></a>
+                                <a data-toggle="tab" href="#process-test"><LazyLoadImage src="img/process/test.svg" alt="test" /></a>
                             </li>
                             <li>
-                                <a data-toggle="tab" href="#process-launch"><img src="img/process/launch.svg" alt="launch" /></a>
+                                <a data-toggle="tab" href="#process-launch"><LazyLoadImage src="img/process/launch.svg" alt="launch" /></a>
                             </li>
                         </ul>
                     </div>
-                    <div className="bubble1"><img src="img/circle1.svg" alt="pink circle" /></div>
+                    <div className="bubble1"><LazyLoadImage src="img/circle1.svg" alt="pink circle" /></div>
                 </section>
 
                 <section className="ios-process">
