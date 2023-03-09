@@ -260,7 +260,7 @@ const HomePage = () => {
                                 >
                                     <div className="outsource-content mb-3 mb-md-4">
                                         <div className="img-overlay"></div>
-                                        <img className="content-image" src="img/outsource/ecomm.jpg" />
+                                        <img className="content-image" src="img/outsource/ecomm.jpg" alt='ecomm' />
 
                                         <div className="outsource-title">
                                             <h5>E-COMMERCE</h5>
@@ -269,7 +269,7 @@ const HomePage = () => {
 
                                     <div className="outsource-content mb-3 mb-md-4">
                                         <div className="img-overlay"></div>
-                                        <img className="content-image" src="img/outsource/on-demand.jpg" />
+                                        <img className="content-image" src="img/outsource/on-demand.jpg" alt='on-demand' />
 
                                         <div className="outsource-title">
                                             <h5>ON DEMAND SOLUTIONS</h5>
@@ -278,7 +278,7 @@ const HomePage = () => {
 
                                     <div className="outsource-content mb-3 mb-md-4">
                                         <div className="img-overlay"></div>
-                                        <img className="content-image" src="img/outsource/social.jpg" />
+                                        <img className="content-image" src="img/outsource/social.jpg" alt='social' />
 
                                         <div className="outsource-title">
                                             <h5>SOCIAL NETWORKING</h5>
@@ -287,7 +287,7 @@ const HomePage = () => {
 
                                     <div className="outsource-content mb-3 mb-md-4">
                                         <div className="img-overlay"></div>
-                                        <img className="content-image" src="img/outsource/health.jpg" />
+                                        <img className="content-image" src="img/outsource/health.jpg" alt='health' />
 
                                         <div className="outsource-title">
                                             <h5>HEALTHCARE</h5>
@@ -296,7 +296,7 @@ const HomePage = () => {
 
                                     <div className="outsource-content mb-3 mb-md-4">
                                         <div className="img-overlay"></div>
-                                        <img className="content-image" src="img/outsource/emerging.jpg" />
+                                        <img className="content-image" src="img/outsource/emerging.jpg" alt='emerging' />
 
                                         <div className="outsource-title">
                                             <h5>Emerging Tech</h5>
@@ -305,7 +305,7 @@ const HomePage = () => {
 
                                     <div className="outsource-content">
                                         <div className="img-overlay"></div>
-                                        <img className="content-image" src="img/outsource/tour.jpg" />
+                                        <img className="content-image" src="img/outsource/tour.jpg" alt='tour' />
 
                                         <div className="outsource-title">
                                             <h5>TOURS AND TRAVEL</h5>
@@ -314,7 +314,7 @@ const HomePage = () => {
 
                                     <div className="outsource-content">
                                         <div className="img-overlay"></div>
-                                        <img className="content-image" src="img/outsource/trans.jpg" />
+                                        <img className="content-image" src="img/outsource/trans.jpg" alt='transport' />
 
                                         <div className="outsource-title">
                                             <h5>TRANSPORT AND LOGISTICS</h5>
@@ -323,7 +323,7 @@ const HomePage = () => {
 
                                     <div className="outsource-content">
                                         <div className="img-overlay"></div>
-                                        <img className="content-image" src="img/outsource/fintech.jpg" />
+                                        <img className="content-image" src="img/outsource/fintech.jpg" alt='fintech' />
 
                                         <div className="outsource-title">
                                             <h5>FINTECH</h5>
@@ -332,7 +332,7 @@ const HomePage = () => {
 
                                     <div className="outsource-content">
                                         <div className="img-overlay"></div>
-                                        <img className="content-image" src="img/outsource/edu.jpg" />
+                                        <img className="content-image" src="img/outsource/edu.jpg" alt='education' />
 
                                         <div className="outsource-title">
                                             <h5>Education</h5>
@@ -341,7 +341,7 @@ const HomePage = () => {
 
                                     <div className="outsource-content mb-0">
                                         <div className="img-overlay"></div>
-                                        <img className="content-image" src="img/outsource/wellness.jpg" />
+                                        <img className="content-image" src="img/outsource/wellness.jpg" alt='wellness' />
 
                                         <div className="outsource-title">
                                             {/* <h5>welness and fitness</h5> */}
@@ -358,7 +358,7 @@ const HomePage = () => {
 
                                 <div className="outsource-content mb-3 mb-md-4">
                                     <div className="img-overlay"></div>
-                                    <img className="content-image" src="img/outsource/ecomm.jpg" />
+                                    <img className="content-image" src="img/outsource/ecomm.jpg" alt='ecommerce' />
 
                                     <div className="outsource-title">
                                         <h5>E-COMMERCE</h5>
@@ -367,7 +367,7 @@ const HomePage = () => {
 
                                 <div className="outsource-content mb-3 mb-md-4">
                                     <div className="img-overlay"></div>
-                                    <img className="content-image" src="img/outsource/on-demand.jpg" />
+                                    <img className="content-image" src="img/outsource/on-demand.jpg" alt='on-demand' />
 
                                     <div className="outsource-title">
                                         <h5>ON DEMAND SOLUTIONS</h5>
@@ -376,7 +376,7 @@ const HomePage = () => {
 
                                 <div className="outsource-content mb-3 mb-md-4">
                                     <div className="img-overlay"></div>
-                                    <img className="content-image" src="img/outsource/social.jpg" />
+                                    <img className="content-image" src="img/outsource/social.jpg" alt='social' />
 
                                     <div className="outsource-title">
                                         <h5>SOCIAL NETWORKING</h5>
@@ -385,7 +385,7 @@ const HomePage = () => {
 
                                 <div className="outsource-content mb-3 mb-md-4">
                                     <div className="img-overlay"></div>
-                                    <img className="content-image" src="img/outsource/health.jpg" />
+                                    <img className="content-image" src="img/outsource/health.jpg" alt='health' />
 
                                     <div className="outsource-title">
                                         <h5>HEALTHCARE</h5>
@@ -394,7 +394,7 @@ const HomePage = () => {
 
                                 <div className="outsource-content mb-3 mb-md-4">
                                     <div className="img-overlay"></div>
-                                    <img className="content-image" src="img/outsource/emerging.jpg" />
+                                    <img className="content-image" src="img/outsource/emerging.jpg" alt='emerging' />
 
                                     <div className="outsource-title">
                                         <h5>Emerging Tech</h5>
@@ -403,7 +403,7 @@ const HomePage = () => {
 
                                 <div className="outsource-content">
                                     <div className="img-overlay"></div>
-                                    <img className="content-image" src="img/outsource/tour.jpg" />
+                                    <img className="content-image" src="img/outsource/tour.jpg" alt='tours' />
 
                                     <div className="outsource-title">
                                         <h5>TOURS AND TRAVEL</h5>
@@ -412,7 +412,7 @@ const HomePage = () => {
 
                                 <div className="outsource-content">
                                     <div className="img-overlay"></div>
-                                    <img className="content-image" src="img/outsource/trans.jpg" />
+                                    <img className="content-image" src="img/outsource/trans.jpg" alt='transport' />
 
                                     <div className="outsource-title">
                                         <h5>TRANSPORT AND LOGISTICS</h5>
@@ -421,7 +421,7 @@ const HomePage = () => {
 
                                 <div className="outsource-content">
                                     <div className="img-overlay"></div>
-                                    <img className="content-image" src="img/outsource/fintech.jpg" />
+                                    <img className="content-image" src="img/outsource/fintech.jpg" alt='fintech'/>
 
                                     <div className="outsource-title">
                                         <h5>FINTECH</h5>
@@ -430,7 +430,7 @@ const HomePage = () => {
 
                                 <div className="outsource-content">
                                     <div className="img-overlay"></div>
-                                    <img className="content-image" src="img/outsource/edu.jpg" />
+                                    <img className="content-image" src="img/outsource/edu.jpg" alt='education' />
 
                                     <div className="outsource-title">
                                         <h5>Education</h5>
@@ -439,7 +439,7 @@ const HomePage = () => {
 
                                 <div className="outsource-content mb-0">
                                     <div className="img-overlay"></div>
-                                    <img className="content-image" src="img/outsource/wellness.jpg" />
+                                    <img className="content-image" src="img/outsource/wellness.jpg" alt='wellness' />
 
                                     <div className="outsource-title">
                                         {/* <h5>welness and fitness</h5> */}
@@ -644,7 +644,7 @@ const HomePage = () => {
                                             <ul>
                                                 <li>
                                                     <figure>
-                                                        <LazyLoadImage className="img-fluid" src="img/icon/flutter.svg" alt="flutter	logo" />
+                                                        <LazyLoadImage className="img-fluid" src="img/icon/flutter.svg" alt="flutter logo" />
                                                     </figure>
                                                     <figcaption>
                                                         <p>Flutter</p>
@@ -772,7 +772,7 @@ const HomePage = () => {
                             <p>Reach your customers across the entire spectrum of digital devices </p>
                         </div>
                         <div data-aos="fade-up" data-aos-delay="100">
-                            <LazyLoadImage src="img/platform-services.png" className="img-fluid" />
+                            <LazyLoadImage src="img/platform-services.png" className="img-fluid" alt='platform services' />
                         </div>
                     </div>
                 </section>
@@ -814,7 +814,7 @@ const HomePage = () => {
                                         <div className="app-tags" data-aos="fade-down" data-aos-delay="200">
                                             <ul>
                                                 <li className="flag" style={{ width: "46px" }}>
-                                                    <img src="img/flags/maldives.svg" />
+                                                    <img src="img/flags/maldives.svg" alt='maldives' />
                                                 </li>
                                                 <li className="app">
                                                     <p>Mobile App</p>
@@ -848,16 +848,16 @@ const HomePage = () => {
                                             <h4>Technology Stack</h4>
                                             <ul>
                                                 <li>
-                                                    <img src="img/technologies/firebase.svg" />
+                                                    <img src="img/technologies/firebase.svg" alt='firebase' />
                                                 </li>
                                                 <li>
-                                                    <img src="img/technologies/laravel.svg" />
+                                                    <img src="img/technologies/laravel.svg" alt='laravel' />
                                                 </li>
                                                 <li>
-                                                    <img src="img/technologies/flutter.svg" />
+                                                    <img src="img/technologies/flutter.svg" alt='flutter' />
                                                 </li>
                                                 <li>
-                                                    <img src="img/technologies/figma.svg" />
+                                                    <img src="img/technologies/figma.svg" alt='figma' />
                                                 </li>
                                             </ul>
                                         </div>
@@ -885,7 +885,7 @@ const HomePage = () => {
                                         <div className="app-tags">
                                             <ul>
                                                 <li className="flag" style={{ width: "46px" }}>
-                                                    <img src="img/flags/begim-flag.jpg" />
+                                                    <img src="img/flags/begim-flag.jpg" alt='begim-flag' />
                                                 </li>
                                                 <li className="app">
                                                     <p>Tablet App</p>
@@ -922,24 +922,24 @@ const HomePage = () => {
                                             <h4>Technology Stack</h4>
                                             <ul>
                                                 <li>
-                                                    <img src="img/technologies/swift.png" />
+                                                    <img src="img/technologies/swift.png" alt='swift' />
                                                 </li>
                                                 <li>
-                                                    <img src="img/technologies/laravel.svg" />
+                                                    <img src="img/technologies/laravel.svg" alt='laravel' />
                                                 </li>
                                                 <li>
-                                                    <img src="img/technologies/flutter.svg" />
+                                                    <img src="img/technologies/flutter.svg" alt='flutter' />
                                                 </li>
                                                 <li>
-                                                    <img src="img/technologies/kotlin.png" />
+                                                    <img src="img/technologies/kotlin.png" alt='kotlin' />
                                                 </li>
                                             </ul>
                                             <ul>
                                                 <li>
-                                                    <img src="img/technologies/google-workspace.png" />
+                                                    <img src="img/technologies/google-workspace.png" alt='google-workspace' />
                                                 </li>
                                                 <li>
-                                                    <img src="img/technologies/office365.png" />
+                                                    <img src="img/technologies/office365.png" alt='office365' />
                                                 </li>
                                             </ul>
                                         </div>
@@ -967,7 +967,7 @@ const HomePage = () => {
                                         <div className="app-tags">
                                             <ul>
                                                 <li className="flag" style={{ width: "46px" }}>
-                                                    <img src="img/flags/begim-flag.jpg" />
+                                                    <img src="img/flags/begim-flag.jpg" alt='begim-flag' />
                                                 </li>
                                                 <li className="app">
                                                     <p>Tablet App</p>
@@ -1003,21 +1003,21 @@ const HomePage = () => {
                                             <h4>Technology Stack</h4>
                                             <ul>
                                                 <li>
-                                                    <img src="img/technologies/flutter.svg" />
+                                                    <img src="img/technologies/flutter.svg" alt='flutter' />
                                                 </li>
                                                 <li>
-                                                    <img src="img/technologies/figma.svg" />
+                                                    <img src="img/technologies/figma.svg" alt='figma' />
                                                 </li>
                                                 <li>
-                                                    <img src="img/technologies/laravel.svg" />
+                                                    <img src="img/technologies/laravel.svg" alt='laravel' />
                                                 </li>
                                                 <li>
-                                                    <img src="img/technologies/office365.png" />
+                                                    <img src="img/technologies/office365.png" alt='office365' />
                                                 </li>
                                             </ul>
                                             <ul>
                                                 <li>
-                                                    <img src="img/technologies/google-workspace.png" />
+                                                    <img src="img/technologies/google-workspace.png" alt='google-workspace' />
                                                 </li>
                                             </ul>
                                         </div>
@@ -1122,7 +1122,7 @@ const HomePage = () => {
                                         <div className="app-tags">
                                             <ul>
                                                 <li className="flag" style={{ width: "46px" }}>
-                                                    <img src="img/flags/south-america.png" />
+                                                    <img src="img/flags/south-america.png" alt='south-america' />
                                                 </li>
                                                 <li className="app">
                                                     <p>Web App</p>
@@ -1157,16 +1157,16 @@ const HomePage = () => {
                                             <h4>Technology Stack</h4>
                                             <ul>
                                                 <li>
-                                                    <img src="img/technologies/firebase.svg" />
+                                                    <img src="img/technologies/firebase.svg" alt='firebase' />
                                                 </li>
                                                 <li>
-                                                    <img src="img/technologies/node.png" />
+                                                    <img src="img/technologies/node.png" alt='node' />
                                                 </li>
                                                 <li>
-                                                    <img src="img/technologies/angular.png" />
+                                                    <img src="img/technologies/angular.png" alt='angular' />
                                                 </li>
                                                 <li>
-                                                    <img src="img/technologies/rdtm.png" />
+                                                    <img src="img/technologies/rdtm.png" alt='rdtm' />
                                                 </li>
                                             </ul>
                                         </div>
@@ -1196,7 +1196,7 @@ const HomePage = () => {
                                         <div className="app-tags">
                                             <ul>
                                                 <li className="flag" style={{ width: "46px" }}>
-                                                    <img src="img/flags/spain.png" />
+                                                    <img src="img/flags/spain.png" alt='spain' />
                                                 </li>
                                                 <li className="app">
                                                     <p>Mobile App</p>
@@ -1234,21 +1234,21 @@ const HomePage = () => {
                                             <h4>Technology Stack</h4>
                                             <ul>
                                                 <li>
-                                                    <img src="img/technologies/mongodb.png" />
+                                                    <img src="img/technologies/mongodb.png" alt='mongodb' />
                                                 </li>
                                                 <li>
-                                                    <img src="img/technologies/node.png" />
+                                                    <img src="img/technologies/node.png" alt='node' />
                                                 </li>
                                                 <li>
-                                                    <img src="img/technologies/flutter.svg" />
+                                                    <img src="img/technologies/flutter.svg" alt='flutter' />
                                                 </li>
                                                 <li>
-                                                    <img src="img/technologies/qr-code.png" />
+                                                    <img src="img/technologies/qr-code.png" alt='qr-code' />
                                                 </li>
                                             </ul>
                                             <ul>
                                                 <li>
-                                                    <img src="img/technologies/aws.png" />
+                                                    <img src="img/technologies/aws.png" alt='aws' />
                                                 </li>
                                             </ul>
                                         </div>
@@ -2028,11 +2028,11 @@ const HomePage = () => {
                         <div className="modal-content-wrapper">
                             <div className="row">
                                 <div className="col-lg-6 col-md-6 pr-0 dnm">
-                                    <img className="img-fluid" src="img/modal-img.png" />
+                                    <img className="img-fluid" src="img/modal-img.png" alt='modal' />
                                 </div>
                                 <div className="col-lg-6 col-md-6 pl-0">
                                     <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                                        <img src="img/close-icon.svg" />
+                                        <img src="img/close-icon.svg" alt='close-icon' />
                                     </button>
                                     <div className="content-area">
                                         <h5>Do you have an <strong>Idea?</strong></h5>
@@ -2043,7 +2043,7 @@ const HomePage = () => {
                                 </div>
                             </div>
                             <div className="modal-bubble-img">
-                                <img src="img/modal-bubble.svg" />
+                                <img src="img/modal-bubble.svg" alt='modal-bubble' />
                             </div>
                         </div>
                     </div>
